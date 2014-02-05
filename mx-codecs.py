@@ -3,6 +3,12 @@
 
 # mx-codecs.py
 
+## Install restricted codecs ##
+## jerry3904, kmathern, adrian and MEPISCommunity   ##
+## http://forum.mepiscommunity.org  ##
+## License: GPL v3      ##
+
+
 import subprocess
 import sys
 import tempfile
