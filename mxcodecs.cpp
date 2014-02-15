@@ -181,7 +181,7 @@ void mxcodecs::installDebs(QString path) {
 void mxcodecs::on_buttonAbout_clicked() {
   QMessageBox msgBox(QMessageBox::NoIcon, tr("About MX User Assistant"),
                      tr("<p align=\"center\"><b><h2>MX Codecs Installer</h2></b></p><p align=\"center\">MX14+git20140215</p><p><h3>Simple codecs\
-      donwloader for antiX MX</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">\
+      downloader for antiX MX</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">\
       http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">Copyright (c) antiX<br /><br /></p>"), 0, this);
       msgBox.addButton(tr("&License"), QMessageBox::AcceptRole);
                      msgBox.addButton(QMessageBox::Cancel);
