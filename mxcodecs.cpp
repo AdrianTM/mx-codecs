@@ -117,7 +117,7 @@ QString mxcodecs::downloadDebs() {
     }
   }
 
-  updateStatus(tr("<b>Download Finished</b>"), 100);
+  updateStatus(tr("<b>Download Finished.</b>"), 100);
 
   return path;
 }
@@ -127,7 +127,7 @@ void mxcodecs::installDebs(QString path) {
   QString cmd, out, msg;
   QDir dir(path);
   dir.setCurrent(path);
-  bool error;
+  bool error = false;
 
   //filter *.deb file only
   QStringList filter;
@@ -140,7 +140,9 @@ void mxcodecs::installDebs(QString path) {
 
   int size = fileList.size();
   if (size == 0) {
-    error = true;
+    QMessageBox::critical(0, QString::null,
+                             tr("No downloaded *.debs files found."));
+    qApp->exit(1);
   }
 
   while (!fileList.isEmpty()) {
