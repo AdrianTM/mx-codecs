@@ -142,7 +142,7 @@ void mxcodecs::installDebs(QString path) {
                              tr("Codecs files have been downloaded and installed successfully."));
     qApp->exit(0);
   } else {
-    QMessageBox::information(0, QString::null,
+    QMessageBox::critical(0, QString::null,
                              tr("Process finished. Errors have occurred during the installation."));
     qApp->exit(1);
   }
