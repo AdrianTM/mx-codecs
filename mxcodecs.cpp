@@ -90,16 +90,32 @@ QString mxcodecs::downloadDebs() {
   cmd = "wget -qO- " + url + "/dists/stable/main/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep libdvdcss2 | awk \'{print $2}\'";
   updateStatus(tr("<b>Running command...</b><p>") + cmd, 10);
   out = getCmdOut(cmd);
-  cmd = "wget -q " + url + "/" + out;
-  updateStatus(tr("<b>Running command...</b><p>") + cmd, 20);
-  out = getCmdOut(cmd);
+  if (out == "") {
+    QMessageBox::critical(0, QString::null,
+                          tr("Cannot connect to the download site"));
+  } else {
+    cmd = "wget -q " + url + "/" + out;
+    updateStatus(tr("<b>Running command...</b><p>") + cmd, 20);
+    if (system(cmd.toAscii()) != 0) {
+      QMessageBox::critical(0, QString::null,
+                            QString(tr("Error downloading %1")).arg(out));
+    }
+  }
 
   cmd = "wget -qO- " + url + "/dists/stable/non-free/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep w.*codecs | awk \'{print $2}\'";
   updateStatus(tr("<b>Running command...</b><p>") + cmd, 50);
   out = getCmdOut(cmd);
-  cmd = "wget -q " + url + "/" + out;
-  updateStatus(tr("<b>Running command...</b><p>") + cmd, 60);
-  out = getCmdOut(cmd);
+  if (out == "") {
+    QMessageBox::critical(0, QString::null,
+                          tr("Cannot connect to the download site"));
+  } else {
+    cmd = "wget -q " + url + "/" + out;
+    updateStatus(tr("<b>Running command...</b><p>") + cmd, 60);
+    if (system(cmd.toAscii()) != 0) {
+      QMessageBox::critical(0, QString::null,
+                            QString(tr("Error downloading %1")).arg(out));
+    }
+  }
 
   updateStatus(tr("<b>Download Finished</b>"), 100);
 
@@ -123,6 +139,10 @@ void mxcodecs::installDebs(QString path) {
   ui->groupBox->setTitle(tr("Installing downloaded files"));
 
   int size = fileList.size();
+  if (size == 0) {
+    error = true;
+  }
+
   while (!fileList.isEmpty()) {
     QString file = fileList.takeFirst();
     cmd = QString("dpkg -i %1").arg(file);
@@ -134,9 +154,11 @@ void mxcodecs::installDebs(QString path) {
     }
     dir.remove(file);
   }
+
   dir.rmdir(path);
   ui->groupBox->setTitle("");
   updateStatus(tr("<b>Installation process has finished</b>"), 100);
+
   if (!error) {
     QMessageBox::information(0, QString::null,
                              tr("Codecs files have been downloaded and installed successfully."));
