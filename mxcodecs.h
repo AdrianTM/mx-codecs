@@ -28,6 +28,7 @@ public:
 public slots:
   virtual void on_buttonOk_clicked();
   virtual void on_buttonAbout_clicked();
+  virtual void on_buttonHelp_clicked();
 
 private:
   Ui::mxcodecs *ui;
