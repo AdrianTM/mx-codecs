@@ -210,7 +210,7 @@
         <string>Display help </string>
        </property>
        <property name="text">
-        <string>&amp;Help</string>
+        <string>Help</string>
        </property>
        <property name="icon">
         <iconset>
