@@ -91,7 +91,7 @@ QString mxcodecs::downloadDebs() {
   updateStatus(tr("<b>Running command...</b><p>") + cmd, 10);
   out = getCmdOut(cmd);
   if (out == "") {
-    QMessageBox::critical(0, QString::null,
+    QMessageBox::critical(0, tr("Error"),
                           tr("Cannot connect to the download site"));
   } else {
     cmd = "wget -q " + url + "/" + out;
@@ -106,13 +106,13 @@ QString mxcodecs::downloadDebs() {
   updateStatus(tr("<b>Running command...</b><p>") + cmd, 50);
   out = getCmdOut(cmd);
   if (out == "") {
-    QMessageBox::critical(0, QString::null,
+    QMessageBox::critical(0, tr("Error"),
                           tr("Cannot connect to the download site"));
   } else {
     cmd = "wget -q " + url + "/" + out;
-    updateStatus(tr("<b>Running command...</b><p>") + cmd, 60);
+    updateStatus(tr("<b>Running command...</b><p>") + cmd, 70);
     if (system(cmd.toAscii()) != 0) {
-      QMessageBox::critical(0, QString::null,
+      QMessageBox::critical(0, tr("Error"),
                             QString(tr("Error downloading %1")).arg(out));
     }
   }
@@ -140,7 +140,7 @@ void mxcodecs::installDebs(QString path) {
 
   int size = fileList.size();
   if (size == 0) {
-    QMessageBox::critical(0, QString::null,
+    QMessageBox::critical(0, tr("Error"),
                              tr("No downloaded *.debs files found."));
     qApp->exit(1);
   }
@@ -162,11 +162,11 @@ void mxcodecs::installDebs(QString path) {
   updateStatus(tr("<b>Installation process has finished</b>"), 100);
 
   if (!error) {
-    QMessageBox::information(0, QString::null,
+    QMessageBox::information(0, tr("Finished"),
                              tr("Codecs files have been downloaded and installed successfully."));
     qApp->exit(0);
   } else {
-    QMessageBox::critical(0, QString::null,
+    QMessageBox::critical(0, tr("Error"),
                              tr("Process finished. Errors have occurred during the installation."));
     qApp->exit(1);
   }
@@ -179,7 +179,7 @@ void mxcodecs::installDebs(QString path) {
 
 // show about
 void mxcodecs::on_buttonAbout_clicked() {
-  QMessageBox msgBox(QMessageBox::NoIcon, tr("About mx-codecs"),
+  QMessageBox msgBox(QMessageBox::NoIcon, tr("About MX Codecs Installer"),
                      tr("<p align=\"center\"><b><h2>MX Codecs Installer</h2></b></p><p align=\"center\">MX14+git20140217</p><p><h3>Simple codecs\
       downloader for antiX MX</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">\
       http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">Copyright (c) antiX<br /><br /></p>"), 0, this);

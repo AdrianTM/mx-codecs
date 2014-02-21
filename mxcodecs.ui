@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>mx-codecs</string>
+   <string>MX Codecs Installer</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
