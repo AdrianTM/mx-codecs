@@ -1,0 +1,19 @@
+[Desktop Entry]
+Name=MX Codecs Installer
+Name[de]=
+Name[es]=
+Name[fr]=
+Name[it]=
+Name[nl]=
+Name[sv]=
+NAme[el]=
+Name[ru]=
+Comment=Simple install of restricted codecs
+Comment[es]=
+Comment[nl]=
+Comment[sv]=
+Exec=gksu mx-codecs 
+Icon=/usr/share/icons/mx-codecs.png
+NoDisplay=false
+Categories=System;
+Type=Application 
