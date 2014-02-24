@@ -1,8 +1,29 @@
-//  Install restricted codecs
-//  jerry3904, kmathern, adrian and MEPISCommunity
-//  http://forum.mepiscommunity.org
-//  License: GPL v3 with the exeption of getCmdOut function
-
+/*****************************************************************************
+ * mx-codecs.cpp
+ *****************************************************************************
+ * Copyright (C) 2014 MX Authors with the exeption of getCmdOut function
+ *  getCmdOut function copyright (C) 2003-2014 Warren Woodford 
+ *   released under the Apache License version 2.0
+ * 
+ * Authors: Jerry 3904
+ *          Anticaptilista
+ *          Adrian
+ *          MEPIS Community <http://forum.mepiscommunity.org>
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+ *****************************************************************************/
 
 #include "mxcodecs.h"
 #include "ui_mxcodecs.h"
@@ -91,7 +112,7 @@ QString mxcodecs::downloadDebs() {
   updateStatus(tr("<b>Running command...</b><p>") + cmd, 10);
   out = getCmdOut(cmd);
   if (out == "") {
-    QMessageBox::critical(0, QString::null,
+    QMessageBox::critical(0, tr("Error"),
                           tr("Cannot connect to the download site"));
   } else {
     cmd = "wget -q " + url + "/" + out;
@@ -106,13 +127,13 @@ QString mxcodecs::downloadDebs() {
   updateStatus(tr("<b>Running command...</b><p>") + cmd, 50);
   out = getCmdOut(cmd);
   if (out == "") {
-    QMessageBox::critical(0, QString::null,
+    QMessageBox::critical(0, tr("Error"),
                           tr("Cannot connect to the download site"));
   } else {
     cmd = "wget -q " + url + "/" + out;
-    updateStatus(tr("<b>Running command...</b><p>") + cmd, 60);
+    updateStatus(tr("<b>Running command...</b><p>") + cmd, 70);
     if (system(cmd.toAscii()) != 0) {
-      QMessageBox::critical(0, QString::null,
+      QMessageBox::critical(0, tr("Error"),
                             QString(tr("Error downloading %1")).arg(out));
     }
   }
@@ -140,7 +161,7 @@ void mxcodecs::installDebs(QString path) {
 
   int size = fileList.size();
   if (size == 0) {
-    QMessageBox::critical(0, QString::null,
+    QMessageBox::critical(0, tr("Error"),
                              tr("No downloaded *.debs files found."));
     qApp->exit(1);
   }
@@ -162,11 +183,11 @@ void mxcodecs::installDebs(QString path) {
   updateStatus(tr("<b>Installation process has finished</b>"), 100);
 
   if (!error) {
-    QMessageBox::information(0, QString::null,
+    QMessageBox::information(0, tr("Finished"),
                              tr("Codecs files have been downloaded and installed successfully."));
     qApp->exit(0);
   } else {
-    QMessageBox::critical(0, QString::null,
+    QMessageBox::critical(0, tr("Error"),
                              tr("Process finished. Errors have occurred during the installation."));
     qApp->exit(1);
   }
@@ -179,11 +200,21 @@ void mxcodecs::installDebs(QString path) {
 
 // show about
 void mxcodecs::on_buttonAbout_clicked() {
+<<<<<<< HEAD
   QMessageBox msgBox(QMessageBox::NoIcon, tr("About MX User Assistant"),
                      tr("<p align=\"center\"><b><h2>MX Codecs Installer</h2></b></p><p align=\"center\">MX14+git20140215</p><p><h3>Simple codecs downloader for antiX MX</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">\
+=======
+  QMessageBox msgBox(QMessageBox::NoIcon, tr("About MX Codecs Installer"),
+                     tr("<p align=\"center\"><b><h2>MX Codecs Installer</h2></b></p><p align=\"center\">MX14+git20140221</p><p><h3>Simple codecs\
+      downloader for antiX MX</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">\
+>>>>>>> upstream/master
       http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">Copyright (c) antiX<br /><br /></p>"), 0, this);
-      msgBox.addButton(tr("&License"), QMessageBox::AcceptRole);
+      msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
                      msgBox.addButton(QMessageBox::Cancel);
       if (msgBox.exec() == QMessageBox::AcceptRole)
       QDesktopServices::openUrl(QUrl("file:///usr/local/share/doc/mx-codecs-license.html"));
+}
+
+void mxcodecs::on_buttonHelp_clicked() {
+  QDesktopServices::openUrl(QUrl("file:///usr/local/share/doc/mxapps.html"));
 }
