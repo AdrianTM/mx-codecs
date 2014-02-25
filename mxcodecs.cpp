@@ -200,9 +200,11 @@ void mxcodecs::installDebs(QString path) {
 
 // show about
 void mxcodecs::on_buttonAbout_clicked() {
-  QMessageBox msgBox(QMessageBox::NoIcon, tr("About MX Codecs Installer"),
-                     tr("<p align=\"center\"><b><h2>MX Codecs Installer</h2></b></p><p align=\"center\">MX14+git20140224</p><p><h3>Simple codecs downloader for antiX MX</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">\
-                    http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">Copyright (c) antiX<br /><br /></p>"), 0, this);
+  QMessageBox msgBox(QMessageBox::NoIcon, 
+                     tr("About MX Codecs Installer"), "<p align=\"center\"><b><h2>" +
+                     tr("MX Codecs Installer") + "</h2></b></p><p align=\"center\">MX14+git20140225</p><p align=\"center\"><h3>" + 
+                     tr("Simple codecs downloader for antiX MX") + "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
+                     tr("Copyright (c) antiX") + "<br /><br /></p>", 0, this);
       msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
                      msgBox.addButton(QMessageBox::Cancel);
       if (msgBox.exec() == QMessageBox::AcceptRole)
