@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="pt_PT">
+<TS version="2.1" language="pt_PT">
 <context>
     <name>QApplication</name>
     <message>
@@ -86,18 +86,94 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="203"/>
+        <location filename="../mxcodecs.cpp" line="204"/>
         <source>About MX Codecs Installer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="204"/>
-        <source>&lt;p align=&quot;center&quot;&gt;&lt;b&gt;&lt;h2&gt;MX Codecs Installer&lt;/h2&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;MX14+git20140221&lt;/p&gt;&lt;p&gt;&lt;h3&gt;Simple codecs      downloader for antiX MX&lt;/h3&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.mepiscommunity.org/mx&quot;&gt;      http://www.mepiscommunity.org/mx&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Copyright (c) antiX&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</source>
+        <location filename="../mxcodecs.cpp" line="206"/>
+        <source>Simple codecs downloader for antiX MX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="207"/>
+        <source>Copyright (c) antiX</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.cpp" line="208"/>
         <source>License</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.ui" line="14"/>
+        <location filename="../mxcodecs.cpp" line="205"/>
+        <source>MX Codecs Installer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.ui" line="33"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;This application allows you to install restricted codecs that permit advanced video and audio functions.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;In some juridictions their distribution may be limited so the user must meet local regulations. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Do you assume legal responsibility for downloading these codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.ui" line="48"/>
+        <source>Downloading codecs files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.ui" line="93"/>
+        <source>Cancel any changes then quit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.ui" line="96"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.ui" line="103"/>
+        <source>Alt+N</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.ui" line="113"/>
+        <source>Apply any changes then quit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.ui" line="116"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.ui" line="171"/>
+        <source>About this application</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.ui" line="174"/>
+        <source>About...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.ui" line="181"/>
+        <source>Alt+B</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.ui" line="210"/>
+        <source>Display help </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.ui" line="213"/>
+        <source>Help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.ui" line="220"/>
+        <source>Alt+H</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
