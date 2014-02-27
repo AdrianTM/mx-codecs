@@ -212,5 +212,5 @@ void mxcodecs::on_buttonAbout_clicked() {
 }
 
 void mxcodecs::on_buttonHelp_clicked() {
-  QDesktopServices::openUrl(QUrl("file:///usr/local/share/doc/mxapps.html"));
+  QDesktopServices::openUrl(QUrl("file:///usr/local/share/doc/mxapps.html#codecs"));
 }
