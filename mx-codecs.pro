@@ -8,7 +8,7 @@
 #* mx-codecs.pro
 # *****************************************************************************
 # * Copyright (C) 2014 MX Authors
-# * 
+# *
 # * Authors: Jerry 3904
 # *          Anticaptilista
 # *          Adrian
@@ -58,6 +58,7 @@ TRANSLATIONS += translations/mx-codecs_ar.ts \
                 translations/mx-codecs_nl.ts \
                 translations/mx-codecs_pl.ts \
                 translations/mx-codecs_pt.ts \
-                translations/mx-codecs_pt_BR.ts \ 
+                translations/mx-codecs_pt_BR.ts \
+                translations/mx-codecs_ro.ts \
                 translations/mx-codecs_zh_CN.ts \
-                translations/mx-codecs_zh_TW.ts 
+                translations/mx-codecs_zh_TW.ts
