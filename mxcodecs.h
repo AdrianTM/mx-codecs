@@ -2,7 +2,7 @@
  * mxcodecs.h
  *****************************************************************************
  * Copyright (C) 2014 MX Authors
- * 
+ *
  * Authors: Jerry 3904
  *          Anticaptilista
  *          Adrian
@@ -38,25 +38,25 @@ class mxcodecs;
 
 class mxcodecs : public QDialog
 {
-  Q_OBJECT
+    Q_OBJECT
 
 public:
-  explicit mxcodecs(QWidget *parent = 0);
-  ~mxcodecs();
-  // helpers
-  static QString getCmdOut(QString cmd);
-  void updateStatus(QString msg, int val);
+    explicit mxcodecs(QWidget *parent = 0);
+    ~mxcodecs();
+    // helpers
+    static QString getCmdOut(QString cmd);
+    void updateStatus(QString msg, int val);
 
-  QString downloadDebs();
-  void installDebs(QString path);
+    QString downloadDebs();
+    void installDebs(QString path);
 
 public slots:
-  virtual void on_buttonOk_clicked();
-  virtual void on_buttonAbout_clicked();
-  virtual void on_buttonHelp_clicked();
+    virtual void on_buttonOk_clicked();
+    virtual void on_buttonAbout_clicked();
+    virtual void on_buttonHelp_clicked();
 
 private:
-  Ui::mxcodecs *ui;
+    Ui::mxcodecs *ui;
 };
 
 #endif // MXCODECS_H
