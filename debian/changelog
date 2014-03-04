@@ -1,3 +1,9 @@
+mx-codecs (0.13.98+git20140304-mx140+1) mx; urgency=low
+
+  * added help/license browser
+
+ -- Adrian <adrian@mx1>  Tue, 04 Mar 2014 10:47:19 -0500
+
 mx-codecs (0.13.98+git20140303-mx140+1) mx; urgency=low
 
   * Initial packaging.

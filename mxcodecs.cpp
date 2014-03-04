@@ -30,7 +30,7 @@
 
 #include <stdio.h>
 
-#include <QDesktopServices>
+#include <QWebView>
 #include <QUrl>
 #include <QDir>
 
@@ -208,9 +208,22 @@ void mxcodecs::on_buttonAbout_clicked() {
     msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
     msgBox.addButton(QMessageBox::Cancel);
     if (msgBox.exec() == QMessageBox::AcceptRole)
-        QDesktopServices::openUrl(QUrl("file:///usr/local/share/doc/mx-codecs-license.html"));
+        displaySite("file:///usr/local/share/doc/mx-codecs-license.html");
 }
 
+
+// Help button clicked
 void mxcodecs::on_buttonHelp_clicked() {
-    QDesktopServices::openUrl(QUrl("file:///usr/local/share/doc/mxapps.html#codecs"));
+    displaySite("file:///usr/local/share/doc/mxapps.html#codecs");
+}
+
+// pop up a window and display website
+void mxcodecs::displaySite(QString site) {
+    QWidget *window = new QWidget(this, Qt::Dialog);
+    window->setWindowTitle(this->windowTitle());
+    window->resize(800, 500);
+    QWebView *webview = new QWebView(window);
+    webview->load(QUrl(site));
+    webview->show();
+    window->show();
 }
