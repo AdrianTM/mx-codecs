@@ -1,3 +1,9 @@
+mx-codecs (0.13.98+git20140406-mx140+2) mx; urgency=low
+
+  * relaced function covered by Apache license
+
+ -- Adrian <adrian@mx1>  Sun, 06 Apr 2014 01:06:49 -0400
+
 mx-codecs (0.13.98+git20140304-mx140+1) mx; urgency=low
 
   * added help/license browser

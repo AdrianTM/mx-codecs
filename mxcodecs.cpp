@@ -1,9 +1,7 @@
 /*****************************************************************************
  * mx-codecs.cpp
  *****************************************************************************
- * Copyright (C) 2014 MX Authors with the exeption of getCmdOut function
- *  getCmdOut function copyright (C) 2003-2014 Warren Woodford
- *   released under the Apache License version 2.0
+ * Copyright (C) 2014 MX Authors
  *
  * Authors: Jerry 3904
  *          Anticaptilista
@@ -28,12 +26,9 @@
 #include "mxcodecs.h"
 #include "ui_mxcodecs.h"
 
-#include <stdio.h>
-
 #include <QWebView>
-#include <QUrl>
 #include <QDir>
-
+#include <QProcess>
 
 mxcodecs::mxcodecs(QWidget *parent) :
     QDialog(parent),
@@ -54,24 +49,15 @@ void mxcodecs::updateStatus(QString msg, int val) {
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-// Util function taken from minstall, part of MEPIS, Copyright (C) 2003-2010 by Warren Woodford
-// Licensed under the Apache License, Version 2.0
+// Util function
 
 QString mxcodecs::getCmdOut(QString cmd) {
-    char line[260];
-    const char* ret = "";
-    FILE* fp = popen(cmd.toAscii(), "r");
-    if (fp == NULL) {
-        return QString (ret);
-    }
-    int i;
-    if (fgets(line, sizeof line, fp) != NULL) {
-        i = strlen(line);
-        line[--i] = '\0';
-        ret = line;
-    }
-    pclose(fp);
-    return QString (ret);
+    QProcess *proc = new QProcess();
+    proc->start(cmd);
+    proc->setReadChannel(QProcess::StandardOutput);
+    proc->setReadChannelMode(QProcess::MergedChannels);
+    proc->waitForFinished();
+    return proc->readAllStandardOutput().trimmed();
 }
 
 
@@ -108,7 +94,7 @@ QString mxcodecs::downloadDebs() {
     // get arch info
     arch = getCmdOut("dpkg --print-architecture");
 
-    cmd = "wget -qO- " + url + "/dists/stable/main/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep libdvdcss2 | awk \'{print $2}\'";
+    cmd = "/bin/bash -c \"wget -qO- " + url + "/dists/stable/main/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep libdvdcss2 | awk \'{print $2}\'\"";
     updateStatus(tr("<b>Running command...</b><p>") + cmd, 10);
     out = getCmdOut(cmd);
     if (out == "") {
@@ -123,7 +109,7 @@ QString mxcodecs::downloadDebs() {
         }
     }
 
-    cmd = "wget -qO- " + url + "/dists/stable/non-free/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep w.*codecs | awk \'{print $2}\'";
+    cmd = "/bin/bash -c \"wget -qO- " + url + "/dists/stable/non-free/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep w.*codecs | awk \'{print $2}\'\"";
     updateStatus(tr("<b>Running command...</b><p>") + cmd, 50);
     out = getCmdOut(cmd);
     if (out == "") {
@@ -202,7 +188,7 @@ void mxcodecs::installDebs(QString path) {
 void mxcodecs::on_buttonAbout_clicked() {
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Codecs Installer"), "<p align=\"center\"><b><h2>" +
-                       tr("MX Codecs Installer") + "</h2></b></p><p align=\"center\">MX14+git20140303</p><p align=\"center\"><h3>" +
+                       tr("MX Codecs Installer") + "</h2></b></p><p align=\"center\">MX14+git20140406</p><p align=\"center\"><h3>" +
                        tr("Simple codecs downloader for antiX MX") + "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) antiX") + "<br /><br /></p>", 0, this);
     msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
