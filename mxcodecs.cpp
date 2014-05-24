@@ -28,13 +28,13 @@
 
 #include <QWebView>
 #include <QDir>
-#include <QProcess>
 
 mxcodecs::mxcodecs(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::mxcodecs)
 {
     ui->setupUi(this);
+    setup();
 }
 
 mxcodecs::~mxcodecs()
@@ -42,22 +42,44 @@ mxcodecs::~mxcodecs()
     delete ui;
 }
 
-void mxcodecs::updateStatus(QString msg, int val) {
+// setup versious items first time program runs
+void mxcodecs::setup() {
+    ui->stackedWidget->setCurrentIndex(0);
+    proc = new QProcess(this);
+    timer = new QTimer(this);
+}
+
+void mxcodecs::updateStatus(QString msg) {
     ui->labelDownload->setText(msg.toAscii());
-    ui->progressBar->setValue(val);
     qApp->processEvents();
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-// Util function
+// Util functions
 
 QString mxcodecs::getCmdOut(QString cmd) {
-    QProcess *proc = new QProcess();
-    proc->start(cmd);
+    setConnections(timer, proc);
+    QEventLoop loop;
+    connect(proc, SIGNAL(finished(int)), &loop, SLOT(quit()));
+    proc->start("/bin/bash", QStringList() << "-c" << cmd);
     proc->setReadChannel(QProcess::StandardOutput);
     proc->setReadChannelMode(QProcess::MergedChannels);
-    proc->waitForFinished();
+    loop.exec();
+    timer->stop();
+    ui->progressBar->setValue(100);
     return proc->readAllStandardOutput().trimmed();
+}
+
+
+int mxcodecs::runCmd(QString cmd) {
+    setConnections(timer, proc);
+    QEventLoop loop;
+    connect(proc, SIGNAL(finished(int)), &loop, SLOT(quit()));
+    proc->start("/bin/bash", QStringList() << "-c" << cmd);
+    loop.exec();
+    timer->stop();
+    ui->progressBar->setValue(100);
+    return proc->exitStatus();
 }
 
 
@@ -94,43 +116,51 @@ QString mxcodecs::downloadDebs() {
     // get arch info
     arch = getCmdOut("dpkg --print-architecture");
 
-    cmd = "/bin/bash -c \"wget -qO- " + url + "/dists/stable/main/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep libdvdcss2 | awk \'{print $2}\'\"";
-    updateStatus(tr("<b>Running command...</b><p>") + cmd, 10);
+    cmd = "wget -qO- " + url + "/dists/stable/main/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep libdvdcss2 | awk \'{print $2}\'";
+    updateStatus(tr("<b>Running command...</b><p>") + cmd);
     out = getCmdOut(cmd);
     if (out == "") {
         QMessageBox::critical(0, tr("Error"),
                               tr("Cannot connect to the download site"));
+        return "";
     } else {
         cmd = "wget -q " + url + "/" + out;
-        updateStatus(tr("<b>Running command...</b><p>") + cmd, 20);
-        if (system(cmd.toAscii()) != 0) {
+        updateStatus(tr("<b>Running command...</b><p>") + cmd);
+        if (runCmd(cmd) != 0) {
             QMessageBox::critical(0, QString::null,
                                   QString(tr("Error downloading %1")).arg(out));
+            return "";
         }
     }
 
-    cmd = "/bin/bash -c \"wget -qO- " + url + "/dists/stable/non-free/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep w.*codecs | awk \'{print $2}\'\"";
-    updateStatus(tr("<b>Running command...</b><p>") + cmd, 50);
+    cmd = "wget -qO- " + url + "/dists/stable/non-free/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep w.*codecs | awk \'{print $2}\'";
+    updateStatus(tr("<b>Running command...</b><p>") + cmd);
     out = getCmdOut(cmd);
     if (out == "") {
         QMessageBox::critical(0, tr("Error"),
                               tr("Cannot connect to the download site"));
+        return "";
     } else {
         cmd = "wget -q " + url + "/" + out;
-        updateStatus(tr("<b>Running command...</b><p>") + cmd, 70);
-        if (system(cmd.toAscii()) != 0) {
+        updateStatus(tr("<b>Running command...</b><p>") + cmd);
+        if (runCmd(cmd) != 0) {
             QMessageBox::critical(0, tr("Error"),
                                   QString(tr("Error downloading %1")).arg(out));
+            return "";
         }
     }
 
-    updateStatus(tr("<b>Download Finished.</b>"), 100);
+    updateStatus(tr("<b>Download Finished.</b>"));
 
     return path;
 }
 
 //install downloaded .debs
 void mxcodecs::installDebs(QString path) {
+    if (path == "") {
+        setup();
+        return;
+    }
     QString cmd, out, msg;
     QDir dir(path);
     dir.setCurrent(path);
@@ -149,14 +179,15 @@ void mxcodecs::installDebs(QString path) {
     if (size == 0) {
         QMessageBox::critical(0, tr("Error"),
                               tr("No downloaded *.debs files found."));
-        qApp->exit(1);
+        setup();
+        return;
     }
 
     while (!fileList.isEmpty()) {
         QString file = fileList.takeFirst();
         cmd = QString("dpkg -i %1").arg(file);
-        updateStatus(tr("<b>Installing...</b><p>")+file, 100/(fileList.size()+1)-100/size);
-        if (system(cmd.toAscii()) != 0) {
+        updateStatus(tr("<b>Installing...</b><p>") + file);
+        if (runCmd(cmd) != 0) {
             QMessageBox::critical(0, QString::null,
                                   QString(tr("Error installing %1")).arg(file));
             error = true;
@@ -166,7 +197,7 @@ void mxcodecs::installDebs(QString path) {
 
     dir.rmdir(path);
     ui->groupBox->setTitle("");
-    updateStatus(tr("<b>Installation process has finished</b>"), 100);
+    updateStatus(tr("<b>Installation process has finished</b>"));
 
     if (!error) {
         QMessageBox::information(0, tr("Finished"),
@@ -179,6 +210,30 @@ void mxcodecs::installDebs(QString path) {
     }
 }
 
+//// sync process events ////
+
+void mxcodecs::procStart() {
+    timer->start(100);
+}
+
+void mxcodecs::procTime() {
+    int i = ui->progressBar->value() + 1;
+    if (i > 100) {
+        i = 0;
+    }
+    ui->progressBar->setValue(i);
+}
+
+
+// set proc and timer connections
+void mxcodecs::setConnections(QTimer* timer, QProcess* proc) {
+    disconnect(timer, SIGNAL(timeout()), 0, 0);
+    connect(timer, SIGNAL(timeout()), SLOT(procTime()));
+    disconnect(proc, SIGNAL(started()), 0, 0);
+    connect(proc, SIGNAL(started()), SLOT(procStart()));
+}
+
+
 
 /////////////////////////////////////////////////////////////////////////
 // slots
@@ -188,7 +243,7 @@ void mxcodecs::installDebs(QString path) {
 void mxcodecs::on_buttonAbout_clicked() {
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Codecs Installer"), "<p align=\"center\"><b><h2>" +
-                       tr("MX Codecs Installer") + "</h2></b></p><p align=\"center\">MX14+git20140406</p><p align=\"center\"><h3>" +
+                       tr("MX Codecs Installer") + "</h2></b></p><p align=\"center\">MX14+git20140523</p><p align=\"center\"><h3>" +
                        tr("Simple codecs downloader for antiX MX") + "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) antiX") + "<br /><br /></p>", 0, this);
     msgBox.addButton(tr("License"), QMessageBox::AcceptRole);

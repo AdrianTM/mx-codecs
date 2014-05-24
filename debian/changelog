@@ -1,3 +1,9 @@
+mx-codecs (0.14-mx140+3) mx; urgency=low
+
+  * changed the progress bar
+
+ -- Adrian <adrian@mx1>  Fri, 23 May 2014 21:54:21 -0400
+
 mx-codecs (0.13.98+git20140406-mx140+2) mx; urgency=low
 
   * relaced function covered by Apache license

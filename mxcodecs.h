@@ -31,6 +31,8 @@
 #include <QMessageBox>
 #include <QComboBox>
 #include <QDir>
+#include <QProcess>
+#include <QTimer>
 
 namespace Ui {
 class mxcodecs;
@@ -40,18 +42,30 @@ class mxcodecs : public QDialog
 {
     Q_OBJECT
 
+
+protected:
+    QProcess *proc;
+    QTimer *timer;
+
 public:
     explicit mxcodecs(QWidget *parent = 0);
     ~mxcodecs();
+
     // helpers
-    static QString getCmdOut(QString cmd);
-    void updateStatus(QString msg, int val);
+    QString getCmdOut(QString cmd);
+    int runCmd(QString cmd);
+    void setup();
+    void updateStatus(QString msg);
     void displaySite(QString site);
 
     QString downloadDebs();
     void installDebs(QString path);
 
-public slots:
+public slots:    
+    void procStart();
+    void procTime();
+    void setConnections(QTimer* timer, QProcess* proc);
+
     virtual void on_buttonOk_clicked();
     virtual void on_buttonAbout_clicked();
     virtual void on_buttonHelp_clicked();
