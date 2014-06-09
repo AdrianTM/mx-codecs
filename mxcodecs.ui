@@ -17,7 +17,7 @@
    <item>
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="pageAccept">
       <widget class="QLabel" name="labelAccept">
@@ -70,9 +70,6 @@
          <property name="value">
           <number>24</number>
          </property>
-         <property name="textVisible">
-          <bool>false</bool>
-         </property>
         </widget>
        </item>
       </layout>
@@ -100,7 +97,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../../../../../../../usr/share/mx-flash/icons/gtk-cancel.png</normaloff>../../../../../../../../usr/share/mx-flash/icons/gtk-cancel.png</iconset>
+         <normaloff>../../../../../../../../../../usr/share/icons/Tango/16x16/actions/gtk-cancel.png</normaloff>../../../../../../../../../../usr/share/icons/Tango/16x16/actions/gtk-cancel.png</iconset>
        </property>
        <property name="shortcut">
         <string>Alt+N</string>
@@ -120,7 +117,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../../../../../../../usr/share/mx-flash/icons/dialog-ok.png</normaloff>../../../../../../../../usr/share/mx-flash/icons/dialog-ok.png</iconset>
+         <normaloff>../../../../../../../../../../usr/share/mx-user/icons/dialog-ok.png</normaloff>../../../../../../../../../../usr/share/mx-user/icons/dialog-ok.png</iconset>
        </property>
        <property name="shortcut">
         <string/>
@@ -161,7 +158,7 @@
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../../../../../../../usr/share/mx-flash/icons/mxfcelogo.png</pixmap>
+        <pixmap>../../../../../../../../../../usr/local/share/icons/mxfcelogo.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -178,7 +175,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../../../../../../../usr/share/mx-flash/icons/accessories-text-editor.png</normaloff>../../../../../../../../usr/share/mx-flash/icons/accessories-text-editor.png</iconset>
+         <normaloff>../../../../../../../../../../usr/share/icons/Tango/16x16/apps/accessories-text-editor.png</normaloff>../../../../../../../../../../usr/share/icons/Tango/16x16/apps/accessories-text-editor.png</iconset>
        </property>
        <property name="shortcut">
         <string>Alt+B</string>
@@ -217,7 +214,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../../../../../../../usr/share/mx-flash/icons/gnome-help.png</normaloff>../../../../../../../../usr/share/mx-flash/icons/gnome-help.png</iconset>
+         <normaloff>../../../../../../../../../usr/share/icons/Tango/16x16/apps/gnome-help.png</normaloff>../../../../../../../../../usr/share/icons/Tango/16x16/apps/gnome-help.png</iconset>
        </property>
        <property name="shortcut">
         <string>Alt+H</string>

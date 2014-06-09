@@ -10,6 +10,77 @@
 <context>
     <name>mxcodecs</name>
     <message>
+        <location filename="mxcodecs.ui" line="14"/>
+        <location filename="mxcodecs.cpp" line="205"/>
+        <source>MX Codecs Installer</source>
+        <translation>MX Codecs Installerare</translation>
+    </message>
+    <message>
+        <location filename="mxcodecs.ui" line="33"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;This application allows you to install restricted codecs that permit advanced video and audio functions.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;In some juridictions their distribution may be limited so the user must meet local regulations. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Do you assume legal responsibility for downloading these codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Det här programmet låter dig installera begränsade codecs som tillåter avancerade video och audio funktioner&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;I en del länder kan deras distribution vara begränsad så användaren måste följa lokala lagar.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Tar du lagligt ansvar för att ladda ner dessa codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="mxcodecs.ui" line="48"/>
+        <source>Downloading codecs files</source>
+        <translation>Laddar ner codecs-filer</translation>
+    </message>
+    <message>
+        <location filename="mxcodecs.ui" line="93"/>
+        <source>Cancel any changes then quit</source>
+        <translation>Avbryt ändringarna och sedan sluta</translation>
+    </message>
+    <message>
+        <location filename="mxcodecs.ui" line="96"/>
+        <source>Cancel</source>
+        <translation>Avbryt</translation>
+    </message>
+    <message>
+        <location filename="mxcodecs.ui" line="103"/>
+        <source>Alt+N</source>
+        <translation>Alt+N</translation>
+    </message>
+    <message>
+        <location filename="mxcodecs.ui" line="113"/>
+        <source>Apply any changes then quit</source>
+        <translation>Genomför ändringarna och sedan sluta</translation>
+    </message>
+    <message>
+        <location filename="mxcodecs.ui" line="116"/>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <location filename="mxcodecs.ui" line="171"/>
+        <source>About this application</source>
+        <translation>Om detta program</translation>
+    </message>
+    <message>
+        <location filename="mxcodecs.ui" line="174"/>
+        <source>About...</source>
+        <translation>Om...</translation>
+    </message>
+    <message>
+        <location filename="mxcodecs.ui" line="181"/>
+        <source>Alt+B</source>
+        <translation>Alt+B</translation>
+    </message>
+    <message>
+        <location filename="mxcodecs.ui" line="210"/>
+        <source>Display help </source>
+        <translation>Visa hjälp</translation>
+    </message>
+    <message>
+        <location filename="mxcodecs.ui" line="213"/>
+        <source>Help</source>
+        <translation>Hjälp</translation>
+    </message>
+    <message>
+        <location filename="mxcodecs.ui" line="220"/>
+        <source>Alt+H</source>
+        <translation>Alt+H</translation>
+    </message>
+    <message>
         <location filename="mxcodecs.cpp" line="112"/>
         <location filename="mxcodecs.cpp" line="119"/>
         <location filename="mxcodecs.cpp" line="127"/>
@@ -84,89 +155,24 @@
         <translation>Processen avslutad. Fel har inträffat under installationen.</translation>
     </message>
     <message>
-        <location filename="mxcodecs.cpp" line="203"/>
+        <location filename="mxcodecs.cpp" line="204"/>
         <source>About MX Codecs Installer</source>
         <translation>MX Codecs Installerare</translation>
     </message>
     <message>
-        <location filename="mxcodecs.cpp" line="204"/>
-        <source>&lt;p align=&quot;center&quot;&gt;&lt;b&gt;&lt;h2&gt;MX Codecs Installer&lt;/h2&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;MX14+git20140224&lt;/p&gt;&lt;p&gt;&lt;h3&gt;Simple codecs downloader for antiX MX&lt;/h3&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.mepiscommunity.org/mx&quot;&gt;                    http://www.mepiscommunity.org/mx&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Copyright (c) antiX&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</source>
-        <translation>&lt;p align=&quot;center&quot;&gt;&lt;b&gt;&lt;h2&gt;MX Codecs Installerare&lt;/h2&gt;&lt;/b&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;MX14+git20140224&lt;/p&gt;&lt;p&gt;&lt;h3&gt;Enkel codecs nerladdare för antiX MX&lt;/h3&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.mepiscommunity.org/mx&quot;&gt; http://www.mepiscommunity.org/mx&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Copyright (c) antiX&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</translation>
+        <location filename="mxcodecs.cpp" line="206"/>
+        <source>Simple codecs downloader for antiX MX</source>
+        <translation>Enkel codecs nerladdare för antiX MX</translation>
     </message>
     <message>
-        <location filename="mxcodecs.cpp" line="206"/>
+        <location filename="mxcodecs.cpp" line="207"/>
+        <source>Copyright (c) antiX</source>
+        <translation>Copyright (c) antiX</translation>
+    </message>
+    <message>
+        <location filename="mxcodecs.cpp" line="208"/>
         <source>License</source>
         <translation>Licens</translation>
-    </message>
-    <message>
-        <location filename="mxcodecs.ui" line="14"/>
-        <source>MX Codecs Installer</source>
-        <translation>MX Codecs Installerare</translation>
-    </message>
-    <message>
-        <location filename="mxcodecs.ui" line="33"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;This application allows you to install restricted codecs that permit advanced video and audio functions.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;In some juridictions their distribution may be limited so the user must meet local regulations. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Do you assume legal responsibility for downloading these codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Det här programmet låter dig installera begränsade codecs som tillåter avancerade video och audio funktioner&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;I en del länder kan deras distribution vara begränsad så användaren måste följa lokala lagar.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Tar du lagligt ansvar för att ladda ner dessa codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="mxcodecs.ui" line="48"/>
-        <source>Downloading codecs files</source>
-        <translation>Laddar ner codecs-filer</translation>
-    </message>
-    <message>
-        <location filename="mxcodecs.ui" line="93"/>
-        <source>Cancel any changes then quit</source>
-        <translation>Avbryt ändringarna och sedan sluta</translation>
-    </message>
-    <message>
-        <location filename="mxcodecs.ui" line="96"/>
-        <source>Cancel</source>
-        <translation>Avbryt</translation>
-    </message>
-    <message>
-        <location filename="mxcodecs.ui" line="103"/>
-        <source>Alt+N</source>
-        <translation>Alt+N</translation>
-    </message>
-    <message>
-        <location filename="mxcodecs.ui" line="113"/>
-        <source>Apply any changes then quit</source>
-        <translation>Genomför ändringarna och sedan sluta</translation>
-    </message>
-    <message>
-        <location filename="mxcodecs.ui" line="116"/>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <location filename="mxcodecs.ui" line="171"/>
-        <source>About this application</source>
-        <translation>Om detta program</translation>
-    </message>
-    <message>
-        <location filename="mxcodecs.ui" line="174"/>
-        <source>About...</source>
-        <translation>Om...</translation>
-    </message>
-    <message>
-        <location filename="mxcodecs.ui" line="181"/>
-        <source>Alt+B</source>
-        <translation>Alt+B</translation>
-    </message>
-    <message>
-        <location filename="mxcodecs.ui" line="210"/>
-        <source>Display help </source>
-        <translation>Visa hjälp</translation>
-    </message>
-    <message>
-        <location filename="mxcodecs.ui" line="213"/>
-        <source>Help</source>
-        <translation>Hjälp</translation>
-    </message>
-    <message>
-        <location filename="mxcodecs.ui" line="220"/>
-        <source>Alt+H</source>
-        <translation>Alt+H</translation>
     </message>
 </context>
 </TS>
