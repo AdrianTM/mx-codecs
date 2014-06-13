@@ -45,19 +45,13 @@ HEADERS  += mxcodecs.h
 
 FORMS    += mxcodecs.ui
 
-TRANSLATIONS += translations/mx-codecs_ar.ts \
-                translations/mx-codecs_ca.ts \
+TRANSLATIONS += translations/mx-codecs_ca.ts \
                 translations/mx-codecs_de.ts \
                 translations/mx-codecs_el.ts \
                 translations/mx-codecs_es.ts \
                 translations/mx-codecs_fr.ts \
-                translations/mx-codecs_hi.ts \
-                translations/mx-codecs_it.ts \
                 translations/mx-codecs_ja.ts \
-                translations/mx-codecs_ko.ts \
                 translations/mx-codecs_nl.ts \
-                translations/mx-codecs_pl.ts \
-                translations/mx-codecs_pt.ts \
-                translations/mx-codecs_pt_BR.ts \ 
-                translations/mx-codecs_zh_CN.ts \
-                translations/mx-codecs_zh_TW.ts 
+                translations/mx-codecs_ro.ts \
+                translations/mx-codecs_sv.ts
+
