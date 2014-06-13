@@ -2,3 +2,4 @@ mx-codecs 		 usr/sbin
 mx-codecs.desktop	 usr/share/applications/mx
 mx-codecs.png            usr/share/pixmaps/mx
 translations/*.qm 	 usr/share/mx-codecs/locale
+icons/*                  usr/share/mx-codecs/icons
