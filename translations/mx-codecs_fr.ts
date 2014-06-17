@@ -147,7 +147,7 @@
     <message>
         <location filename="mxcodecs.cpp" line="187"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
-        <translation>les Fichiers Codecs ont été téléchargées et installées avec succès.</translation>
+        <translation>les Fichiers Codecs ont été téléchargés et installés avec succès.</translation>
     </message>
     <message>
         <location filename="mxcodecs.cpp" line="191"/>
