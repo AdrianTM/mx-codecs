@@ -1,3 +1,9 @@
+mx-codecs (0.14.1mx141+3) mx; urgency=low
+
+  * translated button
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 25 Jun 2014 10:24:24 -0400
+
 mx-codecs (0.14.1mx141+1.2) mx; urgency=low
 
   * Update languages 
