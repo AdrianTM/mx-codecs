@@ -204,7 +204,7 @@ void mxcodecs::on_buttonAbout_clicked() {
                      tr("<p align=\"center\"><b><h2>MX Codecs Installer</h2></b></p><p align=\"center\">MX14+git20140224</p><p><h3>Simple codecs downloader for antiX MX</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">\
                     http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">Copyright (c) antiX<br /><br /></p>"), 0, this);
       msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
-                     msgBox.addButton(QMessageBox::Cancel);
+      msgBox.addButton(tr("Cancel"), QMessageBox::DestructiveRole);
       if (msgBox.exec() == QMessageBox::AcceptRole)
       displaySite("file:///usr/local/share/doc/mx-codecs-license.html");
 }

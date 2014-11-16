@@ -1,3 +1,15 @@
+mx-codecs (0.14.1mx141+3) mx; urgency=low
+
+  * translated button
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 25 Jun 2014 10:24:24 -0400
+
+mx-codecs (0.14.1mx141+1.2) mx; urgency=low
+
+  * Update languages 
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 17 Jun 2014 13:33:39 -0400
+
 mx-codecs (0.13.98+git20140221-mx140+1) mx; urgency=low
 
   * Initial packaging.
