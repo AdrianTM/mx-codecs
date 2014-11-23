@@ -1,9 +1,26 @@
 [Desktop Entry]
 Name=MX Codecs Installer
+Name[ca]=Instal·lador de còdecs MX
+Name[de]=MX Codecs Installer
+Name[el]=Εγκατάσταση codecs του MX
 Name[es]=Instalador de códecs de MX
+Name[fr]=Installateur de Codecs MX
+Name[it]=MX Codecs Installer
+Name[ja]=MX コーデックインストーラ
 Name[nl]=MX Codecs Installeerder
+Name[ro]=MX Instalator Codecuri
 Name[sv]=MX Codecs Installerare
 Comment=Simple install of restricted codecs
+Comment[ca]=Descarregador senzill de còdecs
+Comment[de]=Einfacher Codecs-Downloader
+Comment[el]=Απλή εφαρμογή λήψης codecs
+Comment[es]=Herramienta simple de descarga de códecs
+Comment[fr]=Simple d'installation de codecs restreintes
+Comment[it]=Semplice downloader di codecs
+Comment[ja]=のシンプルなコーデックダウンローダー
+Comment[nl]=Eenvoudige codecs downloader
+Comment[ro]=Descărcător simplu de codecuri pentru
+Comment[sv]=Enkel codecs nerladdare
 Exec=su-to-root -X -c mx-codecs 
 Icon=/usr/share/pixmaps/mx/mx-codecs.png
 NoDisplay=false
