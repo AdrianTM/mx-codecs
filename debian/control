@@ -9,7 +9,7 @@ Homepage: https://github.com/AdrianTM/mx-codecs
 
 Package: mx-codecs
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, gksu
+Depends: ${misc:Depends}, ${shlibs:Depends}, gksu, mx-viewer
 Description: restricted codecs installer
  The MX Codecs Installer provides an easy way to install certain codecs that can 
  not be included with MX, due to legal issues in some jurisdictions.  i.e

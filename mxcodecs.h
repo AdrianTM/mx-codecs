@@ -2,7 +2,7 @@
  * mxcodecs.h
  *****************************************************************************
  * Copyright (C) 2014 MX Authors
- * 
+ *
  * Authors: Jerry 3904
  *          Anticaptilista
  *          Adrian
@@ -47,9 +47,10 @@ public:
   static QString getCmdOut(QString cmd);
   void updateStatus(QString msg, int val);
   void displaySite(QString site);
+  void installDebs(QString path);
 
   QString downloadDebs();
-  void installDebs(QString path);
+  QString getVersion(QString name);
 
 public slots:
   virtual void on_buttonOk_clicked();

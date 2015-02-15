@@ -2,9 +2,9 @@
  * mx-codecs.cpp
  *****************************************************************************
  * Copyright (C) 2014 MX Authors with the exeption of getCmdOut function
- *  getCmdOut function copyright (C) 2003-2014 Warren Woodford 
+ *  getCmdOut function copyright (C) 2003-2014 Warren Woodford
  *   released under the Apache License version 2.0
- * 
+ *
  * Authors: Jerry 3904
  *          Anticaptilista
  *          Adrian
@@ -74,6 +74,11 @@ QString mxcodecs::getCmdOut(QString cmd) {
   return QString (ret);
 }
 
+// Get version of the program
+QString mxcodecs::getVersion(QString name) {
+    QString cmd = QString("dpkg -l %1 | awk 'NR==6 {print $3}'").arg(name);
+    return getCmdOut(cmd);
+}
 
 /////////////////////////////////////////////////////////////////////////
 // general
@@ -200,28 +205,20 @@ void mxcodecs::installDebs(QString path) {
 
 // show about
 void mxcodecs::on_buttonAbout_clicked() {
-  QMessageBox msgBox(QMessageBox::NoIcon, tr("About MX Codecs Installer"),
-                     tr("<p align=\"center\"><b><h2>MX Codecs Installer</h2></b></p><p align=\"center\">MX14+git20140224</p><p><h3>Simple codecs downloader for antiX MX</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">\
-                    http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">Copyright (c) antiX<br /><br /></p>"), 0, this);
-      msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
-      msgBox.addButton(tr("Cancel"), QMessageBox::DestructiveRole);
-      if (msgBox.exec() == QMessageBox::AcceptRole)
-      displaySite("file:///usr/local/share/doc/mx-codecs-license.html");
+    QMessageBox msgBox(QMessageBox::NoIcon,
+                       tr("About MX Codecs"), "<p align=\"center\"><b><h2>" +
+                       tr("MX Codecs") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
+                       getVersion("mx-codecs") + "</p><p align=\"center\"><h3>" +
+                       tr("Simple codecs downloader for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
+                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
+    msgBox.addButton(tr("Cancel"), QMessageBox::AcceptRole); // because we want to display the buttons in reverse order we use counter-intuitive roles.
+    msgBox.addButton(tr("License"), QMessageBox::RejectRole);
+    if (msgBox.exec() == QMessageBox::RejectRole)
+        system("mx-viewer file:///usr/local/share/doc/mx-codecs-license.html 'MX Viwer License'");
 }
 
 // Help button clicked
 void mxcodecs::on_buttonHelp_clicked() {
-  displaySite("file:///usr/local/share/doc/mxapps.html#codecs");
+    system("mx-viewer http://www.mepiscommunity.org/public_html/user_manual_mx15/mxum.html#codecs");
 }
 
-// pop up a window and display website
-
-void mxcodecs::displaySite(QString site) {
-    QWidget *window = new QWidget(this, Qt::Dialog);
-    window->setWindowTitle(this->windowTitle());
-    window->resize(800, 500);
-    QWebView *webview = new QWebView(window);
-    webview->load(QUrl(site));
-    webview->show();
-    window->show();
-}
