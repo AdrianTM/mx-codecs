@@ -218,6 +218,6 @@ void mxcodecs::on_buttonAbout_clicked() {
 
 // Help button clicked
 void mxcodecs::on_buttonHelp_clicked() {
-    system("mx-viewer http://www.mepiscommunity.org/public_html/user_manual_mx15/mxum.html#codecs");
+    system("mx-viewer http://www.mepiscommunity.org/user_manual_mx15/mxum.html#codecs");
 }
 
