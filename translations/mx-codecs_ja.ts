@@ -33,7 +33,7 @@
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="96"/>
-        <location filename="../mxcodecs.cpp" line="212"/>
+        <location filename="../mxcodecs.cpp" line="211"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
@@ -83,101 +83,101 @@
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="115"/>
-        <location filename="../mxcodecs.cpp" line="122"/>
-        <location filename="../mxcodecs.cpp" line="130"/>
-        <location filename="../mxcodecs.cpp" line="137"/>
+        <location filename="../mxcodecs.cpp" line="114"/>
+        <location filename="../mxcodecs.cpp" line="121"/>
+        <location filename="../mxcodecs.cpp" line="129"/>
+        <location filename="../mxcodecs.cpp" line="136"/>
         <source>&lt;b&gt;Running command...&lt;/b&gt;&lt;p&gt;</source>
         <translation>&lt;b&gt;実行コマンド...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="118"/>
-        <location filename="../mxcodecs.cpp" line="133"/>
-        <location filename="../mxcodecs.cpp" line="139"/>
-        <location filename="../mxcodecs.cpp" line="167"/>
-        <location filename="../mxcodecs.cpp" line="193"/>
+        <location filename="../mxcodecs.cpp" line="117"/>
+        <location filename="../mxcodecs.cpp" line="132"/>
+        <location filename="../mxcodecs.cpp" line="138"/>
+        <location filename="../mxcodecs.cpp" line="166"/>
+        <location filename="../mxcodecs.cpp" line="192"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="119"/>
-        <location filename="../mxcodecs.cpp" line="134"/>
+        <location filename="../mxcodecs.cpp" line="118"/>
+        <location filename="../mxcodecs.cpp" line="133"/>
         <source>Cannot connect to the download site</source>
         <translation>ダウンロードサイトに接続できません</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="125"/>
-        <location filename="../mxcodecs.cpp" line="140"/>
+        <location filename="../mxcodecs.cpp" line="124"/>
+        <location filename="../mxcodecs.cpp" line="139"/>
         <source>Error downloading %1</source>
         <translation>ダウンロードエラー %1</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="144"/>
+        <location filename="../mxcodecs.cpp" line="143"/>
         <source>&lt;b&gt;Download Finished.&lt;/b&gt;</source>
         <translation>&lt;b&gt;ダウンロード完了&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="163"/>
+        <location filename="../mxcodecs.cpp" line="162"/>
         <source>Installing downloaded files</source>
         <translation>ダウンロードファイルをインストール中</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="168"/>
+        <location filename="../mxcodecs.cpp" line="167"/>
         <source>No downloaded *.debs files found.</source>
         <translation>ダウンロードした *.deb ファイルが見つかりません</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="175"/>
+        <location filename="../mxcodecs.cpp" line="174"/>
         <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
         <translation>&lt;b&gt;インストール中...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="178"/>
+        <location filename="../mxcodecs.cpp" line="177"/>
         <source>Error installing %1</source>
         <translation>インストールエラー %1</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="186"/>
+        <location filename="../mxcodecs.cpp" line="185"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
         <translation>&lt;b&gt;インストール作業が完了しました&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="189"/>
+        <location filename="../mxcodecs.cpp" line="188"/>
         <source>Finished</source>
         <translation>完了</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="190"/>
+        <location filename="../mxcodecs.cpp" line="189"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
         <translation>コーデックファイルのダウンロード・インストールが完了しました。</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="194"/>
+        <location filename="../mxcodecs.cpp" line="193"/>
         <source>Process finished. Errors have occurred during the installation.</source>
         <translation>処理が完了しました。インストールでエラーが発生しています。</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="207"/>
+        <location filename="../mxcodecs.cpp" line="206"/>
         <source>About MX Codecs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="208"/>
+        <location filename="../mxcodecs.cpp" line="207"/>
         <source>MX Codecs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="208"/>
+        <location filename="../mxcodecs.cpp" line="207"/>
         <source>Version: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="210"/>
+        <location filename="../mxcodecs.cpp" line="209"/>
         <source>Simple codecs downloader for MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="211"/>
+        <location filename="../mxcodecs.cpp" line="210"/>
         <source>Copyright (c) MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
@@ -194,7 +194,7 @@
         <translation type="obsolete">Copyright (c) antiX</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="213"/>
+        <location filename="../mxcodecs.cpp" line="212"/>
         <source>License</source>
         <translation>ライセンス</translation>
     </message>
