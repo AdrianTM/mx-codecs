@@ -29,7 +29,6 @@
 
 #include <stdio.h>
 
-#include <QWebView>
 #include <QUrl>
 #include <QDir>
 

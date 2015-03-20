@@ -10,8 +10,8 @@ Build-Depends: qt4-qmake, debhelper (>= 7.0.50~)
 Package-List: 
  mx-codecs deb system optional
 Checksums-Sha1: 
- eac5e352ccd8bd709c1abdea17a8a3801c2cc2e0 51854 mx-codecs_15.3mx14.tar.gz
+ 4308f06cc47cd83439d4a262672a21dd21b20691 51802 mx-codecs_15.3mx14.tar.gz
 Checksums-Sha256: 
- 4aee954f73ac1c8876cd3688759f8e0919d41a70539871c349342b7761f173d2 51854 mx-codecs_15.3mx14.tar.gz
+ d91843fd1a23b1072605ea1eaa6902902718ea69580d6275566a33c4664ed945 51802 mx-codecs_15.3mx14.tar.gz
 Files: 
- c3db8acc3e0f497d4fd589474b057287 51854 mx-codecs_15.3mx14.tar.gz
+ 17f396f9e9768bd5e8c8e9fd676a21d7 51802 mx-codecs_15.3mx14.tar.gz
