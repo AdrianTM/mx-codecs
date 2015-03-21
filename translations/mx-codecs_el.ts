@@ -27,58 +27,58 @@
         <translation>Κατεβάζοντας τα αρχεία codecs</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="93"/>
+        <location filename="../mxcodecs.ui" line="102"/>
         <source>Cancel any changes then quit</source>
         <translation>Ακύρωση τις αλλαγές και μετά κλείστε</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="96"/>
+        <location filename="../mxcodecs.ui" line="105"/>
         <location filename="../mxcodecs.cpp" line="211"/>
         <source>Cancel</source>
         <translation>Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="103"/>
+        <location filename="../mxcodecs.ui" line="112"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="113"/>
+        <location filename="../mxcodecs.ui" line="122"/>
         <source>Apply any changes then quit</source>
         <translation>Εφαρμόστε τις αλλαγές και μετά κλείστε </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="116"/>
+        <location filename="../mxcodecs.ui" line="125"/>
         <source>OK</source>
         <translation>Εντάξει</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="171"/>
+        <location filename="../mxcodecs.ui" line="180"/>
         <source>About this application</source>
         <translation>Περί εφαρμογής.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="174"/>
+        <location filename="../mxcodecs.ui" line="183"/>
         <source>About...</source>
         <translation>Περί</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="181"/>
+        <location filename="../mxcodecs.ui" line="190"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="210"/>
+        <location filename="../mxcodecs.ui" line="219"/>
         <source>Display help </source>
         <translation>Δείτε Βοήθεια</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="213"/>
+        <location filename="../mxcodecs.ui" line="222"/>
         <source>Help</source>
         <translation>Βοήθεια</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="220"/>
+        <location filename="../mxcodecs.ui" line="229"/>
         <source>Alt+H</source>
         <translation>Alt+H </translation>
     </message>

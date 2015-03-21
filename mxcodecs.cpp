@@ -45,7 +45,7 @@ mxcodecs::~mxcodecs()
 }
 
 void mxcodecs::updateStatus(QString msg, int val) {
-  ui->labelDownload->setText(msg.toAscii());
+  ui->labelDownload->setText(msg);
   ui->progressBar->setValue(val);
   qApp->processEvents();
 }

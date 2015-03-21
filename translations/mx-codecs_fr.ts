@@ -27,58 +27,58 @@
         <translation>Téléchargement des fichiers codecs</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="93"/>
+        <location filename="../mxcodecs.ui" line="102"/>
         <source>Cancel any changes then quit</source>
         <translation>Annuler toutes les modifications puis sortir</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="96"/>
+        <location filename="../mxcodecs.ui" line="105"/>
         <location filename="../mxcodecs.cpp" line="211"/>
         <source>Cancel</source>
         <translation>Anuler</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="103"/>
+        <location filename="../mxcodecs.ui" line="112"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="113"/>
+        <location filename="../mxcodecs.ui" line="122"/>
         <source>Apply any changes then quit</source>
         <translation>Appliquer les modifications puis sortir</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="116"/>
+        <location filename="../mxcodecs.ui" line="125"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="171"/>
+        <location filename="../mxcodecs.ui" line="180"/>
         <source>About this application</source>
         <translation>A propos</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="174"/>
+        <location filename="../mxcodecs.ui" line="183"/>
         <source>About...</source>
         <translation>A propos...</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="181"/>
+        <location filename="../mxcodecs.ui" line="190"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="210"/>
+        <location filename="../mxcodecs.ui" line="219"/>
         <source>Display help </source>
         <translation>Afficher l&apos;aide</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="213"/>
+        <location filename="../mxcodecs.ui" line="222"/>
         <source>Help</source>
         <translation>Aide</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="220"/>
+        <location filename="../mxcodecs.ui" line="229"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
