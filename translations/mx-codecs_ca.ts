@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="ca">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ca" version="2.0">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="57"/>
         <source>You must run this program as root.</source>
-        <translation>Cal ser administrador per executar aquest programa</translation>
+        <translation>Cal ser usuari principal per executar aquest programa</translation>
     </message>
 </context>
 <context>
@@ -24,7 +22,7 @@
     <message>
         <location filename="../mxcodecs.ui" line="48"/>
         <source>Downloading codecs files</source>
-        <translation>Descarregant els arxius dels còdecs</translation>
+        <translation>Descarregant els fitxers dels còdecs</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="102"/>
@@ -124,7 +122,7 @@
     <message>
         <location filename="../mxcodecs.cpp" line="167"/>
         <source>No downloaded *.debs files found.</source>
-        <translation>No s&apos;han trobat arxius *.deb descarregats</translation>
+        <translation>No s&apos;han trobat fitxers *.deb descarregats</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="174"/>
@@ -159,39 +157,27 @@
     <message>
         <location filename="../mxcodecs.cpp" line="206"/>
         <source>About MX Codecs</source>
-        <translation type="unfinished"></translation>
+        <translation>Quant a MX Codecs </translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="207"/>
         <source>MX Codecs</source>
-        <translation type="unfinished"></translation>
+        <translation>MX Codecs </translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="207"/>
         <source>Version: </source>
-        <translation type="unfinished"></translation>
+        <translation>Versió: </translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="209"/>
         <source>Simple codecs downloader for MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Descarregador de còdecs senzill per a MX Linux </translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="210"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>About MX Codecs Installer</source>
-        <translation type="obsolete">Sobre l&apos;Instal·lador de còdecs MX</translation>
-    </message>
-    <message>
-        <source>Simple codecs downloader for antiX MX</source>
-        <translation type="obsolete">Descarregador senzill de còdecs per antiX MX</translation>
-    </message>
-    <message>
-        <source>Copyright (c) antiX</source>
-        <translation type="obsolete">Copyright (c) antiX</translation>
+        <translation>Copyright (c) MX Linux </translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="212"/>

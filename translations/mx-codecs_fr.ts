@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="fr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.0">
 <context>
     <name>QApplication</name>
     <message>
@@ -159,39 +157,27 @@
     <message>
         <location filename="../mxcodecs.cpp" line="206"/>
         <source>About MX Codecs</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="207"/>
         <source>MX Codecs</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="207"/>
         <source>Version: </source>
-        <translation type="unfinished"></translation>
+        <translation>Version:</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="209"/>
         <source>Simple codecs downloader for MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="210"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>About MX Codecs Installer</source>
-        <translation type="obsolete">À propos de l&apos;Installateur de Codecs MX</translation>
-    </message>
-    <message>
-        <source>Simple codecs downloader for antiX MX</source>
-        <translation type="obsolete">Simple codecs downloader pour antiX MX</translation>
-    </message>
-    <message>
-        <source>Copyright (c) antiX</source>
-        <translation type="obsolete">Copyright (c) antiX</translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="212"/>

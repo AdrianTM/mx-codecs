@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="de">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
 <context>
     <name>QApplication</name>
     <message>
@@ -19,7 +17,7 @@
     <message>
         <location filename="../mxcodecs.ui" line="33"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;This application allows you to install restricted codecs that permit advanced video and audio functions.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;In some juridictions their distribution may be limited so the user must meet local regulations. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Do you assume legal responsibility for downloading these codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Diese Anwendung ermöglicht das Herunterladen von beschränkten Codecs, die erweiterte Audio- und Videofunktionen ermöglichen.  &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Ihre Distribution kann in einigen Gerichtsbezirken limitiert sein, daher muss der Benutzer örtliche Regulierungen nachprüfen.  &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Nehmen Sie die Verantwortlichkeit für das Herunterladen dieser Codecs an?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Diese Anwendung ermöglicht das Herunterladen von beschränkten Codecs, die erweiterte Audio- und Videofunktionen ermöglichen.  &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Ihre Weitergabe kann je nach lokaler Rechtsprechung eingeschränkt sein, daher muss der Benutzer die jeweiligen Vorschriften beachten.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Übernehmen Sie die Verantwortung für das Herunterladen dieser Codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="48"/>
@@ -29,7 +27,7 @@
     <message>
         <location filename="../mxcodecs.ui" line="102"/>
         <source>Cancel any changes then quit</source>
-        <translation>Änderungen zurückziehen und dann abbrechen</translation>
+        <translation>Änderungen verwerfen und abbrechen</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="105"/>
@@ -45,7 +43,7 @@
     <message>
         <location filename="../mxcodecs.ui" line="122"/>
         <source>Apply any changes then quit</source>
-        <translation>Änderungen annehmen und dann abbrechen</translation>
+        <translation>Änderungen annehmen und beenden</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="125"/>
@@ -114,12 +112,12 @@
     <message>
         <location filename="../mxcodecs.cpp" line="143"/>
         <source>&lt;b&gt;Download Finished.&lt;/b&gt;</source>
-        <translation>Herunterladung am Ende</translation>
+        <translation>&lt;b&gt;Herunterladen beendet.&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="162"/>
         <source>Installing downloaded files</source>
-        <translation>Die heruntergeldenen Dateien werden jetzt installiert</translation>
+        <translation>Installiere die heruntergeladenen Dateien</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="167"/>
@@ -139,7 +137,7 @@
     <message>
         <location filename="../mxcodecs.cpp" line="185"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
-        <translation>Der Installer-Vorgang ist zu Ende</translation>
+        <translation>&lt;b&gt;Die Installation ist beendet&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="188"/>
@@ -154,44 +152,32 @@
     <message>
         <location filename="../mxcodecs.cpp" line="193"/>
         <source>Process finished. Errors have occurred during the installation.</source>
-        <translation>Prozessablauf ist beendet. Fehler sind während des Installationsvorgangs aufgetreten.</translation>
+        <translation>Prozessablauf ist beendet. Während der Installation sind Fehler aufgetreten.</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="206"/>
         <source>About MX Codecs</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="207"/>
         <source>MX Codecs</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="207"/>
         <source>Version: </source>
-        <translation type="unfinished"></translation>
+        <translation>Version:</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="209"/>
         <source>Simple codecs downloader for MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="210"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>About MX Codecs Installer</source>
-        <translation type="obsolete">Über MX Codecs Installer</translation>
-    </message>
-    <message>
-        <source>Simple codecs downloader for antiX MX</source>
-        <translation type="obsolete">Einfacher Codecs-Downloader für antiX MX</translation>
-    </message>
-    <message>
-        <source>Copyright (c) antiX</source>
-        <translation type="obsolete">Copyright (c) antiX&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="212"/>
