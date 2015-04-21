@@ -1,3 +1,9 @@
+mx-codecs (15.4mx14) mx; urgency=medium
+
+  * added translation
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 21 Apr 2015 13:59:21 -0400
+
 mx-codecs (15.3mx14) mx; urgency=medium
 
   * changed help URL
