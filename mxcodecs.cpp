@@ -216,6 +216,6 @@ void mxcodecs::on_buttonAbout_clicked() {
 
 // Help button clicked
 void mxcodecs::on_buttonHelp_clicked() {
-    system("mx-viewer http://mepiscommunity.org/doc_mx/codecs.html");
+    system("mx-viewer http://mepiscommunity.org/wiki/help-files/help-mx-codecs-installer");
 }
 

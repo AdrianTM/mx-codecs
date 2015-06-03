@@ -2,7 +2,7 @@ Format: 3.0 (native)
 Source: mx-codecs
 Binary: mx-codecs
 Architecture: any
-Version: 15.4mx14
+Version: 15.6mx14
 Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
 Homepage: https://github.com/AdrianTM/mx-codecs
 Standards-Version: 3.9.5
@@ -10,8 +10,8 @@ Build-Depends: qt4-qmake, debhelper (>= 7.0.50~)
 Package-List: 
  mx-codecs deb system optional
 Checksums-Sha1: 
- aea3248bf1309ffd28d860b6482cae582d216487 53274 mx-codecs_15.4mx14.tar.gz
+ c7005606d05b9456301268724dab69ade2bc2c45 52353 mx-codecs_15.6mx14.tar.gz
 Checksums-Sha256: 
- 77b3a3914cabdb5c6f71620b718aa51ac48d7a807808ec46e6a55cbf2e461c5b 53274 mx-codecs_15.4mx14.tar.gz
+ 4da2ec565e40d860716a1ec2c9106a21659cb29b9699da4ead32f4e1e3dbd740 52353 mx-codecs_15.6mx14.tar.gz
 Files: 
- 4375b576fbeb83d58e37c70885059b2b 53274 mx-codecs_15.4mx14.tar.gz
+ 89b22e16ced5a6317c60d7d14ef8d9d4 52353 mx-codecs_15.6mx14.tar.gz
