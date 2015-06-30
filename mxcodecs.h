@@ -26,7 +26,6 @@
 #define MXCODECS_H
 
 #include <QDialog>
-
 #include <QMessageBox>
 #include <QComboBox>
 #include <QDir>

@@ -1,3 +1,9 @@
+mx-codecs (15.7mx14) mx; urgency=medium
+
+  * update to qt5
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 30 Jun 2015 12:48:27 -0400
+
 mx-codecs (15.6mx14) mx; urgency=medium
 
   * changed documentation URL

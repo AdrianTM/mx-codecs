@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 30 Jun 2015 12:48:27 -0400
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source i386
+Version: 15.7mx14
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description: 
+ mx-codecs  - restricted codecs installer
+Changes: 
+ mx-codecs (15.7mx14) mx; urgency=medium
+ .
+   * update to qt5
+Checksums-Sha1: 
+ d17d971a3f84a240ddd73f19dd98a8111066d19b 609 mx-codecs_15.7mx14.dsc
+ eb4a3f666a743b1c8c66576e93e7f916e4ba3adf 52588 mx-codecs_15.7mx14.tar.gz
+ 157bbc67972f255458b6bfe2e49c0e11df30475b 50750 mx-codecs_15.7mx14_i386.deb
+Checksums-Sha256: 
+ c06baddfcb524bb955146b86a8892c21d866ae3bc52dd4dd4537f436e8b972f1 609 mx-codecs_15.7mx14.dsc
+ 115fadf38a590232ef4b737f5c417f76dd88fdbaf303b0f917fd91ce23d0bf56 52588 mx-codecs_15.7mx14.tar.gz
+ 138f44d8bd727198611ee4c7d777ab38c998e72c9c7e2c7a508031c15fd7d7c6 50750 mx-codecs_15.7mx14_i386.deb
+Files: 
+ 747834661393e11747500371da294efb 609 system optional mx-codecs_15.7mx14.dsc
+ 748e7c023fb61179f24bd247000917a5 52588 system optional mx-codecs_15.7mx14.tar.gz
+ fd31cb852105201f833b39ded9d239cc 50750 system optional mx-codecs_15.7mx14_i386.deb

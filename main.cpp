@@ -22,13 +22,11 @@
  * along with MX Codecs.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-
-#include <QApplication>
-#include <qtranslator.h>
-#include <qlocale.h>
 #include "mxcodecs.h"
+#include <QApplication>
+#include <QTranslator>
+#include <QLocale>
 #include <unistd.h>
-
 
 
 int main(int argc, char *argv[])

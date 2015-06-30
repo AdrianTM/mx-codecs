@@ -57,7 +57,7 @@ void mxcodecs::updateStatus(QString msg, int val) {
 QString mxcodecs::getCmdOut(QString cmd) {
   char line[260];
   const char* ret = "";
-  FILE* fp = popen(cmd.toAscii(), "r");
+  FILE* fp = popen(cmd.toUtf8(), "r");
   if (fp == NULL) {
     return QString (ret);
   }
@@ -119,7 +119,7 @@ QString mxcodecs::downloadDebs() {
   } else {
     cmd = "wget -q " + url + "/" + out;
     updateStatus(tr("<b>Running command...</b><p>") + cmd, 20);
-    if (system(cmd.toAscii()) != 0) {
+    if (system(cmd.toUtf8()) != 0) {
       QMessageBox::critical(0, QString::null,
                             QString(tr("Error downloading %1")).arg(out));
     }
@@ -134,7 +134,7 @@ QString mxcodecs::downloadDebs() {
   } else {
     cmd = "wget -q " + url + "/" + out;
     updateStatus(tr("<b>Running command...</b><p>") + cmd, 70);
-    if (system(cmd.toAscii()) != 0) {
+    if (system(cmd.toUtf8()) != 0) {
       QMessageBox::critical(0, tr("Error"),
                             QString(tr("Error downloading %1")).arg(out));
     }
@@ -172,7 +172,7 @@ void mxcodecs::installDebs(QString path) {
     QString file = fileList.takeFirst();
     cmd = QString("dpkg -i %1").arg(file);
     updateStatus(tr("<b>Installing...</b><p>")+file, 100/(fileList.size()+1)-100/size);
-    if (system(cmd.toAscii()) != 0) {
+    if (system(cmd.toUtf8()) != 0) {
       QMessageBox::critical(0, QString::null,
                             QString(tr("Error installing %1")).arg(file));
       error = true;
