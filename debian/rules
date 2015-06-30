@@ -11,7 +11,7 @@ override_dh_auto_clean:
 	rm -f translations/*.qm
 
 override_dh_auto_build:
-	lrelease-qt4 mx-codecs.pro
+	lrelease mx-codecs.pro
 	dh_auto_build -- $(MAKE_OPTS)
 
 override_dh_auto_install:
