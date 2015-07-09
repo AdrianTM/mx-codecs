@@ -1,3 +1,9 @@
+mx-codecs (15.7.1mx15) mx; urgency=medium
+
+  * update license, added additional build-deps
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 09 Jul 2015 19:43:56 -0400
+
 mx-codecs (15.7mx15) mx; urgency=medium
 
   * update to qt5

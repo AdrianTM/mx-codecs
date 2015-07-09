@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 09 Jul 2015 19:43:56 -0400
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source i386
+Version: 15.7.1mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (15.7.1mx15) mx; urgency=medium
+ .
+   * update license, added additional build-deps
+Checksums-Sha1:
+ 84c4a681016b5d2c5e36210b0c659208c7edd4c1 658 mx-codecs_15.7.1mx15.dsc
+ e808e48dde4a5a34aa0ee8ddcc37a758f8d44437 108472 mx-codecs_15.7.1mx15.tar.xz
+ 998ef2f3b47f306169363ed20ab7986d0beffe02 51026 mx-codecs_15.7.1mx15_i386.deb
+Checksums-Sha256:
+ 5df450f8dc1e3aaa4a9bd5201e6fe4c226062bb99457c5f8285a0a24e2db67fa 658 mx-codecs_15.7.1mx15.dsc
+ 9f3b8b04b6d07a90250592aef679b294fd1e1dd9b2bc8493f4269abaaa5060e1 108472 mx-codecs_15.7.1mx15.tar.xz
+ 6f35ab51d79cfeb6be00a880545d835ae63237765f5ebf5baf9bfba97e03a424 51026 mx-codecs_15.7.1mx15_i386.deb
+Files:
+ 129ae4868c857804082cabb9c216c553 658 system optional mx-codecs_15.7.1mx15.dsc
+ ceab04330c4606c21bd318150a98b809 108472 system optional mx-codecs_15.7.1mx15.tar.xz
+ cfec0fa8ae678ca13d1afb996fec1836 51026 system optional mx-codecs_15.7.1mx15_i386.deb
