@@ -211,7 +211,7 @@ void mxcodecs::on_buttonAbout_clicked() {
     msgBox.addButton(tr("Cancel"), QMessageBox::AcceptRole); // because we want to display the buttons in reverse order we use counter-intuitive roles.
     msgBox.addButton(tr("License"), QMessageBox::RejectRole);
     if (msgBox.exec() == QMessageBox::RejectRole)
-        system("mx-viewer file:///usr/local/share/doc/mx-codecs-license.html 'MX Viwer License'");
+        system("mx-viewer file:///usr/share/doc/mx-codecs/license.html 'MX Viewer License'");
 }
 
 // Help button clicked
