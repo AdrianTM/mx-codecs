@@ -15,14 +15,14 @@ Changes:
  .
    * update license, added additional build-deps
 Checksums-Sha1:
- be253677889ec8fb4d757b6f52ab10362455f6af 658 mx-codecs_15.7.1mx15.dsc
- bc4d43c48951d2c8f38658d96e8e807637e3ba3e 145104 mx-codecs_15.7.1mx15.tar.xz
- e858bb12a824ff691114f0a96885268a78d39c7f 51014 mx-codecs_15.7.1mx15_i386.deb
+ d41cc0f3451dcce454eab16f8be96d35da9ce5ae 658 mx-codecs_15.7.1mx15.dsc
+ 54b9b8c9d305534956056cb9f204a9abb6934279 182092 mx-codecs_15.7.1mx15.tar.xz
+ 4159d3265d9f3c285fefffba8c4e31d7c0c8aa11 51024 mx-codecs_15.7.1mx15_i386.deb
 Checksums-Sha256:
- c4b4cf3edda511c2da99a624805de197855985722999aeed843067b1befd76e6 658 mx-codecs_15.7.1mx15.dsc
- a93c6e5931ad54259f51934c80081cfa5d8e3531d1196a5ccc2814c181eab9a4 145104 mx-codecs_15.7.1mx15.tar.xz
- aa0d187906f39df54d963f0d507358a9dcd2ec1682af4ce637eb274151e755fc 51014 mx-codecs_15.7.1mx15_i386.deb
+ 9ca0d4d3c7e657c2ddffcac258bec34db85769e929f4c06803c9cc8068bbbc88 658 mx-codecs_15.7.1mx15.dsc
+ 7e8813a8b0dd3efe9bb0bef26cd8c51d878063e255cec20b909fa04f785cd88d 182092 mx-codecs_15.7.1mx15.tar.xz
+ e446dc07c57a4ce28e0fda783da4d310b1e0fc4fa74ba0476e5306451dd121a7 51024 mx-codecs_15.7.1mx15_i386.deb
 Files:
- 74f0519abe532b577865a5d2134ffaa1 658 system optional mx-codecs_15.7.1mx15.dsc
- 787de376e8aab3fbe5486b9b64ba5d63 145104 system optional mx-codecs_15.7.1mx15.tar.xz
- 052c48abb2cbbeb5ae5eab100e8f9f17 51014 system optional mx-codecs_15.7.1mx15_i386.deb
+ d7d5162edba9532da65a61b2599e2c04 658 system optional mx-codecs_15.7.1mx15.dsc
+ 18ac435370e2d3dbf2c26c6a81c7ac3d 182092 system optional mx-codecs_15.7.1mx15.tar.xz
+ e2f40d745975119d9dff64abf815f80a 51024 system optional mx-codecs_15.7.1mx15_i386.deb
