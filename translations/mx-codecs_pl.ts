@@ -34,7 +34,7 @@ W niektórych krajach ich instalacja może być ograniczona prawnie.&lt;/p&gt;&l
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="105"/>
-        <location filename="../mxcodecs.cpp" line="211"/>
+        <location filename="../mxcodecs.cpp" line="212"/>
         <source>Cancel</source>
         <translation>Anuluj</translation>
     </message>
@@ -183,7 +183,7 @@ W niektórych krajach ich instalacja może być ograniczona prawnie.&lt;/p&gt;&l
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="212"/>
+        <location filename="../mxcodecs.cpp" line="211"/>
         <source>License</source>
         <translation>Licencja</translation>
     </message>

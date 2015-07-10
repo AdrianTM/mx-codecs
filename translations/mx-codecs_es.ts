@@ -33,7 +33,7 @@
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="105"/>
-        <location filename="../mxcodecs.cpp" line="211"/>
+        <location filename="../mxcodecs.cpp" line="212"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
@@ -182,7 +182,7 @@
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="212"/>
+        <location filename="../mxcodecs.cpp" line="211"/>
         <source>License</source>
         <translation>Licencia</translation>
     </message>
