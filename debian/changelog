@@ -1,3 +1,9 @@
+mx-codecs (15.10mx15) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 23 Oct 2015 14:11:25 -0400
+
 mx-codecs (15.7.1mx15) mx; urgency=medium
 
   * update license, added additional build-deps
