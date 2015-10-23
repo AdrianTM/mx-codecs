@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="el">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
 <context>
     <name>QApplication</name>
     <message>
@@ -159,12 +157,12 @@
     <message>
         <location filename="../mxcodecs.cpp" line="206"/>
         <source>About MX Codecs</source>
-        <translation type="unfinished"></translation>
+        <translation>Περί MX Codecs</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="207"/>
         <source>MX Codecs</source>
-        <translation type="unfinished"></translation>
+        <translation>MX Codecs</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="207"/>
@@ -174,7 +172,7 @@
     <message>
         <location filename="../mxcodecs.cpp" line="209"/>
         <source>Simple codecs downloader for MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Απλή λήψη codecs για MX Linux</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="210"/>

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
 <context>
     <name>QApplication</name>
     <message>
@@ -45,7 +43,7 @@
     <message>
         <location filename="../mxcodecs.ui" line="122"/>
         <source>Apply any changes then quit</source>
-        <translation>Änderungen annehmen und beenden</translation>
+        <translation>Änderungen anwenden und beenden</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="125"/>
@@ -60,7 +58,7 @@
     <message>
         <location filename="../mxcodecs.ui" line="183"/>
         <source>About...</source>
-        <translation>Impressum</translation>
+        <translation>Über...</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="190"/>
@@ -109,7 +107,7 @@
         <location filename="../mxcodecs.cpp" line="124"/>
         <location filename="../mxcodecs.cpp" line="139"/>
         <source>Error downloading %1</source>
-        <translation>Fehler beim Herunterladen %1</translation>
+        <translation>Fehler beim Herunterladen von %1</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="143"/>
@@ -159,12 +157,12 @@
     <message>
         <location filename="../mxcodecs.cpp" line="206"/>
         <source>About MX Codecs</source>
-        <translation type="unfinished"></translation>
+        <translation>Über MX Codecs</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="207"/>
         <source>MX Codecs</source>
-        <translation type="unfinished"></translation>
+        <translation>MX Codecs</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="207"/>
@@ -174,7 +172,7 @@
     <message>
         <location filename="../mxcodecs.cpp" line="209"/>
         <source>Simple codecs downloader for MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Einfacher Codecs-Downloader für MX Linux</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="210"/>
