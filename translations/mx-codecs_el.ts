@@ -33,7 +33,7 @@
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="105"/>
-        <location filename="../mxcodecs.cpp" line="212"/>
+        <location filename="../mxcodecs.cpp" line="213"/>
         <source>Cancel</source>
         <translation>Ακύρωση</translation>
     </message>
@@ -157,32 +157,32 @@
         <translation>Η διαδικασία τελείωσε με λάθη. </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="206"/>
+        <location filename="../mxcodecs.cpp" line="207"/>
         <source>About MX Codecs</source>
         <translation>Περί MX Codecs</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="207"/>
+        <location filename="../mxcodecs.cpp" line="208"/>
         <source>MX Codecs</source>
         <translation>MX Codecs</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="207"/>
+        <location filename="../mxcodecs.cpp" line="208"/>
         <source>Version: </source>
         <translation>Έκδοση:</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="209"/>
+        <location filename="../mxcodecs.cpp" line="210"/>
         <source>Simple codecs downloader for MX Linux</source>
         <translation>Απλή λήψη codecs για MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="210"/>
+        <location filename="../mxcodecs.cpp" line="211"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c)  MX Linux </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="211"/>
+        <location filename="../mxcodecs.cpp" line="212"/>
         <source>License</source>
         <translation>Άδεια</translation>
     </message>

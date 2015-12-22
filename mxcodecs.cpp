@@ -202,6 +202,7 @@ void mxcodecs::installDebs(QString path) {
 
 // show about
 void mxcodecs::on_buttonAbout_clicked() {
+    this->hide();
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Codecs"), "<p align=\"center\"><b><h2>" +
                        tr("MX Codecs") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
@@ -212,10 +213,13 @@ void mxcodecs::on_buttonAbout_clicked() {
     msgBox.addButton(tr("Cancel"), QMessageBox::RejectRole);
     if (msgBox.exec() == QMessageBox::AcceptRole)
         system("mx-viewer file:///usr/share/doc/mx-codecs/license.html 'MX Viewer License'");
+    this->show();
 }
 
 // Help button clicked
 void mxcodecs::on_buttonHelp_clicked() {
+    this->hide();
     system("mx-viewer http://mepiscommunity.org/wiki/help-files/help-mx-codecs-installer");
+    this->show();
 }
 

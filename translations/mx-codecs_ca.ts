@@ -33,7 +33,7 @@
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="105"/>
-        <location filename="../mxcodecs.cpp" line="212"/>
+        <location filename="../mxcodecs.cpp" line="213"/>
         <source>Cancel</source>
         <translation>Cancel·la</translation>
     </message>
@@ -157,32 +157,32 @@
         <translation>Procés finalitzat. S&apos;han produït errors durant la instal·lació.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="206"/>
+        <location filename="../mxcodecs.cpp" line="207"/>
         <source>About MX Codecs</source>
         <translation>Quant a MX Codecs </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="207"/>
+        <location filename="../mxcodecs.cpp" line="208"/>
         <source>MX Codecs</source>
         <translation>MX Codecs </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="207"/>
+        <location filename="../mxcodecs.cpp" line="208"/>
         <source>Version: </source>
         <translation>Versió: </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="209"/>
+        <location filename="../mxcodecs.cpp" line="210"/>
         <source>Simple codecs downloader for MX Linux</source>
         <translation>Descarregador de còdecs senzill per a MX Linux </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="210"/>
+        <location filename="../mxcodecs.cpp" line="211"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="211"/>
+        <location filename="../mxcodecs.cpp" line="212"/>
         <source>License</source>
         <translation>Llicència</translation>
     </message>

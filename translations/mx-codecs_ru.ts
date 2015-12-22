@@ -33,7 +33,7 @@
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="105"/>
-        <location filename="../mxcodecs.cpp" line="212"/>
+        <location filename="../mxcodecs.cpp" line="213"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
@@ -157,32 +157,32 @@
         <translation>Процесс завершен. В процессе установки произошли ошибки.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="206"/>
+        <location filename="../mxcodecs.cpp" line="207"/>
         <source>About MX Codecs</source>
         <translation>О программе MX Кодеки</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="207"/>
+        <location filename="../mxcodecs.cpp" line="208"/>
         <source>MX Codecs</source>
         <translation>MX Codecs</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="207"/>
+        <location filename="../mxcodecs.cpp" line="208"/>
         <source>Version: </source>
         <translation>Версия:</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="209"/>
+        <location filename="../mxcodecs.cpp" line="210"/>
         <source>Simple codecs downloader for MX Linux</source>
         <translation>Простой загрузчик кодеков для MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="210"/>
+        <location filename="../mxcodecs.cpp" line="211"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Авторское право (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="211"/>
+        <location filename="../mxcodecs.cpp" line="212"/>
         <source>License</source>
         <translation>Лицензия</translation>
     </message>
