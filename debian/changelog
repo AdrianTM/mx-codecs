@@ -1,3 +1,9 @@
+mx-codecs (16.1mx15) UNRELEASED; urgency=medium
+
+  * updated .desktop file 
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Sun, 22 May 2016 20:42:09 -0400
+
 mx-codecs (15.12mx15) mx; urgency=medium
 
   * hide GUI when displaying help/license

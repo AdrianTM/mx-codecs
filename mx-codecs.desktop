@@ -26,5 +26,5 @@ Comment[sv]=Enkel installering av non-free codecs
 Exec=su-to-root -X -c mx-codecs 
 Icon=mx-codecs
 NoDisplay=false
-Categories=System;
+Categories=System;MX-Setup;
 Type=Application
