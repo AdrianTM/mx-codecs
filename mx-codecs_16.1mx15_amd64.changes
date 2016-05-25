@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Sun, 22 May 2016 20:42:09 -0400
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source amd64
+Version: 16.1mx15
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: dolphinoracle <dolphinoracle@gmail.com>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (16.1mx15) UNRELEASED; urgency=medium
+ .
+   * updated .desktop file
+Checksums-Sha1:
+ 4776b3d207f8bf7436fedfa3739c7dc90f7d994f 647 mx-codecs_16.1mx15.dsc
+ b612a9222f2df4e0528507b0929b53a8788efc2a 36968 mx-codecs_16.1mx15.tar.xz
+ 5491b2b753ba273eb3a3265d8450db8989ae74db 52060 mx-codecs_16.1mx15_amd64.deb
+Checksums-Sha256:
+ 94e30081c3d431a8b11381b1a4c303f514202f588df918a5e5af906d979fa9dc 647 mx-codecs_16.1mx15.dsc
+ 8dcc0d16ffb1245cb8cedf316a18b8c3f706a23728f75c72bc41b327ae8a3fc8 36968 mx-codecs_16.1mx15.tar.xz
+ 3e1b5fd900ba98d1c25809c79b400b2354b3a8df2221d1846c79cbcfe70c8185 52060 mx-codecs_16.1mx15_amd64.deb
+Files:
+ 396ffbab484a416ab953a7a5541a986c 647 system optional mx-codecs_16.1mx15.dsc
+ d334d54d86cf1572e17976f91edab5af 36968 system optional mx-codecs_16.1mx15.tar.xz
+ 1b9afedfcadcd81da723f6d6af4a9a3b 52060 system optional mx-codecs_16.1mx15_amd64.deb
