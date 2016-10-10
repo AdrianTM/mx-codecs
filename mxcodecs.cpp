@@ -8,7 +8,7 @@
  * Authors: Jerry 3904
  *          Anticaptilista
  *          Adrian
- *          MEPIS Community <http://forum.mepiscommunity.org>
+ *          MX Linux <http://mxlinux.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -207,7 +207,7 @@ void mxcodecs::on_buttonAbout_clicked() {
                        tr("About MX Codecs"), "<p align=\"center\"><b><h2>" +
                        tr("MX Codecs") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
                        getVersion("mx-codecs") + "</p><p align=\"center\"><h3>" +
-                       tr("Simple codecs downloader for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
+                       tr("Simple codecs downloader for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
     msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
     msgBox.addButton(tr("Cancel"), QMessageBox::RejectRole);
@@ -219,7 +219,7 @@ void mxcodecs::on_buttonAbout_clicked() {
 // Help button clicked
 void mxcodecs::on_buttonHelp_clicked() {
     this->hide();
-    system("mx-viewer http://mepiscommunity.org/wiki/help-files/help-mx-codecs-installer");
+    system("mx-viewer https://mxlinux.org/wiki/help-files/help-mx-codecs-installer");
     this->show();
 }
 
