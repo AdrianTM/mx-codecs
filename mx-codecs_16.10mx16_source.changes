@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 10 Oct 2016 12:59:34 -0400
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source
+Version: 16.10mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (16.10mx16) mx; urgency=medium
+ .
+   * Changed URLs
+Checksums-Sha1:
+ ef8664840369c3490a5be4ae801eadc6f1cf67de 1175 mx-codecs_16.10mx16.dsc
+ f5239fb24e2b7b86ab33fe85f39fe70a9e2d0428 145988 mx-codecs_16.10mx16.tar.xz
+Checksums-Sha256:
+ 8361620cf7fbe7f4848a29331975cb4714ed7dd23698ad83120a4b2cc95d6532 1175 mx-codecs_16.10mx16.dsc
+ 3c6f6382181e5ca680aa595cb77b622491b2f8347ebf944605d4827a77b1c691 145988 mx-codecs_16.10mx16.tar.xz
+Files:
+ f041c6f2fc999ce359668d76d87c67c0 1175 system optional mx-codecs_16.10mx16.dsc
+ 542de4d82f5e12de9ecb9a9f2b513dcb 145988 system optional mx-codecs_16.10mx16.tar.xz
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJX/OCmAAoJEHCTjHgGee6Ypy0H/jdmAQwIGxgJioDx2LsM3elX
+fyC2InbNVXx9pmI3oU4XYkHlLctWQ1GeeldhEs1YXJK09z3gV3SxYMH0lp4WOZUn
+SDKdXP+6umRt2eX9SWV3pEoBP1XODxN+nsA0vd6dgDO7DEGNt0unUMYB2zWIQIix
+6brFGPmMIE26oXs2hhrdyxQAODlhgo9IMXADgZBvCZdmnGJOsLokbhrp5OLuayAk
+B7Cct/e/Oc+dbcC4DbEYAru9NsVB2PJ6BONMz1uaVOMK4MyvsZFO8ySQJFpcFok4
+ierw2svydlFMim8W4trk8CWg2WN3z8Td+GBMU7xyx3KA819F3t/wypWGFD511yU=
+=B6Yg
+-----END PGP SIGNATURE-----
