@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="tr" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="55"/>
         <source>You must run this program as root.</source>
-        <translation>U dient deze toepassing als &apos;root&apos; uit te voeren.</translation>
+        <translation>Bu programı root olarak çalıştırmalısınız.</translation>
     </message>
 </context>
 <context>
@@ -12,28 +12,28 @@
     <message>
         <location filename="../mxcodecs.ui" line="14"/>
         <source>MX Codecs Installer</source>
-        <translation>MX Codecs Installeerder</translation>
+        <translation>MX Çözücü Kurucusu</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="33"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;This application allows you to install restricted codecs that permit advanced video and audio functions.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;In some juridictions their distribution may be limited so the user must meet local regulations. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Do you assume legal responsibility for downloading these codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Deze applicatie staat u toe gelimiteerde codecs te gebruiken die geavanceerde video en audio functies toestaan.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;In sommige jurisdicties kan hun distributie beperkt zijn zodat de gebruiker de lokale regels naleeft.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Neemt u de legale verantwoordelijkheid voor het downloaden van deze codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="48"/>
         <source>Downloading codecs files</source>
-        <translation>Codecs bestanden downloaden</translation>
+        <translation>Çözücü dosyaları indiriliyor</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="102"/>
         <source>Cancel any changes then quit</source>
-        <translation>Iedere verandering ongedaan maken, dan afsluiten</translation>
+        <translation>Değişiklikleri iptal et ve çık</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="105"/>
         <location filename="../mxcodecs.cpp" line="213"/>
         <source>Cancel</source>
-        <translation>Annuleren</translation>
+        <translation>İptal</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="112"/>
@@ -43,22 +43,22 @@
     <message>
         <location filename="../mxcodecs.ui" line="122"/>
         <source>Apply any changes then quit</source>
-        <translation>Veranderingen toepassen en afsluiten</translation>
+        <translation>Değişiklikleri uygula ve çık</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="125"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation>Tamam</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="180"/>
         <source>About this application</source>
-        <translation>Over deze toepassing</translation>
+        <translation>Uygulama hakkında</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="183"/>
         <source>About...</source>
-        <translation>Over...</translation>
+        <translation>Hakkında...</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="190"/>
@@ -68,12 +68,12 @@
     <message>
         <location filename="../mxcodecs.ui" line="219"/>
         <source>Display help </source>
-        <translation>Toon help</translation>
+        <translation>Yardımı görüntüle</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="222"/>
         <source>Help</source>
-        <translation>Help</translation>
+        <translation>Yardım</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="229"/>
@@ -86,7 +86,7 @@
         <location filename="../mxcodecs.cpp" line="129"/>
         <location filename="../mxcodecs.cpp" line="136"/>
         <source>&lt;b&gt;Running command...&lt;/b&gt;&lt;p&gt;</source>
-        <translation>&lt;b&gt;Commando uitvoeren...&lt;/b&gt;&lt;p&gt;</translation>
+        <translation>&lt;b&gt;Komut Çalıştırılıyor...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="117"/>
@@ -95,84 +95,84 @@
         <location filename="../mxcodecs.cpp" line="166"/>
         <location filename="../mxcodecs.cpp" line="192"/>
         <source>Error</source>
-        <translation>Fout</translation>
+        <translation>Hata</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="118"/>
         <location filename="../mxcodecs.cpp" line="133"/>
         <source>Cannot connect to the download site</source>
-        <translation>Kan geen verbinding maken met de download site</translation>
+        <translation>İndirilecek siteye bağlanılamıyor</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="124"/>
         <location filename="../mxcodecs.cpp" line="139"/>
         <source>Error downloading %1</source>
-        <translation>Download fout %1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="143"/>
         <source>&lt;b&gt;Download Finished.&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Download beëindigd.&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;İndirme Tamamlandı.&lt;b&gt;</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="162"/>
         <source>Installing downloaded files</source>
-        <translation>Gedownloade bestanden installeren</translation>
+        <translation>İndirilen dosyalar kuruluyor</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="167"/>
         <source>No downloaded *.debs files found.</source>
-        <translation>Geen gedownloade *.deb bestanden gevonden.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="174"/>
         <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
-        <translation>&lt;b&gt;Installeren...&lt;/b&gt;&lt;p&gt;</translation>
+        <translation>&lt;b&gt;Kuruluyor...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="177"/>
         <source>Error installing %1</source>
-        <translation>Fout bij installeren %1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="185"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Installatieproces is beëindigd&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Kurulum işlemi tamamlandı&lt;b&gt;</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="188"/>
         <source>Finished</source>
-        <translation>Voltooien</translation>
+        <translation>Bitti</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="189"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
-        <translation>De codecs bestanden zijn gedownload en succesvol geïnstalleerd.</translation>
+        <translation>Çözücü dosyaları başarılı bir şekilde indirildi ve kuruldu.</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="193"/>
         <source>Process finished. Errors have occurred during the installation.</source>
-        <translation>Proces beëindigd. Er hebben zich fouten voorgedaan tijdens de installatie.</translation>
+        <translation>Süreç tamamlandı.Kurulum sırasıda bir hata oluştu.</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="207"/>
         <source>About MX Codecs</source>
-        <translation>Over MX Codecs</translation>
+        <translation>MX Çözücüleri Hakkında</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="208"/>
         <source>MX Codecs</source>
-        <translation>MX Codecs</translation>
+        <translation>MX Çözücüleri</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="208"/>
         <source>Version: </source>
-        <translation>Versie:</translation>
+        <translation>Sürüm</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="210"/>
         <source>Simple codecs downloader for MX Linux</source>
-        <translation>Eenvoudige codecs downloader voor MX Linux</translation>
+        <translation>MX Linux için basit çözücü indiricisi</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="211"/>
@@ -182,7 +182,7 @@
     <message>
         <location filename="../mxcodecs.cpp" line="212"/>
         <source>License</source>
-        <translation>Licentie</translation>
+        <translation>Ruhsat</translation>
     </message>
 </context>
 </TS>

@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="55"/>
         <source>You must run this program as root.</source>
-        <translation>Vous devez lancer cette application avec les droits root.</translation>
+        <translation>Vous devez lancer cette application avec les droits administrateur.</translation>
     </message>
 </context>
 <context>
@@ -19,7 +17,7 @@
     <message>
         <location filename="../mxcodecs.ui" line="33"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;This application allows you to install restricted codecs that permit advanced video and audio functions.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;In some juridictions their distribution may be limited so the user must meet local regulations. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Do you assume legal responsibility for downloading these codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt; &lt;head/&gt; &lt;body&gt; &lt;p align=&quot;justify&quot;&gt; Cette application vous permet d&apos;installer les codecs restreints qui permettent les fonctions audio et vidéo avancées. &lt;/ p&gt; &lt;p align=&quot;justify&quot;&gt; Dans certaines juridictions  la distribution doit être limitée afin que l&apos;utilisateur puisse respecter les réglementations locales. &lt;/ p&gt; &lt;p align=&quot;justify&quot;&gt; &lt;br/&gt; &lt;/ p&gt; &lt;p align=&quot;justify&quot;&gt; &lt;span style=&quot; font-weight:600;&quot;&gt; Êtes-vous prêt à assumer la responsabilité juridique pour le téléchargement de ces codecs ? &lt;/ span&gt; &lt;/ p&gt; &lt;/ body&gt; &lt;/ html&gt;</translation>
+        <translation>&lt;html&gt; &lt;head/&gt; &lt;body&gt; &lt;p align=&quot;justify&quot;&gt; Cette application vous permet d&apos;installer les codecs restreints qui permettent les fonctions audio et vidéo avancées. &lt;/ p&gt; &lt;p align=&quot;justify&quot;&gt; Dans certaines juridictions, la distribution doit être limitée afin que l&apos;utilisateur puisse respecter les réglementations locales. &lt;/ p&gt; &lt;p align=&quot;justify&quot;&gt; &lt;br/&gt; &lt;/ p&gt; &lt;p align=&quot;justify&quot;&gt; &lt;span style=&quot; font-weight:600;&quot;&gt; Êtes-vous prêt à assumer la responsabilité juridique pour le téléchargement de ces codecs ? &lt;/ span&gt; &lt;/ p&gt; &lt;/ body&gt; &lt;/ html&gt;</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="48"/>
@@ -144,7 +142,7 @@
     <message>
         <location filename="../mxcodecs.cpp" line="188"/>
         <source>Finished</source>
-        <translation>Fini</translation>
+        <translation>Terminé</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="189"/>
