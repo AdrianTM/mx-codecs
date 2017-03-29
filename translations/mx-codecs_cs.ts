@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="es" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="cs" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="55"/>
         <source>You must run this program as root.</source>
-        <translation>Debe ejecutar este programa como root.</translation>
+        <translation>Tuto aplikaci musíte spustit jako root.</translation>
     </message>
 </context>
 <context>
@@ -12,28 +12,29 @@
     <message>
         <location filename="../mxcodecs.ui" line="14"/>
         <source>MX Codecs Installer</source>
-        <translation>MX Instalar códecs</translation>
+        <translation>MX instalátor kodeků</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="33"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;This application allows you to install restricted codecs that permit advanced video and audio functions.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;In some juridictions their distribution may be limited so the user must meet local regulations. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Do you assume legal responsibility for downloading these codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Esta aplicación le permite instalar códecs restringidos que permiten funciones avanzadas de audio y video.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;En ciertas jurisdicciones, su distribución puede hallarse limitada para que los usuarios se ajusten a regulaciones locales. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;¿Asume la responsabilidad legar por descargar estos códecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Tato aplikace Vám umožní nainstalovat nesvodobné kodeky, které spřístupňují pokročilé funkce videa a audia.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
+V některých krajinách může byt jejich šíření omezené, je na uživateli, aby dodržoval lokální právné předpisy. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Přebíráte právní zodpovědnost za stažení těchto kodeků?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="48"/>
         <source>Downloading codecs files</source>
-        <translation>Descargando los archivos códec</translation>
+        <translation>Stahuji kodeky</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="102"/>
         <source>Cancel any changes then quit</source>
-        <translation>Cancelar los cambios y luego salir</translation>
+        <translation>Zrušit všechny změny a ukončit</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="105"/>
         <location filename="../mxcodecs.cpp" line="213"/>
         <source>Cancel</source>
-        <translation>Cancelar</translation>
+        <translation>Zrušit</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="112"/>
@@ -43,7 +44,7 @@
     <message>
         <location filename="../mxcodecs.ui" line="122"/>
         <source>Apply any changes then quit</source>
-        <translation>Aplicar los cambios y salir</translation>
+        <translation>Uložit všechny změny a ukončit</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="125"/>
@@ -53,12 +54,12 @@
     <message>
         <location filename="../mxcodecs.ui" line="180"/>
         <source>About this application</source>
-        <translation>Acerca de esta aplicación</translation>
+        <translation>O této aplikaci</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="183"/>
         <source>About...</source>
-        <translation>Acerca de...</translation>
+        <translation>O...</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="190"/>
@@ -68,12 +69,12 @@
     <message>
         <location filename="../mxcodecs.ui" line="219"/>
         <source>Display help </source>
-        <translation>Mostrar la ayuda</translation>
+        <translation>Zobrazit nápovědu</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="222"/>
         <source>Help</source>
-        <translation>Ayuda</translation>
+        <translation>Nápověda</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="229"/>
@@ -86,7 +87,7 @@
         <location filename="../mxcodecs.cpp" line="129"/>
         <location filename="../mxcodecs.cpp" line="136"/>
         <source>&lt;b&gt;Running command...&lt;/b&gt;&lt;p&gt;</source>
-        <translation>&lt;b&gt;Ejecutando la orden...&lt;/b&gt;&lt;p&gt;</translation>
+        <translation>&lt;b&gt;Spouštím příkaz...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="117"/>
@@ -95,94 +96,94 @@
         <location filename="../mxcodecs.cpp" line="166"/>
         <location filename="../mxcodecs.cpp" line="192"/>
         <source>Error</source>
-        <translation>Error</translation>
+        <translation>Chyba</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="118"/>
         <location filename="../mxcodecs.cpp" line="133"/>
         <source>Cannot connect to the download site</source>
-        <translation>No es posible conectarse al sitio de descargas</translation>
+        <translation>Nelze se připojit k stránce</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="124"/>
         <location filename="../mxcodecs.cpp" line="139"/>
         <source>Error downloading %1</source>
-        <translation>Error al descargar %1</translation>
+        <translation>Chyba stahování %1</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="143"/>
         <source>&lt;b&gt;Download Finished.&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Descarga finalizada.&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Stahování dokončeno.&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="162"/>
         <source>Installing downloaded files</source>
-        <translation>Instalando los archivos descargados</translation>
+        <translation>Instaluji stažené soubory</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="167"/>
         <source>No downloaded *.debs files found.</source>
-        <translation>No se encontraron archivos *.debs descargados</translation>
+        <translation>Nebyly nalezeny žádné *.deb (instalační) soubory.</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="174"/>
         <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
-        <translation>&lt;b&gt;Instalando...&lt;/b&gt;&lt;p&gt;</translation>
+        <translation>&lt;b&gt;Instaluje se...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="177"/>
         <source>Error installing %1</source>
-        <translation>Error al instalar %1</translation>
+        <translation>Chyba instalace %1</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="185"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
-        <translation>&lt;b&gt;La instalación ha finalizado&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Instalace dokončena&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="188"/>
         <source>Finished</source>
-        <translation>El proceso ha terminado.</translation>
+        <translation>Dokončeno</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="189"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
-        <translation>Los archivos de códec se han descargado e instalado con éxito.</translation>
+        <translation>Kodeky byly úspěšně staženy a nainstalovány.</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="193"/>
         <source>Process finished. Errors have occurred during the installation.</source>
-        <translation>Proceso terminado. Ocurrieron errores durante la instalación.</translation>
+        <translation>Proces dokončen. Během instalace se vyskytly chyby. </translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="207"/>
         <source>About MX Codecs</source>
-        <translation>Acerca de MX Códecs</translation>
+        <translation>O MX Kodeky</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="208"/>
         <source>MX Codecs</source>
-        <translation>MX Códecs</translation>
+        <translation>MX Kodeky</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="208"/>
         <source>Version: </source>
-        <translation>Versión:</translation>
+        <translation>Verze:</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="210"/>
         <source>Simple codecs downloader for MX Linux</source>
-        <translation>Gestor de descargas de códecs simple para MX Linux</translation>
+        <translation>Jednoduchý instalátor kodeků pro MX Linux</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="211"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation>Vlastnická práva (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="212"/>
         <source>License</source>
-        <translation>Licencia</translation>
+        <translation>Licence</translation>
     </message>
 </context>
 </TS>

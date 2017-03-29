@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="tr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="tr" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
@@ -19,7 +17,7 @@
     <message>
         <location filename="../mxcodecs.ui" line="33"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;This application allows you to install restricted codecs that permit advanced video and audio functions.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;In some juridictions their distribution may be limited so the user must meet local regulations. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Do you assume legal responsibility for downloading these codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="48"/>
@@ -109,7 +107,7 @@
         <location filename="../mxcodecs.cpp" line="124"/>
         <location filename="../mxcodecs.cpp" line="139"/>
         <source>Error downloading %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 indirilirken hata</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="143"/>
@@ -124,7 +122,7 @@
     <message>
         <location filename="../mxcodecs.cpp" line="167"/>
         <source>No downloaded *.debs files found.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="174"/>
@@ -134,7 +132,7 @@
     <message>
         <location filename="../mxcodecs.cpp" line="177"/>
         <source>Error installing %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 kurulurken hata</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="185"/>

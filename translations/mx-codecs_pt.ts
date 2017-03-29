@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="pt">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="pt" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="55"/>
         <source>You must run this program as root.</source>
-        <translation>Tem que executar este programa com a conta de raíz (root)</translation>
+        <translation>Tem que executar este programa como root.</translation>
     </message>
 </context>
 <context>

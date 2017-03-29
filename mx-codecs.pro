@@ -45,6 +45,7 @@ HEADERS  += mxcodecs.h
 FORMS    += mxcodecs.ui
 
 TRANSLATIONS += translations/mx-codecs_ca.ts \
+                translations/mx-codecs_cs.ts \
                 translations/mx-codecs_de.ts \
                 translations/mx-codecs_el.ts \
                 translations/mx-codecs_es.ts \
@@ -52,6 +53,7 @@ TRANSLATIONS += translations/mx-codecs_ca.ts \
                 translations/mx-codecs_it.ts \
                 translations/mx-codecs_ja.ts \
                 translations/mx-codecs_kk.ts \
+                translations/mx-codecs_lt.ts \
                 translations/mx-codecs_nl.ts \
                 translations/mx-codecs_pl.ts \
                 translations/mx-codecs_pt.ts \
