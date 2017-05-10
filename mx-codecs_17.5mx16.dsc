@@ -13,20 +13,20 @@ Build-Depends: qt5-qmake, qt5-default, qttools5-dev-tools, debhelper (>= 7.0.50~
 Package-List:
  mx-codecs deb system optional arch=any
 Checksums-Sha1:
- 5b4d1d257305e3718bd8df6c0e79b4f2bfb7f81f 37616 mx-codecs_17.5mx16.tar.xz
+ 742760df0336d7861fd18ff808da23deb167889b 37588 mx-codecs_17.5mx16.tar.xz
 Checksums-Sha256:
- 70bff824500fa1d216290bed1b925b871c3eb126e8a0109fed233eade46448bc 37616 mx-codecs_17.5mx16.tar.xz
+ 6d51a727de54a14b828ebd169e16fbbf8892aac5458d40790f0f14d0915f688e 37588 mx-codecs_17.5mx16.tar.xz
 Files:
- 09e360246b18a706dea8a00601e582de 37616 mx-codecs_17.5mx16.tar.xz
+ 7f86bfd0bbac26b0dc8ce79866406344 37588 mx-codecs_17.5mx16.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJZEzYoAAoJEHCTjHgGee6YoFEIAII0T66TJH97lFq+YC1ILpj5
-J5h7WUP6Ab9U504OmDwe/cW5pMwnv6EM9NZbvuHGr8dhiKD3D/A3/vL+udQH14c2
-d/ZwJdqgTXzzhPugMgXNHQEXhdZ8Yj0qYAbMcZKQZ0RmTLwP7H3F9lybABlJBduO
-y5vL+Jq4ggapgBW0ZkrmO+aOvTPXRFTUhsia9qU0EIk4PqzXqAd/Sce4hJP6VgTr
-HqRZLfCtr8PrZXwZGJzXCIiRHQmdQutEqkQ9WZMVKJT1xYeFeiREsdlj1Oc1DIyd
-J1fyNI4CcCvK7cWedNas5hGKG6+0fxlNhdydPYAPG3roSVf2NVTPWzj259Wca+E=
-=zTP5
+iQEcBAEBAgAGBQJZEzfHAAoJEHCTjHgGee6YoQIIAJGsYLieDxl65XAEXfNqPzoA
+vszUxTk62vDKMAk11mLBFdU0pED8jT2cCR5cC1wZ+N83OOMksgylNNFfUmzlROoM
+zu6LTohlTb9uzfiCyu9lrwWdJYPGrWR7MSUFjNboXvunr20KWoiTzZ4A0NOrXlKm
+2tz9ScnwmCu3P3RvSQsO0oWwTcvqHgrTvW+Eaenvg6YtwPefXvPhf5O1gR2B5SGf
+CzPrVpjFLLtgjWnlRAkoP5/EdvNCt5Nu+YQOIj/z4hF1UWPR4aI7CczG1SgX91uh
+qQ+DJEH/6zWIvkyyMOFf/4fkT5JBmwEGDQSVunfbB2gdZ69a2N1lOXPEMHFk9ZU=
+=yQAb
 -----END PGP SIGNATURE-----
