@@ -20,25 +20,21 @@
       <number>0</number>
      </property>
      <widget class="QWidget" name="pageAccept">
-      <widget class="QLabel" name="labelAccept">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>20</y>
-         <width>481</width>
-         <height>201</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;This application allows you to install restricted codecs that permit advanced video and audio functions.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;In some juridictions their distribution may be limited so the user must meet local regulations. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Do you assume legal responsibility for downloading these codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-       <property name="textFormat">
-        <enum>Qt::RichText</enum>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-      </widget>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="labelAccept">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;This application allows you to install restricted codecs that permit advanced video and audio functions.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;In some juridictions their distribution may be limited so the user must meet local regulations. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Do you assume legal responsibility for downloading these codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::RichText</enum>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
      <widget class="QWidget" name="pageDownload">
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -47,22 +43,18 @@
          <property name="title">
           <string>Downloading codecs files</string>
          </property>
-         <widget class="QLabel" name="labelDownload">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>30</y>
-            <width>481</width>
-            <height>151</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
-         </widget>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="labelDownload">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
        <item>
@@ -105,8 +97,7 @@
         <string>Cancel</string>
        </property>
        <property name="icon">
-        <iconset>
-         <normaloff>../../../../../../../../../../usr/share/icons/Tango/16x16/actions/gtk-cancel.png</normaloff>../../../../../../../../../../usr/share/icons/Tango/16x16/actions/gtk-cancel.png</iconset>
+        <iconset theme="window-close"/>
        </property>
        <property name="shortcut">
         <string>Alt+N</string>
@@ -125,8 +116,7 @@
         <string>OK</string>
        </property>
        <property name="icon">
-        <iconset>
-         <normaloff>../../../../../../../../../../usr/share/mx-user/icons/dialog-ok.png</normaloff>../../../../../../../../../../usr/share/mx-user/icons/dialog-ok.png</iconset>
+        <iconset theme="dialog-ok"/>
        </property>
        <property name="shortcut">
         <string/>
@@ -167,7 +157,7 @@
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../../../../../../../../../usr/local/share/icons/mxfcelogo.png</pixmap>
+        <pixmap resource="images.qrc">:/icons/logo.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -183,8 +173,7 @@
         <string>About...</string>
        </property>
        <property name="icon">
-        <iconset>
-         <normaloff>../../../../../../../../../../usr/share/icons/Tango/16x16/apps/accessories-text-editor.png</normaloff>../../../../../../../../../../usr/share/icons/Tango/16x16/apps/accessories-text-editor.png</iconset>
+        <iconset theme="help-about"/>
        </property>
        <property name="shortcut">
         <string>Alt+B</string>
@@ -222,8 +211,7 @@
         <string>Help</string>
        </property>
        <property name="icon">
-        <iconset>
-         <normaloff>../../../../../../../../../usr/share/icons/Tango/16x16/apps/gnome-help.png</normaloff>../../../../../../../../../usr/share/icons/Tango/16x16/apps/gnome-help.png</iconset>
+        <iconset theme="help-contents"/>
        </property>
        <property name="shortcut">
         <string>Alt+H</string>
@@ -235,7 +223,9 @@
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>buttonCancel</sender>

@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 10 May 2017 11:44:37 -0400
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source amd64
+Version: 17.5mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (17.5mx16) mx; urgency=medium
+ .
+   * update icons
+Checksums-Sha1:
+ 45d39750ed43a65617e3f26313a2c82c36265bcb 1142 mx-codecs_17.5mx16.dsc
+ 5b4d1d257305e3718bd8df6c0e79b4f2bfb7f81f 37616 mx-codecs_17.5mx16.tar.xz
+ f549ea41b79aabff866478afda390014107bdcd7 53606 mx-codecs_17.5mx16_amd64.deb
+Checksums-Sha256:
+ 7bf3ce8d3a66f4c8c0bb841260aa201a7f699de6a9e294fb861097e7b5857403 1142 mx-codecs_17.5mx16.dsc
+ 70bff824500fa1d216290bed1b925b871c3eb126e8a0109fed233eade46448bc 37616 mx-codecs_17.5mx16.tar.xz
+ f5326dc4f1c81252189f6ab3d866d693b127ab03695557668d9258428313969d 53606 mx-codecs_17.5mx16_amd64.deb
+Files:
+ 9eae3a60a842b9fd5ac0ce6679d83cac 1142 system optional mx-codecs_17.5mx16.dsc
+ 09e360246b18a706dea8a00601e582de 37616 system optional mx-codecs_17.5mx16.tar.xz
+ e5e3defc599e6c39a104fb2606b2f75f 53606 system optional mx-codecs_17.5mx16_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZEzYsAAoJEHCTjHgGee6YY2AH/27L6YByehvl2C2F38jfAseY
+CHLYxgyaR+sqs4rLZs3pvEzhZyhAvz8ARVSgckhAvEJ6V/BBns/0thukXIVc0zWX
+V/luot4WVwM0Jo+gXPlNYXI1XgdL2VGAqiVx3znrMYejLOBE5vEdMWz4/i+uNub8
+ggTOJZ9OGoUUwMZ2auZL+VewCtPr98R3SX35VFNmG2mvzudTcKNxp7oEc2i2K/wD
+CEUJiVa/IWxieKFKCSRfJs2lJ9kx4FLI9pV0bBHWh0IuE3KdYnYEHjgZCubpRb30
+Y8rmXC7s4USRoApfiCx+wOlh4YTHXg0/BkS382Tzpwaj5CZD2Dd/XO/iFpuPKx8=
+=JWqc
+-----END PGP SIGNATURE-----

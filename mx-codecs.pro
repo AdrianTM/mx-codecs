@@ -62,3 +62,6 @@ TRANSLATIONS += translations/mx-codecs_ca.ts \
                 translations/mx-codecs_sv.ts \
                 translations/mx-codecs_tr.ts
 
+RESOURCES += \
+    images.qrc
+

@@ -37,6 +37,9 @@ mxcodecs::mxcodecs(QWidget *parent) :
   ui(new Ui::mxcodecs)
 {
   ui->setupUi(this);
+  if (ui->buttonOk->icon().isNull()) {
+      ui->buttonOk->setIcon(QIcon(":/icons/dialog-ok.svg"));
+  }
 }
 
 mxcodecs::~mxcodecs()
@@ -213,6 +216,7 @@ void mxcodecs::on_buttonAbout_clicked() {
     msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
     if (msgBox.exec() == QMessageBox::AcceptRole) {
         system("mx-viewer file:///usr/share/doc/mx-codecs/license.html 'MX Viewer License'");
+    }
     this->show();
 }
 
