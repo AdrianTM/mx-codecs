@@ -59,6 +59,7 @@ TRANSLATIONS += translations/mx-codecs_ca.ts \
                 translations/mx-codecs_pt.ts \
                 translations/mx-codecs_ro.ts \
                 translations/mx-codecs_ru.ts \
+                translations/mx-codecs_sk.ts \
                 translations/mx-codecs_sv.ts \
                 translations/mx-codecs_tr.ts
 
