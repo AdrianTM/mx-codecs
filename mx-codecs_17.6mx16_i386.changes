@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 02 Jun 2017 13:14:58 -0400
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: i386
+Version: 17.6mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (17.6mx16) mx; urgency=medium
+ .
+   * updated translations
+Checksums-Sha1:
+ 34d22bfa0c95f385ea053e0bc61f17e3689f592d 54378 mx-codecs_17.6mx16_i386.deb
+Checksums-Sha256:
+ 7ca2c29a90448e894fd96efbe8aa099ba17dadd9c429262853706fbea19e858e 54378 mx-codecs_17.6mx16_i386.deb
+Files:
+ 5d361d57af0920460a91096e8f98e1b3 54378 system optional mx-codecs_17.6mx16_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZMZ1IAAoJEHCTjHgGee6YdlAH/jAiV4rTtIkiGJxlFofB4vZX
+dQ5rkLG7NHtjmV3rOt3K7XmDl9+l3Ji3Gd6NNi/xKCgOTB65efskBcPuUaFAjZGF
+iq6d7t7LgjWSbjI4MYlwWOUMUVC1DuPzuRybQJZsSOujuSguCZGhNLM0K/yL9AVj
+aVUIB+/C6OVtPduKM8CMsiZIrxm86rOz9hL+vlNPl7XD7PDq+iwgKBKvqXawyhaj
+P18KA0KpIIrsywMhwtzOdpCvrx9D0Qxy17GI+pS0qm55Qs8ic5cfbsqjZyCSQRug
+uqBWMMc5cKjHqb35I6WTkA0qgz1bMu6gvVlr96+ULe6c/3Ev8BL9kBNNUOq3P30=
+=DBpF
+-----END PGP SIGNATURE-----
