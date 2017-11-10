@@ -4,6 +4,12 @@ mx-codecs (17.11) mx; urgency=medium
 
  -- Adrian <adrian@mxlinux.org>  Fri, 10 Nov 2017 10:59:35 -0500
 
+mx-codecs (17.7mx16) mx; urgency=medium
+
+  * new icons
+
+ -- Dolphin <dolphinoracle@gmain.com>  Sun, 15 Oct 2017 09:38:58 -0400
+
 mx-codecs (17.6mx16) mx; urgency=medium
 
   * updated translations
