@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 10 Nov 2017 10:59:35 -0500
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: i386
+Version: 17.11
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (17.11) mx; urgency=medium
+ .
+   * add FR help
+Checksums-Sha1:
+ a8a05675a181a82041be06bd8b3f16c91c814eb1 54878 mx-codecs_17.11_i386.deb
+Checksums-Sha256:
+ 120ee6d905dd615dbeacc7407e13a6f9a1313abc4e79a5fea3e20ea65a0d3b49 54878 mx-codecs_17.11_i386.deb
+Files:
+ 870910557d377beca4998a6528fe1a4c 54878 system optional mx-codecs_17.11_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJaBc1OAAoJEHCTjHgGee6Yo1sIAMnCOVprV+hqCo6QQFdIgZ7Z
+MdycVJs4CiEyxPgLLkGKvWb15bBrZarFqrx41mL2H9SGRwpYHttsFUhFyEAjqwzJ
+HFdLig2J9encLSe9xcX6rp2Sz+QvzzE+0AgW7GWOLobBkPatfUi8JppzEhuD1IUk
+HPd5A2Q1e+Xt6JufKmQh6Tdn6zJEF1SOlJ+fVU0k1L0HY25NqtisyTX6TUkr1Uo+
+dzhPfLG3sm7mnZpgXYvEpxoAVFy9ekpiaoKzO9Ty0Vpa8xJcwmnOZSs5dNp8fwZn
+fezGF96uuVT4WnvBf9PzEdgLIzWqyxDOGqhL/nNPm7dLl65dLB8mWXFNVLIYiTY=
+=aAEx
+-----END PGP SIGNATURE-----

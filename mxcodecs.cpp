@@ -223,7 +223,18 @@ void mxcodecs::on_buttonAbout_clicked() {
 // Help button clicked
 void mxcodecs::on_buttonHelp_clicked() {
     this->hide();
-    system("mx-viewer https://mxlinux.org/wiki/help-files/help-mx-codecs-installer");
+
+    QLocale locale;
+    QString lang = locale.bcp47Name();
+
+    QString url = "https://mxlinux.org/wiki/help-files/help-mx-codecs-installer";
+
+    if (lang == "fr") {
+        url = "https://mxlinux.org/french-wiki/help-files/help-mx-codecs-installer";
+    }
+
+    system("mx-viewer " + url.toUtf8());
+
     this->show();
 }
 
