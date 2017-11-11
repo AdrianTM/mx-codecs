@@ -229,7 +229,7 @@ void mxcodecs::on_buttonHelp_clicked() {
 
     QString url = "https://mxlinux.org/wiki/help-files/help-mx-codecs-installer";
 
-    if (lang == "fr") {
+    if (lang.startsWith("fr")) {
         url = "https://mxlinux.org/french-wiki/help-files/help-mx-codecs-installer";
     }
 
