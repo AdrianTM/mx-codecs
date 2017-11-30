@@ -97,13 +97,15 @@
         <string>Cancel</string>
        </property>
        <property name="icon">
-        <iconset theme="window-close"/>
+        <iconset theme="window-close">
+         <normaloff/>
+        </iconset>
        </property>
        <property name="shortcut">
         <string>Alt+N</string>
        </property>
        <property name="autoDefault">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
       </widget>
      </item>
@@ -116,16 +118,18 @@
         <string>OK</string>
        </property>
        <property name="icon">
-        <iconset theme="dialog-ok"/>
+        <iconset theme="dialog-ok">
+         <normaloff/>
+        </iconset>
        </property>
        <property name="shortcut">
         <string/>
        </property>
        <property name="autoDefault">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
        <property name="default">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
       </widget>
      </item>
@@ -173,13 +177,15 @@
         <string>About...</string>
        </property>
        <property name="icon">
-        <iconset theme="help-about"/>
+        <iconset theme="help-about">
+         <normaloff/>
+        </iconset>
        </property>
        <property name="shortcut">
         <string>Alt+B</string>
        </property>
        <property name="autoDefault">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
       </widget>
      </item>
@@ -211,10 +217,15 @@
         <string>Help</string>
        </property>
        <property name="icon">
-        <iconset theme="help-contents"/>
+        <iconset theme="help-contents">
+         <normaloff/>
+        </iconset>
        </property>
        <property name="shortcut">
         <string>Alt+H</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
        </property>
       </widget>
      </item>
