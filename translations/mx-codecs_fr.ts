@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
@@ -35,7 +33,7 @@
         <location filename="../mxcodecs.ui" line="97"/>
         <location filename="../mxcodecs.cpp" line="216"/>
         <source>Cancel</source>
-        <translation>Anuler</translation>
+        <translation>Annuler</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="103"/>
@@ -55,12 +53,12 @@
     <message>
         <location filename="../mxcodecs.ui" line="170"/>
         <source>About this application</source>
-        <translation>A propos de cette application</translation>
+        <translation>À propos de cette application</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="173"/>
         <source>About...</source>
-        <translation>A propos...</translation>
+        <translation>À propos...</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="179"/>
@@ -88,7 +86,7 @@
         <location filename="../mxcodecs.cpp" line="132"/>
         <location filename="../mxcodecs.cpp" line="139"/>
         <source>&lt;b&gt;Running command...&lt;/b&gt;&lt;p&gt;</source>
-        <translation>&lt;b&gt;Commande en cours d&apos;exécution ...&lt;/b&gt;&lt;p&gt;</translation>
+        <translation>&lt;b&gt;Commande en cours d&apos;exécution...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="120"/>
@@ -134,12 +132,12 @@
     <message>
         <location filename="../mxcodecs.cpp" line="180"/>
         <source>Error installing %1</source>
-        <translation>Erreur en installant %1</translation>
+        <translation>Erreur lors de l&apos;installation de %1</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="188"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Le processus d&apos;installation est terminé&lt;/ b&gt;</translation>
+        <translation>&lt;b&gt;Le processus d&apos;installation est terminé&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="191"/>
@@ -149,7 +147,7 @@
     <message>
         <location filename="../mxcodecs.cpp" line="192"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
-        <translation>les Fichiers Codecs ont été téléchargés et installés avec succès.</translation>
+        <translation>les fichiers Codecs ont été téléchargés et installés avec succès.</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="196"/>
@@ -159,7 +157,7 @@
     <message>
         <location filename="../mxcodecs.cpp" line="210"/>
         <source>About MX Codecs</source>
-        <translation>A propos de MX Codecs</translation>
+        <translation>À propos de MX Codecs</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="211"/>
@@ -169,7 +167,7 @@
     <message>
         <location filename="../mxcodecs.cpp" line="211"/>
         <source>Version: </source>
-        <translation>Version:</translation>
+        <translation>Version: </translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="213"/>

@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="lt">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="lt" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="55"/>
         <source>You must run this program as root.</source>
-        <translation>Jūs privalote vykdyti šią programą kaip pagrindinis (root) naudotojas.</translation>
+        <translation>Privalote paleisti šią programą kaip pagrindinis (root) naudotojas.</translation>
     </message>
 </context>
 <context>
@@ -14,7 +12,7 @@
     <message>
         <location filename="../mxcodecs.ui" line="14"/>
         <source>MX Codecs Installer</source>
-        <translation>MX Kodekų diegimo programa</translation>
+        <translation>MX kodekų diegimo programa</translation>
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="27"/>
@@ -159,12 +157,12 @@
     <message>
         <location filename="../mxcodecs.cpp" line="210"/>
         <source>About MX Codecs</source>
-        <translation>Apie MX Kodekai</translation>
+        <translation>Apie MX kodekai</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="211"/>
         <source>MX Codecs</source>
-        <translation>MX Kodekai</translation>
+        <translation>MX kodekai</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="211"/>
