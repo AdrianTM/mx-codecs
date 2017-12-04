@@ -38,47 +38,47 @@
         <translation>Annulla</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="103"/>
+        <location filename="../mxcodecs.ui" line="105"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="113"/>
+        <location filename="../mxcodecs.ui" line="118"/>
         <source>Apply any changes then quit</source>
         <translation>Applica tutte le modifiche quando chiudi</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="116"/>
+        <location filename="../mxcodecs.ui" line="121"/>
         <source>OK</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="170"/>
+        <location filename="../mxcodecs.ui" line="177"/>
         <source>About this application</source>
         <translation>Informazioni riguardo questa applicazione</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="173"/>
+        <location filename="../mxcodecs.ui" line="180"/>
         <source>About...</source>
         <translation>Info...</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="179"/>
+        <location filename="../mxcodecs.ui" line="188"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="208"/>
+        <location filename="../mxcodecs.ui" line="217"/>
         <source>Display help </source>
         <translation>Visualizza Aiuto</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="211"/>
+        <location filename="../mxcodecs.ui" line="220"/>
         <source>Help</source>
         <translation>Aiuto</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="217"/>
+        <location filename="../mxcodecs.ui" line="228"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>

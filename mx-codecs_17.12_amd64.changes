@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 04 Dec 2017 14:30:12 -0500
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source amd64
+Version: 17.12
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (17.12) mx; urgency=medium
+ .
+   * new translations
+Checksums-Sha1:
+ ef8ad4b3bed9a77011a1ddf1fbf0a10bc7030f2e 1130 mx-codecs_17.12.dsc
+ c3d74c85f7d5c035f67d16ee3bf3f6da33407932 42152 mx-codecs_17.12.tar.xz
+ 2da5ede1bf8374bb296e62c6863ea6ba7883f745 58764 mx-codecs_17.12_amd64.deb
+Checksums-Sha256:
+ bdf68c21d18f101e228cfb4256db685441b52bb22d72823224e1849c6724d734 1130 mx-codecs_17.12.dsc
+ 68da71ef86d0199fbe2d23d774949bd9b655b9df0bc5949b804d69400fccbdb3 42152 mx-codecs_17.12.tar.xz
+ 7e2b91d5e455e6595906558adba69c3c5e10e24e9260c92a7834791c2fdfc682 58764 mx-codecs_17.12_amd64.deb
+Files:
+ 2cac01e7fb783ae660cec568c1b98a19 1130 system optional mx-codecs_17.12.dsc
+ 3a0c0cd6fb8f9a6ec12a39c67c7bd27b 42152 system optional mx-codecs_17.12.tar.xz
+ 01dbf2ea1c251ac0d2d5bd2e41ab01d7 58764 system optional mx-codecs_17.12_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJaJaKHAAoJEHCTjHgGee6Y360H/jZgH71ahzvDBVFEhoWn1tq9
+kBZkUDE4JdixKwuH6gq/J3I+XNfyZB/mZFfw6cEOoSAYEo88DuwU/Xiy6cSIBiCG
+L01KtgciJWdlBonJJq34V5Lan0CS5DnhVetGVH6Xbr7RBVQselI0rY4Rl24x1E6A
+1t+SAQVMZWJD57jyqsJBE3yJfHjnQUm4RgWGutM/Fbfm8uVHO85zyoLiGt4cPNwb
+fQbniM4X8iLOFwVKLVKgbjWE5R1Kn35OueWlDDCJAhK/kgA94gzZqUwxZiquUwKV
+PjGgEUtQigl9O/ctdED7yNmDmUUkjoUqc7u+lMBL4RGBH6zYQ9g4UN3av8+I6nk=
+=lTwv
+-----END PGP SIGNATURE-----
