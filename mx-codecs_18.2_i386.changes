@@ -18,20 +18,20 @@ Changes:
  .
    * new translations
 Checksums-Sha1:
- 1eab35c615012fe148c9831c2f14539bf365f22d 46826 mx-codecs_18.2_i386.deb
+ 68567208a518420c29d184b17c7c4d775a48688c 61274 mx-codecs_18.2_i386.deb
 Checksums-Sha256:
- 0b30fcfea107d6981a3485fd419e698c65b7d1058e2fe2c86238c3dfbdf27547 46826 mx-codecs_18.2_i386.deb
+ 7e22a874c8b1988eaf3303873cd458945230582e718fab8005e4b9cb93ef564f 61274 mx-codecs_18.2_i386.deb
 Files:
- a768e3d39a1be8d336cca50b0cd13120 46826 system optional mx-codecs_18.2_i386.deb
+ 443f6e141b7402221f02c0cfcb465497 61274 system optional mx-codecs_18.2_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJafpPEAAoJEHCTjHgGee6YR4MH/i5bX8eUMwno72FRLLR0x0Bw
-m1djHBoys82CYoZQoB6Kxo2pUTBzV1WnsFYInZjiSMjseHjs4WhEnepTWhqJsd1Q
-Ly1OneAbidEbTLVC/c/tp+uDc4BEAcPaDMWR0xH72SrxR1HAIWYG1HH1A8OQgRct
-wiWp3jSGUAy8xkLuztjtcS8dzXL709y1T/HRc0lZYQB6CrLzGIEJQG8dqy0Z312B
-Dcr70auS9IDgf6/0D/gomCDdpKbQ3QfMtwZ2RfA3Nf/LfxwLtCkWB7+MM4fIGlKb
-zPXh0yb/59lb+tG/dFokcgFUKaNl2B8Gj7P+bWRSppS4IKJ8sOBPdqgamZWzGpQ=
-=zL8u
+iQEcBAEBAgAGBQJafplIAAoJEHCTjHgGee6Y+OcIAJ1MZUb9M50FelRp8WrLikSg
+jB99C2u92zSuxeeE0IFyr7ictzdhvf6DBFueOqSQWr57fAuzW7nTz4hYalH8sU58
+Qv+4QqfUZonLabm+puyuoDzm+mf4E9z1EohAe2Yw4UIf5JN8B5zHaJnJvfXh+RTa
+rj8kZcSvuCWAbsVvwL2aPb+dcH+1ycTpUPP9vd3rdc3fUNPqGqy7IYF9hjvgtDZD
+9HWS7q+AzcTW3fUvNTSwzyaPZeqRdxWnh91WaLoPFM+2BJ6uUfaStp2fwgw7e7fY
+w8sLPvy198yJyrDQQ1li0Sv2Pot3xt3PflyevyZBxPipbQVoTVomtW1zALiQzwM=
+=RyGJ
 -----END PGP SIGNATURE-----
