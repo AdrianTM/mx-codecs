@@ -18,20 +18,20 @@ Changes:
  .
    * new translations
 Checksums-Sha1:
- 098cba9d59676d9ca36a03be64b38d1e84537e98 62582 mx-codecs_18.3_i386.deb
+ efa43a22f0cea4b7264002675b8bf8a5134b328b 62764 mx-codecs_18.3_i386.deb
 Checksums-Sha256:
- bfe8aa29a5a134a814e147f4f506a618053f682d06f93de182d0bdaba3892bf8 62582 mx-codecs_18.3_i386.deb
+ 7e83a2b6191a607e5deef549be74c379f0a2e2f7f5bd6f47c72a0c24028564dc 62764 mx-codecs_18.3_i386.deb
 Files:
- d29cfb45231ce92c93e55336d3c476ef 62582 system optional mx-codecs_18.3_i386.deb
+ 27cae2f264c04b5e69be33530f1c5199 62764 system optional mx-codecs_18.3_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJamW4XAAoJEHCTjHgGee6Yh0kH/3C+lJVPUXBXqZLGm9e6ruqJ
-qCvofwEwWcAIzGDAg3d6PYhkHfnEGxX7ji8EcksynlK08kGQfARuLyh1Ra/rrEEp
-kZuelPYhURYAjvJtvbO76KWfiEojcUCFru0ovl31+vKL+PrVem0zSik5cVtG//kk
-ZJDT064ygTiyAtn53SDfBh/eV2vwpeanQ4GxxOlP2rad4X3RYQurgFeEmtIjWcYY
-x0o0FovXrW6fnrKJMPiFM1lZpji7bBhkeqWx419IRAD4T8CY17d77shhhqof4slP
-PbTJhdMCAiprXZ4Ri9L99w3ieGmy880DgESTE9U9zBq7jZ1glRHdNhoRmpHhnYE=
-=rYNE
+iQEcBAEBAgAGBQJamXdyAAoJEHCTjHgGee6YotIIAM33trZ57GvLQ046nD50NClC
+tB18VC+ZSNyuvA8Ly5IVVO6hkSyiATJmLViT48H3RdutK9Z/iouUHbUa1H0s3dHu
+Ecv+DtA32vMFRIGWpvjFPCEglB8UwjQl8sWD/a1wxjWFUdJhMB473XpIsgR04n6v
+aZ4fcdueprbxb1pU912JiTyaPjn152eAfIDwQtTL7tVTMkdxvjd98Y555Kitzypo
+SBNfMIgslikQxlyocH9pGKBqdbgoTgiiMSultGOsPy83u4nqPsSF6Xk43K4zYMUS
+049NVEJCgyVWuY2KwyM52t2iqjtax3Knl9FDLoDUtAE/FohDgeod1Fi9i8EJkxc=
+=+6mW
 -----END PGP SIGNATURE-----
