@@ -33,7 +33,7 @@
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="97"/>
-        <location filename="../mxcodecs.cpp" line="216"/>
+        <location filename="../mxcodecs.cpp" line="227"/>
         <source>Cancel</source>
         <translation>Ακύρωση</translation>
     </message>
@@ -83,106 +83,106 @@
         <translation>Alt+H </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="117"/>
-        <location filename="../mxcodecs.cpp" line="124"/>
-        <location filename="../mxcodecs.cpp" line="132"/>
-        <location filename="../mxcodecs.cpp" line="139"/>
+        <location filename="../mxcodecs.cpp" line="128"/>
+        <location filename="../mxcodecs.cpp" line="135"/>
+        <location filename="../mxcodecs.cpp" line="143"/>
+        <location filename="../mxcodecs.cpp" line="150"/>
         <source>&lt;b&gt;Running command...&lt;/b&gt;&lt;p&gt;</source>
         <translation>&lt;b&gt;Τρέχοντας την εντολή ...&lt;/b&gt;&lt;p&gt; </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="120"/>
-        <location filename="../mxcodecs.cpp" line="135"/>
-        <location filename="../mxcodecs.cpp" line="141"/>
-        <location filename="../mxcodecs.cpp" line="169"/>
-        <location filename="../mxcodecs.cpp" line="195"/>
+        <location filename="../mxcodecs.cpp" line="131"/>
+        <location filename="../mxcodecs.cpp" line="146"/>
+        <location filename="../mxcodecs.cpp" line="152"/>
+        <location filename="../mxcodecs.cpp" line="180"/>
+        <location filename="../mxcodecs.cpp" line="206"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="121"/>
-        <location filename="../mxcodecs.cpp" line="136"/>
+        <location filename="../mxcodecs.cpp" line="132"/>
+        <location filename="../mxcodecs.cpp" line="147"/>
         <source>Cannot connect to the download site</source>
         <translation>Δεν είναι δυνατή η σύνδεση με την τοποθεσία λήψης</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="127"/>
-        <location filename="../mxcodecs.cpp" line="142"/>
+        <location filename="../mxcodecs.cpp" line="138"/>
+        <location filename="../mxcodecs.cpp" line="153"/>
         <source>Error downloading %1</source>
         <translation>Σφάλμα λήψη %1</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="146"/>
+        <location filename="../mxcodecs.cpp" line="157"/>
         <source>&lt;b&gt;Download Finished.&lt;/b&gt;</source>
         <translation>H lήψη oλοκληρώθηκε.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="165"/>
+        <location filename="../mxcodecs.cpp" line="176"/>
         <source>Installing downloaded files</source>
         <translation>Εγκατάσταση ληφθέντα αρχεία </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="170"/>
+        <location filename="../mxcodecs.cpp" line="181"/>
         <source>No downloaded *.debs files found.</source>
         <translation>Δεν βρέθηκαν αρχεία *. debs</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="177"/>
+        <location filename="../mxcodecs.cpp" line="188"/>
         <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
         <translation>&lt;b&gt;Εγκατάσταση ...</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="180"/>
+        <location filename="../mxcodecs.cpp" line="191"/>
         <source>Error installing %1</source>
         <translation>Σφάλμα κατά την εγκατάσταση %1</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="188"/>
+        <location filename="../mxcodecs.cpp" line="199"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
         <translation>&lt;b&gt;H dιαδικασία εγκατάστασης έχει ολοκληρωθεί&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="191"/>
+        <location filename="../mxcodecs.cpp" line="202"/>
         <source>Finished</source>
         <translation>Ολοκλήρωση</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="192"/>
+        <location filename="../mxcodecs.cpp" line="203"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
         <translation>Οι αρχεία codecs έχουν κατεβάσει και εγκαταστήσει με επιτυχία.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="196"/>
+        <location filename="../mxcodecs.cpp" line="207"/>
         <source>Process finished. Errors have occurred during the installation.</source>
         <translation>Η διαδικασία τελείωσε με λάθη. </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="210"/>
+        <location filename="../mxcodecs.cpp" line="221"/>
         <source>About MX Codecs</source>
         <translation>Περί MX Codecs</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="211"/>
+        <location filename="../mxcodecs.cpp" line="222"/>
         <source>MX Codecs</source>
         <translation>MX Codecs</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="211"/>
+        <location filename="../mxcodecs.cpp" line="222"/>
         <source>Version: </source>
         <translation>Έκδοση:</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="213"/>
+        <location filename="../mxcodecs.cpp" line="224"/>
         <source>Simple codecs downloader for MX Linux</source>
         <translation>Απλή λήψη codecs για MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="214"/>
+        <location filename="../mxcodecs.cpp" line="225"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c)  MX Linux </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="215"/>
+        <location filename="../mxcodecs.cpp" line="226"/>
         <source>License</source>
         <translation>Άδεια</translation>
     </message>

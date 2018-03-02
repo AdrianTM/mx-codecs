@@ -44,7 +44,7 @@ public:
   // helpers
   static QString getCmdOut(QString cmd);
   void updateStatus(QString msg, int val);
-  void displaySite(QString site);
+  void displayDoc(QString url);
   void installDebs(QString path);
 
   QString downloadDebs();

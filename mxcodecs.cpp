@@ -53,6 +53,17 @@ void mxcodecs::updateStatus(QString msg, int val) {
   qApp->processEvents();
 }
 
+void mxcodecs::displayDoc(QString url)
+{
+    QString exec = "xdg-open";
+    QString user = getCmdOut("logname");
+    if (system("command -v mx-viewer") == 0) { // use mx-viewer if available
+        exec = "mx-viewer";
+    }
+    QString cmd = "su " + user + " -c \"" + exec + " " + url + "\"&";
+    system(cmd.toUtf8());
+}
+
 ////////////////////////////////////////////////////////////////////////////////////////////////
 // Util function taken from minstall, part of MEPIS, Copyright (C) 2003-2010 by Warren Woodford
 // Licensed under the Apache License, Version 2.0
@@ -215,15 +226,13 @@ void mxcodecs::on_buttonAbout_clicked() {
     msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
     msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
     if (msgBox.exec() == QMessageBox::AcceptRole) {
-        system("mx-viewer file:///usr/share/doc/mx-codecs/license.html 'MX Viewer License'");
+        displayDoc("file:///usr/share/doc/mx-codecs/license.html");
     }
     this->show();
 }
 
 // Help button clicked
 void mxcodecs::on_buttonHelp_clicked() {
-    this->hide();
-
     QLocale locale;
     QString lang = locale.bcp47Name();
 
@@ -232,9 +241,6 @@ void mxcodecs::on_buttonHelp_clicked() {
     if (lang.startsWith("fr")) {
         url = "https://mxlinux.org/french-wiki/help-files/help-mx-codecs-installer";
     }
-
-    system("mx-viewer " + url.toUtf8());
-
-    this->show();
+    displayDoc(url);
 }
 
