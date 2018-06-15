@@ -50,7 +50,10 @@ TRANSLATIONS += translations/mx-codecs_am.ts \
                 translations/mx-codecs_de.ts \
                 translations/mx-codecs_el.ts \
                 translations/mx-codecs_es.ts \
+                translations/mx-codecs_fi.ts \
                 translations/mx-codecs_fr.ts \
+                translations/mx-codecs_hi.ts \
+                translations/mx-codecs_hr.ts \
                 translations/mx-codecs_hu.ts \
                 translations/mx-codecs_it.ts \
                 translations/mx-codecs_ja.ts \
