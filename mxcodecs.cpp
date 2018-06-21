@@ -30,6 +30,7 @@
 #include <stdio.h>
 
 #include <QDir>
+#include <QDebug>
 
 
 mxcodecs::mxcodecs(QWidget *parent) :
@@ -56,7 +57,7 @@ void mxcodecs::updateStatus(QString msg, int val) {
 void mxcodecs::displayDoc(QString url)
 {
     QString exec = "xdg-open";
-    QString user = getCmdOut("logname");
+    QString user = cmd.getOutput("logname");
     if (system("command -v mx-viewer") == 0) { // use mx-viewer if available
         exec = "mx-viewer";
     }
@@ -64,31 +65,9 @@ void mxcodecs::displayDoc(QString url)
     system(cmd.toUtf8());
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////
-// Util function taken from minstall, part of MEPIS, Copyright (C) 2003-2010 by Warren Woodford
-// Licensed under the Apache License, Version 2.0
-
-QString mxcodecs::getCmdOut(QString cmd) {
-  char line[260];
-  const char* ret = "";
-  FILE* fp = popen(cmd.toUtf8(), "r");
-  if (fp == NULL) {
-    return QString (ret);
-  }
-  int i;
-  if (fgets(line, sizeof line, fp) != NULL) {
-    i = strlen(line);
-    line[--i] = '\0';
-    ret = line;
-  }
-  pclose(fp);
-  return QString (ret);
-}
-
 // Get version of the program
 QString mxcodecs::getVersion(QString name) {
-    QString cmd = QString("dpkg -l %1 | awk 'END {print $3}'").arg(name);
-    return getCmdOut(cmd);
+    return cmd.getOutput("dpkg-query -f '${Version}' -W " + name);
 }
 
 /////////////////////////////////////////////////////////////////////////
@@ -106,7 +85,7 @@ void mxcodecs::on_buttonOk_clicked() {
 
 //download .deb codecs returns download path
 QString mxcodecs::downloadDebs() {
-  QString cmd, out, msg;
+  QString cmd_str, out, msg;
   QString path, arch;
   QString url = "http://deb-multimedia.org";
 
@@ -116,39 +95,39 @@ QString mxcodecs::downloadDebs() {
   qApp->processEvents();
 
   // create temp folder and set it current
-  path = getCmdOut("mktemp -d");
+  path = cmd.getOutput("mktemp -d");
   QDir dir(path);
   dir.mkdir(path);
   dir.setCurrent(path);
 
   // get arch info
-  arch = getCmdOut("dpkg --print-architecture");
+  arch = cmd.getOutput("dpkg --print-architecture");
 
-  cmd = "wget -qO- " + url + "/dists/stable/main/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep libdvdcss2 | awk \'{print $2}\'";
-  updateStatus(tr("<b>Running command...</b><p>") + cmd, 10);
-  out = getCmdOut(cmd);
+  cmd_str = "wget -qO- " + url + "/dists/stable/main/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep libdvdcss2 | awk \'{print $2}\'";
+  updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 10);
+  out = cmd.getOutput(cmd_str);
   if (out == "") {
     QMessageBox::critical(0, tr("Error"),
                           tr("Cannot connect to the download site"));
   } else {
-    cmd = "wget -q " + url + "/" + out;
-    updateStatus(tr("<b>Running command...</b><p>") + cmd, 20);
-    if (system(cmd.toUtf8()) != 0) {
+    cmd_str = "wget -q " + url + "/" + out;
+    updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 20);
+    if (cmd.run(cmd_str) != 0) {
       QMessageBox::critical(0, QString::null,
                             QString(tr("Error downloading %1")).arg(out));
     }
   }
 
-  cmd = "wget -qO- " + url + "/dists/stable/non-free/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep w.*codecs | awk \'{print $2}\'";
-  updateStatus(tr("<b>Running command...</b><p>") + cmd, 50);
-  out = getCmdOut(cmd);
+  cmd_str = "wget -qO- " + url + "/dists/stable/non-free/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep w.*codecs | awk \'{print $2}\'";
+  updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 50);
+  out = cmd.getOutput(cmd_str);
   if (out == "") {
     QMessageBox::critical(0, tr("Error"),
                           tr("Cannot connect to the download site"));
   } else {
-    cmd = "wget -q " + url + "/" + out;
-    updateStatus(tr("<b>Running command...</b><p>") + cmd, 70);
-    if (system(cmd.toUtf8()) != 0) {
+    cmd_str = "wget -q " + url + "/" + out;
+    updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 70);
+    if (cmd.run(cmd_str) != 0) {
       QMessageBox::critical(0, tr("Error"),
                             QString(tr("Error downloading %1")).arg(out));
     }
@@ -161,7 +140,7 @@ QString mxcodecs::downloadDebs() {
 
 //install downloaded .debs
 void mxcodecs::installDebs(QString path) {
-  QString cmd, out, msg;
+  QString cmd_str, out, msg;
   QDir dir(path);
   dir.setCurrent(path);
   bool error = false;
@@ -184,9 +163,9 @@ void mxcodecs::installDebs(QString path) {
 
   while (!fileList.isEmpty()) {
     QString file = fileList.takeFirst();
-    cmd = QString("dpkg -i %1").arg(file);
+    cmd_str = QString("dpkg -i %1").arg(file);
     updateStatus(tr("<b>Installing...</b><p>")+file, 100/(fileList.size()+1)-100/size);
-    if (system(cmd.toUtf8()) != 0) {
+    if (cmd.run(cmd_str) != 0) {
       QMessageBox::critical(0, QString::null,
                             QString(tr("Error installing %1")).arg(file));
       error = true;

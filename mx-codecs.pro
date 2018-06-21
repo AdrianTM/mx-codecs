@@ -74,3 +74,4 @@ TRANSLATIONS += translations/mx-codecs_am.ts \
 RESOURCES += \
     images.qrc
 
+unix:!macx: LIBS += -lcmd

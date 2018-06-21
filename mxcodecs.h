@@ -30,6 +30,8 @@
 #include <QComboBox>
 #include <QDir>
 
+#include "cmd.h"
+
 namespace Ui {
 class mxcodecs;
 }
@@ -57,6 +59,7 @@ public slots:
 
 private:
   Ui::mxcodecs *ui;
+  Cmd cmd;
 };
 
 #endif // MXCODECS_H
