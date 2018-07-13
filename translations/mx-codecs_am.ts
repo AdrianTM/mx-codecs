@@ -4,7 +4,17 @@
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="../main.cpp" line="55"/>
+        <location filename="../main.cpp" line="53"/>
+        <source>Unable to get exclusive lock</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="54"/>
+        <source>Another package management application (like Synaptic or apt-get), is already running. Please close that application first</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="67"/>
         <source>You must run this program as root.</source>
         <translation>ይህን ፕሮግራም እንደ root ማስኬድ አለብዎት</translation>
     </message>
@@ -33,7 +43,7 @@
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="97"/>
-        <location filename="../mxcodecs.cpp" line="211"/>
+        <location filename="../mxcodecs.cpp" line="212"/>
         <source>Cancel</source>
         <translation>መሰረዣ</translation>
     </message>
@@ -95,7 +105,7 @@
         <location filename="../mxcodecs.cpp" line="128"/>
         <location filename="../mxcodecs.cpp" line="134"/>
         <location filename="../mxcodecs.cpp" line="162"/>
-        <location filename="../mxcodecs.cpp" line="188"/>
+        <location filename="../mxcodecs.cpp" line="189"/>
         <source>Error</source>
         <translation>ስህተት</translation>
     </message>
@@ -132,67 +142,67 @@
         <translation>&lt;b&gt;በ መግጠም ላይ...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="173"/>
+        <location filename="../mxcodecs.cpp" line="174"/>
         <source>Error installing %1</source>
         <translation>ስህተት በ መግጠም ላይ %1</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="181"/>
+        <location filename="../mxcodecs.cpp" line="182"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
         <translation>&lt;b&gt;የ መግጠም ሂደት ጨርሷል&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="184"/>
+        <location filename="../mxcodecs.cpp" line="185"/>
         <source>Finished</source>
         <translation>ጨርሷል</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="185"/>
+        <location filename="../mxcodecs.cpp" line="186"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
         <translation>የ ኮድ ፋይሎች ተሳክቶ ወርደው እና ተገጥመዋል</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="189"/>
+        <location filename="../mxcodecs.cpp" line="190"/>
         <source>Process finished. Errors have occurred during the installation.</source>
         <translation>ሂደቱ ተፈጽሟል: በሚገጠም ጊዜ ስህተት ተፈጥሯል</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="204"/>
+        <location filename="../mxcodecs.cpp" line="205"/>
         <source>About MX Codecs</source>
         <translation>ስለ MX ኮዶች</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="205"/>
+        <location filename="../mxcodecs.cpp" line="206"/>
         <source>MX Codecs</source>
         <translation>MX ኮዶች</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="205"/>
+        <location filename="../mxcodecs.cpp" line="206"/>
         <source>Version: </source>
         <translation>እትም</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="207"/>
+        <location filename="../mxcodecs.cpp" line="208"/>
         <source>Simple codecs downloader for MX Linux</source>
         <translation>ለ MX ሊነክስ ቀላል ኮድ ማውረጃ</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="208"/>
+        <location filename="../mxcodecs.cpp" line="209"/>
         <source>Copyright (c) MX Linux</source>
         <translation>የ ቅጂ መብት (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="209"/>
+        <location filename="../mxcodecs.cpp" line="210"/>
         <source>License</source>
         <translation>ፍቃድ</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="210"/>
+        <location filename="../mxcodecs.cpp" line="211"/>
         <source>Changelog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="226"/>
+        <location filename="../mxcodecs.cpp" line="227"/>
         <source>&amp;Close</source>
         <translation type="unfinished"></translation>
     </message>

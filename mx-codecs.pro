@@ -38,9 +38,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mxcodecs.cpp
+        mxcodecs.cpp \
+    lockfile.cpp
 
-HEADERS  += mxcodecs.h
+HEADERS  += mxcodecs.h \
+    lockfile.h
 
 FORMS    += mxcodecs.ui
 

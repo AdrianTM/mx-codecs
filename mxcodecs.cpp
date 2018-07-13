@@ -37,7 +37,7 @@
 
 mxcodecs::mxcodecs(QWidget *parent) :
   QDialog(parent),
-  ui(new Ui::mxcodecs)
+  ui(new Ui::mxcodecs), lock_file("/var/lib/dpkg/lock")
 {
   ui->setupUi(this);
   if (ui->buttonOk->icon().isNull()) {
@@ -168,6 +168,7 @@ void mxcodecs::installDebs(QString path) {
     QString file = fileList.takeFirst();
     cmd_str = QString("dpkg -i %1").arg(file);
     updateStatus(tr("<b>Installing...</b><p>")+file, 100/(fileList.size()+1)-100/size);
+    lock_file.unlock();
     if (cmd.run(cmd_str) != 0) {
       QMessageBox::critical(0, QString::null,
                             QString(tr("Error installing %1")).arg(file));

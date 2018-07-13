@@ -1,0 +1,44 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Fri, 13 Jul 2018 12:00:11 -0400
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source amd64
+Version: 18.7
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (18.7) mx; urgency=medium
+ .
+   * don't run if dpkg is locked
+   * lock dpkg for other programs
+Checksums-Sha1:
+ 64966a4a13b84d0f85defac6d32c22378fe76bd2 1169 mx-codecs_18.7.dsc
+ ca2e96e24aa5b2e0a3f575d29cb04084fdd17763 47752 mx-codecs_18.7.tar.xz
+ d72a0761cf0317896de5cc232df4f949b4643c6b 67632 mx-codecs_18.7_amd64.deb
+Checksums-Sha256:
+ 18a2c3b255e29e660e17ff74bb27eebc759149b71c3a3296f1312e73e2b816cf 1169 mx-codecs_18.7.dsc
+ b2ed3e56d8c8490ea0ef4d191972eb6a9e5ec0072c9622e0cd72df1483a9b795 47752 mx-codecs_18.7.tar.xz
+ d2e268b14a68c71ea25de88e34a7205e04263c7928d28abda7e180781b1b8f1d 67632 mx-codecs_18.7_amd64.deb
+Files:
+ 3b1b970dfa267f13d99b91b4a6bd5f0e 1169 system optional mx-codecs_18.7.dsc
+ 2e5cb8750fc1897ec53386a9c7cc286f 47752 system optional mx-codecs_18.7.tar.xz
+ b33d8519dd6ecf3f99c028064b51c2bf 67632 system optional mx-codecs_18.7_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAltIzx0THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumHLeCACXY8kNLmp7gZxPq42fd9dzO2UXlngo
+Kxk5blZWhZejeIjhCJ7YX+BYwSn0yIiqoTNd/kJDn+b24E4ry7hiGeMZme9cGBdh
+Mw+C9UI+ISJQP8AyEoOwbrA3eJi0fhu/TzE9wATPBrSiDWvAmmlkzHZo3wyYO2Px
+PvnT7dM/bBkpXy4CC/9j9gFpv66Pr/hlJPDLu19NMHAZgbxryUQKRdNsWT3R5otz
+MxOkv0eLNAW6jPOW6J/iWZ8vSG4zfVP5wKDTmCUxvAb/rwLXp76pNL+5aj+Bk0ke
+BvnDUDAjLRqHwIkxJOCql/X+D70P58gio4/aK0Tjdt8K+4vM8ceIs5EQ
+=frH2
+-----END PGP SIGNATURE-----

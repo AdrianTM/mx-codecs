@@ -31,6 +31,7 @@
 #include <QDir>
 
 #include "cmd.h"
+#include "lockfile.h"
 
 namespace Ui {
 class mxcodecs;
@@ -60,6 +61,7 @@ public slots:
 private:
   Ui::mxcodecs *ui;
   Cmd cmd;
+  LockFile lock_file;
 };
 
 #endif // MXCODECS_H

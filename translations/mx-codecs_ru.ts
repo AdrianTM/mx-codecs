@@ -4,7 +4,17 @@
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="../main.cpp" line="55"/>
+        <location filename="../main.cpp" line="53"/>
+        <source>Unable to get exclusive lock</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="54"/>
+        <source>Another package management application (like Synaptic or apt-get), is already running. Please close that application first</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="67"/>
         <source>You must run this program as root.</source>
         <translation>Вы должны запустить программу от имени суперпользователя.</translation>
     </message>
@@ -33,7 +43,7 @@
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="97"/>
-        <location filename="../mxcodecs.cpp" line="211"/>
+        <location filename="../mxcodecs.cpp" line="212"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
@@ -95,7 +105,7 @@
         <location filename="../mxcodecs.cpp" line="128"/>
         <location filename="../mxcodecs.cpp" line="134"/>
         <location filename="../mxcodecs.cpp" line="162"/>
-        <location filename="../mxcodecs.cpp" line="188"/>
+        <location filename="../mxcodecs.cpp" line="189"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
@@ -132,67 +142,67 @@
         <translation>&lt;b&gt;Установка...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="173"/>
+        <location filename="../mxcodecs.cpp" line="174"/>
         <source>Error installing %1</source>
         <translation>Ошибка установки %1</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="181"/>
+        <location filename="../mxcodecs.cpp" line="182"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
         <translation>&lt;b&gt;Процесс установки завершен&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="184"/>
+        <location filename="../mxcodecs.cpp" line="185"/>
         <source>Finished</source>
         <translation>Завершено</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="185"/>
+        <location filename="../mxcodecs.cpp" line="186"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
         <translation>Файлы кодеков были загружены и установлены успешно.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="189"/>
+        <location filename="../mxcodecs.cpp" line="190"/>
         <source>Process finished. Errors have occurred during the installation.</source>
         <translation>Процесс завершен. В процессе установки произошли ошибки.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="204"/>
+        <location filename="../mxcodecs.cpp" line="205"/>
         <source>About MX Codecs</source>
         <translation>О программе MX Кодеки</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="205"/>
+        <location filename="../mxcodecs.cpp" line="206"/>
         <source>MX Codecs</source>
         <translation>MX Codecs</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="205"/>
+        <location filename="../mxcodecs.cpp" line="206"/>
         <source>Version: </source>
         <translation>Версия:</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="207"/>
+        <location filename="../mxcodecs.cpp" line="208"/>
         <source>Simple codecs downloader for MX Linux</source>
         <translation>Простой загрузчик кодеков для MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="208"/>
+        <location filename="../mxcodecs.cpp" line="209"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Авторское право (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="209"/>
+        <location filename="../mxcodecs.cpp" line="210"/>
         <source>License</source>
         <translation>Лицензия</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="210"/>
+        <location filename="../mxcodecs.cpp" line="211"/>
         <source>Changelog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="226"/>
+        <location filename="../mxcodecs.cpp" line="227"/>
         <source>&amp;Close</source>
         <translation type="unfinished"></translation>
     </message>

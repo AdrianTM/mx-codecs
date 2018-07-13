@@ -28,6 +28,8 @@
 #include <QLocale>
 #include <unistd.h>
 
+#include "lockfile.h"
+
 
 int main(int argc, char *argv[])
 {
@@ -44,11 +46,21 @@ int main(int argc, char *argv[])
 
 
   if (getuid() == 0) {
-    mxcodecs w;
-    w.show();
+      // Don't start app if Synaptic/apt-get is running, lock dpkg otherwise while the program runs
+      LockFile lock_file("/var/lib/dpkg/lock");
+      if (lock_file.isLocked()) {
+          QApplication::beep();
+          QMessageBox::critical(0, QApplication::tr("Unable to get exclusive lock"),
+                                QApplication::tr("Another package management application (like Synaptic or apt-get), "\
+                                                 "is already running. Please close that application first"));
+          return 1;
+      } else {
+          lock_file.lock();
+      }
+      mxcodecs w;
+      w.show();
 
-    return a.exec();
-
+      return a.exec();
   } else {
     QApplication::beep();
     QMessageBox::critical(0, QString::null,
