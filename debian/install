@@ -1,5 +1,6 @@
 mx-codecs		 usr/sbin
 mx-codecs.desktop	 usr/share/applications
 mx-codecs.png            usr/share/pixmaps
+mx-codecs.png            usr/share/icons/hicolor/48x48/apps
 translations/*.qm	 usr/share/mx-codecs/locale
 license.html		 usr/share/doc/mx-codecs

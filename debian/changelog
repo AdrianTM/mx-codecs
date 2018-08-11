@@ -1,6 +1,7 @@
 mx-codecs (18.8) mx; urgency=medium
 
   * rm gksu dependency
+  * fix icon other themes
 
  -- Adrian <adrian@mxlinux.org>  Sat, 11 Aug 2018 13:34:37 -0400
 
