@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Sun, 14 Oct 2018 18:35:20 -0400
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source amd64
+Version: 18.10
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (18.10) mx; urgency=medium
+ .
+   * updated translations
+Checksums-Sha1:
+ 3a8cd6d63addc8453bc962ba121f47387b9b4f6a 1173 mx-codecs_18.10.dsc
+ ad6dc218f3670cfa99ac0eff4a42fc191e841289 49736 mx-codecs_18.10.tar.xz
+ 1b76959ee53a6247513ed017277acd326aedb8fe 70234 mx-codecs_18.10_amd64.deb
+Checksums-Sha256:
+ 41f4652b4e3171b3778681ab2372d8ff6bf1b836d08a783d8741ed6d5eef2409 1173 mx-codecs_18.10.dsc
+ 4f50cf6f926429fbdca9257682dc488db876ad948ac5b9af1483f76ee5cc02ce 49736 mx-codecs_18.10.tar.xz
+ 88ed5816e28dcb05bf04daf751d8aeb2f7912773f88808a4914f13938eab8ba6 70234 mx-codecs_18.10_amd64.deb
+Files:
+ 5ffe69d158ce438b6b346eae473bb99c 1173 system optional mx-codecs_18.10.dsc
+ 4280a817e9712993bd2499d9b1ac75e2 49736 system optional mx-codecs_18.10.tar.xz
+ d75ef193fc80625bdd74ce6568864b81 70234 system optional mx-codecs_18.10_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlvDxZgTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumPXwCACTrEQ9EOlPpVskToGkJuskRdmTHY2C
+zBrOO+7KFYd7oZnY/pRqaP9fKfaAa1ZM2Amdvn3Lz6v6GCIqMuCJjvS1JPO18EFR
+tq5sMTSOVulirOytk23UVmwvVKW0LaaqcqJrUTRQR+2OkVsyJ522Cr+5g465NREX
+/wezRTLLpJScM7IJ9DPHQ4jHYsQX71N8g9jXV1a0f8WftCUVfGBKZQMcI09jE8uL
+LpyL8XHY4Q/QQ65rgu/2aVAUVu5G9I567Fbb2TYWoJaQpTFlIvBOzT/EAiEupcIb
+XOPT/N5t0JKp/iWM9fVqLs5SIiCD1n9OA7KSL6Xgdc5VPwppwzhWy+PZ
+=EfXA
+-----END PGP SIGNATURE-----
