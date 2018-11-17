@@ -15,8 +15,8 @@ Changes:
  .
    * add libtxc-dxtn0 from deb-multi to install routine
 Checksums-Sha1:
- c831b329d1739e3d928931d9bc64f947ce0016a5 71908 mx-codecs_18.11_i386.deb
+ c6b51e17784c027efa4bc64159f3517262d509f4 74220 mx-codecs_18.11_i386.deb
 Checksums-Sha256:
- fcdf4a29817e7aa4c6f71bb2905aa4eddc69db46cd9d20e2af33a675013fa91d 71908 mx-codecs_18.11_i386.deb
+ 6dbb5b71dc69e4d36608cf16a0295205441fba81943f2534237a3f6fc28337ff 74220 mx-codecs_18.11_i386.deb
 Files:
- 649bb28ba53256c8f0acdeeb8282fb43 71908 system optional mx-codecs_18.11_i386.deb
+ 130939ee6a5956c6417a5834f7376324 74220 system optional mx-codecs_18.11_i386.deb

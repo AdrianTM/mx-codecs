@@ -15,11 +15,11 @@ Changes:
  .
    * add libtxc-dxtn0 from deb-multi to install routine
 Checksums-Sha1:
- 2390d3f0dc3daaeb5070e2c81141634c9658c7f9 611 mx-codecs_18.11.dsc
- 7ebf62b1ccc81c246ac37d098dabcb512839214b 51628 mx-codecs_18.11.tar.xz
+ d39bdc1dc734cf395de5ed83ba453a1b1024961a 611 mx-codecs_18.11.dsc
+ aee4383326347d11c8cafbcc845f003a9f69db7c 51748 mx-codecs_18.11.tar.xz
 Checksums-Sha256:
- 28d6bc1832e8745069c3fdadc1ada13a6137de6de44e16d935987ad3ad6c6644 611 mx-codecs_18.11.dsc
- a7b9b825319c9f6d21660784e588305618252b1af57a5818391f0e7bcb9c59cf 51628 mx-codecs_18.11.tar.xz
+ fb0b8b29ef477ce2dcd22fdafd0017e37911857432ec94e352ad6c32bb751545 611 mx-codecs_18.11.dsc
+ 58c73c2dbeb9a521a0e0dc031cad93290bda63aa380e1a275d9b47882cdc2658 51748 mx-codecs_18.11.tar.xz
 Files:
- 130375b8b9434bd2ad8b654bebb40f58 611 system optional mx-codecs_18.11.dsc
- 44f55fbcd44b0afc89ce7be976441a40 51628 system optional mx-codecs_18.11.tar.xz
+ ca2018da3c82996b7a96ef280ddc4220 611 system optional mx-codecs_18.11.dsc
+ 7bf9e2ff71e9404646d26ee311bc36c0 51748 system optional mx-codecs_18.11.tar.xz

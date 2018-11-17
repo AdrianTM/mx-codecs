@@ -122,14 +122,14 @@ QString mxcodecs::downloadDebs() {
   }
 
   cmd_str = "wget -qO- " + url + "/dists/stable/non-free/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep w.*codecs | awk \'{print $2}\'";
-  updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 50);
+  updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 30);
   out = cmd.getOutput(cmd_str);
   if (out == "") {
     QMessageBox::critical(0, tr("Error"),
                           tr("Cannot connect to the download site"));
   } else {
     cmd_str = "wget -q " + url + "/" + out;
-    updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 70);
+    updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 40);
     if (cmd.run(cmd_str) != 0) {
       QMessageBox::critical(0, tr("Error"),
                             QString(tr("Error downloading %1")).arg(out));
@@ -144,7 +144,7 @@ QString mxcodecs::downloadDebs() {
                           tr("Cannot connect to the download site"));
   } else {
     cmd_str = "wget -q " + url + "/" + out;
-    updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 70);
+    updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 60);
     if (cmd.run(cmd_str) != 0) {
       QMessageBox::critical(0, tr("Error"),
                             QString(tr("Error downloading %1")).arg(out));
@@ -153,14 +153,14 @@ QString mxcodecs::downloadDebs() {
     //if 64 bit, also install 32 bit libtxc-dxtn0 package
   if (arch == "amd64") {
       cmd_str = "wget -qO- " + url + "/dists/stable/main/binary-i386/Packages.gz | zgrep ^Filename | grep libtxc-dxtn0 | awk \'{print $2}\'";
-      updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 50);
+      updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 70);
       out = cmd.getOutput(cmd_str);
       if (out == "") {
         QMessageBox::critical(0, tr("Error"),
                               tr("Cannot connect to the download site"));
       } else {
         cmd_str = "wget -q " + url + "/" + out;
-        updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 70);
+        updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 75);
         if (cmd.run(cmd_str) != 0) {
           QMessageBox::critical(0, tr("Error"),
                                 QString(tr("Error downloading %1")).arg(out));
@@ -168,7 +168,7 @@ QString mxcodecs::downloadDebs() {
       }
   }
 
-  updateStatus(tr("<b>Download Finished.</b>"), 100);
+  updateStatus(tr("<b>Download Finished.</b>"), 85);
 
   return path;
 }
@@ -196,18 +196,43 @@ void mxcodecs::installDebs(QString path) {
     qApp->exit(1);
   }
 
-  while (!fileList.isEmpty()) {
-    QString file = fileList.takeFirst();
-    cmd_str = QString("dpkg -i %1").arg(file);
-    updateStatus(tr("<b>Installing...</b><p>")+file, 100/(fileList.size()+1)-100/size);
-    lock_file.unlock();
-    if (cmd.run(cmd_str) != 0) {
+  qDebug() << "filelist " << fileList;
+
+  QString file;
+
+  QString item;
+
+  foreach (item, fileList) {
+      file = "./" + fileList.takeFirst() + " " + file;
+  }
+
+  qDebug() << "file " << file;
+  cmd_str = QString("apt-get -y install %1").arg(file);
+  updateStatus(tr("<b>Installing...</b><p>")+file, 95);
+  lock_file.unlock();
+  if (cmd.run(cmd_str) != 0) {
       QMessageBox::critical(0, QString::null,
                             QString(tr("Error installing %1")).arg(file));
       error = true;
-    }
-    dir.remove(file);
   }
+
+  while (!fileList.isEmpty()) {
+      file = fileList.takeFirst();
+      dir.remove(file);
+  }
+
+//  while (!fileList.isEmpty()) {
+//    QString file = fileList.takeFirst();
+//    cmd_str = QString("dpkg -i %1").arg(file);
+//    updateStatus(tr("<b>Installing...</b><p>")+file, 100/(fileList.size()+1)-100/size);
+//    lock_file.unlock();
+//    if (cmd.run(cmd_str) != 0) {
+//      QMessageBox::critical(0, QString::null,
+//                            QString(tr("Error installing %1")).arg(file));
+//      error = true;
+//    }
+//    dir.remove(file);
+//  }
 
   dir.rmdir(path);
   ui->groupBox->setTitle("");

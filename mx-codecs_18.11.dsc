@@ -10,8 +10,8 @@ Build-Depends: qt5-qmake, qt5-default, qttools5-dev-tools, debhelper (>= 9), lib
 Package-List:
  mx-codecs deb system optional arch=any
 Checksums-Sha1:
- 7ebf62b1ccc81c246ac37d098dabcb512839214b 51628 mx-codecs_18.11.tar.xz
+ aee4383326347d11c8cafbcc845f003a9f69db7c 51748 mx-codecs_18.11.tar.xz
 Checksums-Sha256:
- a7b9b825319c9f6d21660784e588305618252b1af57a5818391f0e7bcb9c59cf 51628 mx-codecs_18.11.tar.xz
+ 58c73c2dbeb9a521a0e0dc031cad93290bda63aa380e1a275d9b47882cdc2658 51748 mx-codecs_18.11.tar.xz
 Files:
- 44f55fbcd44b0afc89ce7be976441a40 51628 mx-codecs_18.11.tar.xz
+ 7bf9e2ff71e9404646d26ee311bc36c0 51748 mx-codecs_18.11.tar.xz
