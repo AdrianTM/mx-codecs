@@ -136,6 +136,38 @@ QString mxcodecs::downloadDebs() {
     }
   }
 
+  cmd_str = "wget -qO- " + url + "/dists/stable/main/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep libtxc-dxtn0 | awk \'{print $2}\'";
+  updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 50);
+  out = cmd.getOutput(cmd_str);
+  if (out == "") {
+    QMessageBox::critical(0, tr("Error"),
+                          tr("Cannot connect to the download site"));
+  } else {
+    cmd_str = "wget -q " + url + "/" + out;
+    updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 70);
+    if (cmd.run(cmd_str) != 0) {
+      QMessageBox::critical(0, tr("Error"),
+                            QString(tr("Error downloading %1")).arg(out));
+    }
+  }
+    //if 64 bit, also install 32 bit libtxc-dxtn0 package
+  if (arch == "amd64") {
+      cmd_str = "wget -qO- " + url + "/dists/stable/main/binary-i386/Packages.gz | zgrep ^Filename | grep libtxc-dxtn0 | awk \'{print $2}\'";
+      updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 50);
+      out = cmd.getOutput(cmd_str);
+      if (out == "") {
+        QMessageBox::critical(0, tr("Error"),
+                              tr("Cannot connect to the download site"));
+      } else {
+        cmd_str = "wget -q " + url + "/" + out;
+        updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 70);
+        if (cmd.run(cmd_str) != 0) {
+          QMessageBox::critical(0, tr("Error"),
+                                QString(tr("Error downloading %1")).arg(out));
+        }
+      }
+  }
+
   updateStatus(tr("<b>Download Finished.</b>"), 100);
 
   return path;
