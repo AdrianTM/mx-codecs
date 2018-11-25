@@ -49,6 +49,7 @@ FORMS    += mxcodecs.ui
 TRANSLATIONS += translations/mx-codecs_am.ts \
                 translations/mx-codecs_ca.ts \
                 translations/mx-codecs_cs.ts \
+                translations/mx-codecs_da.ts \
                 translations/mx-codecs_de.ts \
                 translations/mx-codecs_el.ts \
                 translations/mx-codecs_es.ts \
@@ -57,6 +58,7 @@ TRANSLATIONS += translations/mx-codecs_am.ts \
                 translations/mx-codecs_hi.ts \
                 translations/mx-codecs_hr.ts \
                 translations/mx-codecs_hu.ts \
+                translations/mx-codecs_is.ts \
                 translations/mx-codecs_it.ts \
                 translations/mx-codecs_ja.ts \
                 translations/mx-codecs_kk.ts \
@@ -68,6 +70,7 @@ TRANSLATIONS += translations/mx-codecs_am.ts \
                 translations/mx-codecs_ro.ts \
                 translations/mx-codecs_ru.ts \
                 translations/mx-codecs_sk.ts \
+                translations/mx-codecs_sq.ts \
                 translations/mx-codecs_sv.ts \
                 translations/mx-codecs_tr.ts \
                 translations/mx-codecs_uk.ts \
