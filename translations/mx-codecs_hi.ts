@@ -43,7 +43,7 @@
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="97"/>
-        <location filename="../mxcodecs.cpp" line="212"/>
+        <location filename="../mxcodecs.cpp" line="269"/>
         <source>Cancel</source>
         <translation>रद्द</translation>
     </message>
@@ -97,6 +97,10 @@
         <location filename="../mxcodecs.cpp" line="117"/>
         <location filename="../mxcodecs.cpp" line="125"/>
         <location filename="../mxcodecs.cpp" line="132"/>
+        <location filename="../mxcodecs.cpp" line="140"/>
+        <location filename="../mxcodecs.cpp" line="147"/>
+        <location filename="../mxcodecs.cpp" line="156"/>
+        <location filename="../mxcodecs.cpp" line="163"/>
         <source>&lt;b&gt;Running command...&lt;/b&gt;&lt;p&gt;</source>
         <translation>&lt;b&gt;कमांड निष्पादित की जा रही है...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
@@ -104,105 +108,113 @@
         <location filename="../mxcodecs.cpp" line="113"/>
         <location filename="../mxcodecs.cpp" line="128"/>
         <location filename="../mxcodecs.cpp" line="134"/>
-        <location filename="../mxcodecs.cpp" line="162"/>
-        <location filename="../mxcodecs.cpp" line="189"/>
+        <location filename="../mxcodecs.cpp" line="143"/>
+        <location filename="../mxcodecs.cpp" line="149"/>
+        <location filename="../mxcodecs.cpp" line="159"/>
+        <location filename="../mxcodecs.cpp" line="165"/>
+        <location filename="../mxcodecs.cpp" line="194"/>
+        <location filename="../mxcodecs.cpp" line="246"/>
         <source>Error</source>
         <translation>त्रुटि</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="114"/>
         <location filename="../mxcodecs.cpp" line="129"/>
+        <location filename="../mxcodecs.cpp" line="144"/>
+        <location filename="../mxcodecs.cpp" line="160"/>
         <source>Cannot connect to the download site</source>
         <translation>डाउनलोड साइट से जुड़ा नहीं जा सका</translation>
     </message>
     <message>
         <location filename="../mxcodecs.cpp" line="120"/>
         <location filename="../mxcodecs.cpp" line="135"/>
+        <location filename="../mxcodecs.cpp" line="150"/>
+        <location filename="../mxcodecs.cpp" line="166"/>
         <source>Error downloading %1</source>
         <translation>%1 डाउनलोड करने में त्रुटि</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="139"/>
+        <location filename="../mxcodecs.cpp" line="171"/>
         <source>&lt;b&gt;Download Finished.&lt;/b&gt;</source>
         <translation>&lt;b&gt;डाउनलोड पूर्ण हुआ।&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="158"/>
+        <location filename="../mxcodecs.cpp" line="190"/>
         <source>Installing downloaded files</source>
         <translation>डाउनलोड की गई फ़ाइलें इंस्टॉल हो रही हैं</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="163"/>
+        <location filename="../mxcodecs.cpp" line="195"/>
         <source>No downloaded *.debs files found.</source>
         <translation>डाउनलोड की गई कोई *.deb फ़ाइलें नहीं मिली।</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="170"/>
+        <location filename="../mxcodecs.cpp" line="211"/>
         <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
         <translation>&lt;b&gt;इंस्टॉल हो रहा है...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="174"/>
+        <location filename="../mxcodecs.cpp" line="215"/>
         <source>Error installing %1</source>
         <translation>%1 इंस्टॉल करने में त्रुटि</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="182"/>
+        <location filename="../mxcodecs.cpp" line="239"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
         <translation>&lt;b&gt;इंस्टॉल प्रक्रिया पूर्ण हुई&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="185"/>
+        <location filename="../mxcodecs.cpp" line="242"/>
         <source>Finished</source>
         <translation>पूर्ण हुआ</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="186"/>
+        <location filename="../mxcodecs.cpp" line="243"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
         <translation>कोडेक्स फ़ाइलें डाउनलोड कर सफलतापूर्वक डाउनलोड हो गई हैं।</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="190"/>
+        <location filename="../mxcodecs.cpp" line="247"/>
         <source>Process finished. Errors have occurred during the installation.</source>
         <translation>प्रक्रिया पूर्ण हुई। इंस्टॉल के दौरान त्रुटियाँ हुई हैं।</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="205"/>
+        <location filename="../mxcodecs.cpp" line="262"/>
         <source>About MX Codecs</source>
         <translation>MX कोडेक्स के बारे में</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="206"/>
+        <location filename="../mxcodecs.cpp" line="263"/>
         <source>MX Codecs</source>
         <translation>MX कोडेक्स</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="206"/>
+        <location filename="../mxcodecs.cpp" line="263"/>
         <source>Version: </source>
         <translation>संस्करण :</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="208"/>
+        <location filename="../mxcodecs.cpp" line="265"/>
         <source>Simple codecs downloader for MX Linux</source>
         <translation>MX लिनक्स हेतु सरल कोडेक्स डाउनलोड साधन</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="209"/>
+        <location filename="../mxcodecs.cpp" line="266"/>
         <source>Copyright (c) MX Linux</source>
         <translation>प्रतिलिप्याधिकार (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="210"/>
+        <location filename="../mxcodecs.cpp" line="267"/>
         <source>License</source>
         <translation>लाइसेंस</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="211"/>
+        <location filename="../mxcodecs.cpp" line="268"/>
         <source>Changelog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="227"/>
+        <location filename="../mxcodecs.cpp" line="284"/>
         <source>&amp;Close</source>
         <translation type="unfinished"></translation>
     </message>

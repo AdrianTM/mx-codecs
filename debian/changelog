@@ -1,3 +1,9 @@
+mx-codecs (18.11.1) mx; urgency=medium
+
+  * updated translations
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 30 Nov 2018 12:01:03 -0500
+
 mx-codecs (18.11) mx; urgency=medium
 
   * add libtxc-dxtn0 from deb-multi to install routine 

@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Fri, 30 Nov 2018 12:01:03 -0500
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source amd64
+Version: 18.11.1
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (18.11.1) mx; urgency=medium
+ .
+   * updated translations
+Checksums-Sha1:
+ 93475e89f778922c9d2c7eef7b0a8e10a6294e87 1181 mx-codecs_18.11.1.dsc
+ b126bc198d8954292f104d8f44db31a7a2a9af0d 51076 mx-codecs_18.11.1.tar.xz
+ 782d545069fb6c38de0c8236bb39c182b19bb363 11198 mx-codecs_18.11.1_amd64.buildinfo
+ 5bc2113e1097df1c6cbb68fdc8a4b4cbe41929cf 74894 mx-codecs_18.11.1_amd64.deb
+Checksums-Sha256:
+ 9a9519c9323e8ee942801193046eefb08fabb68a0b099cae828e4f37a80c8c4a 1181 mx-codecs_18.11.1.dsc
+ a0991e27453b0febe1dcbe112a24fb62176c0619db23b58a36e45a0b870899b4 51076 mx-codecs_18.11.1.tar.xz
+ d4c5b9bc8b47ea8949c9a54da0a9712df12c92871e5a93619450f3bb9bbf3de4 11198 mx-codecs_18.11.1_amd64.buildinfo
+ a645dc0c4fa210421caf4961070dfe804011f73338f80fb876a2ae5a538ae7fd 74894 mx-codecs_18.11.1_amd64.deb
+Files:
+ f65b5438bb1b2dc0c1651ee67086491e 1181 system optional mx-codecs_18.11.1.dsc
+ 256cdb3a92a5d8c693914534f6637526 51076 system optional mx-codecs_18.11.1.tar.xz
+ 7b4c5d5a77d71330e7ea944b48f3f0ae 11198 system optional mx-codecs_18.11.1_amd64.buildinfo
+ 9ccd70c09ac0e497b3a1e95ef5258338 74894 system optional mx-codecs_18.11.1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlwBbZkTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumKWuB/0S4Sfs/8YaE3ky+uHO7UfuMBRD/3GU
+06lhWZnue3jYu/eBm3Qj9Mgh0kUrP8pGLMv3jezhTqV/r3nmAMlb3v7Nvcv6wgz1
+V3DwpLXbF54umV6YGOMigRUivWNnvZoJYKHPCPMtsvx2M9OIbyvpBGRdntaNC1nq
+ZMkzCuOx9E18JgxLuAXzFiVsFQwI/7gQ84IrpegT1wx/uI2d6qLNvKSQ0dgg5Xws
+9CjGCCt8gPj6VL2gHukb95OESDcQvcBJu6z7xhSXV12W7GMWoQRGAw/S19oKeblL
+w3qZ2T5FCya6DCr5mse4zQAyaz9BkMSJikA/8FSHWO51tlIhLJFjSIG0
+=uHwy
+-----END PGP SIGNATURE-----
