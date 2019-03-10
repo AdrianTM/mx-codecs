@@ -43,7 +43,7 @@
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="97"/>
-        <location filename="../mxcodecs.cpp" line="269"/>
+        <location filename="../mxcodecs.cpp" line="266"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
@@ -113,7 +113,7 @@
         <location filename="../mxcodecs.cpp" line="159"/>
         <location filename="../mxcodecs.cpp" line="165"/>
         <location filename="../mxcodecs.cpp" line="194"/>
-        <location filename="../mxcodecs.cpp" line="246"/>
+        <location filename="../mxcodecs.cpp" line="243"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
@@ -149,72 +149,72 @@
         <translation>找不到下載的 *.debs 檔。</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="211"/>
+        <location filename="../mxcodecs.cpp" line="208"/>
         <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
         <translation>&lt;b&gt;正在安裝……&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="215"/>
+        <location filename="../mxcodecs.cpp" line="212"/>
         <source>Error installing %1</source>
         <translation>安裝 %1 時發生錯誤</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="239"/>
+        <location filename="../mxcodecs.cpp" line="236"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
         <translation>&lt;b&gt;安裝程序已完成&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="242"/>
+        <location filename="../mxcodecs.cpp" line="239"/>
         <source>Finished</source>
         <translation>完成</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="243"/>
+        <location filename="../mxcodecs.cpp" line="240"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
         <translation>編碼已順利下載並安裝。</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="247"/>
+        <location filename="../mxcodecs.cpp" line="244"/>
         <source>Process finished. Errors have occurred during the installation.</source>
         <translation>程序結束。安裝時發生錯誤。</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="262"/>
+        <location filename="../mxcodecs.cpp" line="259"/>
         <source>About MX Codecs</source>
         <translation>關於 MX 影音編碼</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="263"/>
+        <location filename="../mxcodecs.cpp" line="260"/>
         <source>MX Codecs</source>
         <translation>MX 影音編碼</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="263"/>
+        <location filename="../mxcodecs.cpp" line="260"/>
         <source>Version: </source>
         <translation>版本：</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="265"/>
+        <location filename="../mxcodecs.cpp" line="262"/>
         <source>Simple codecs downloader for MX Linux</source>
         <translation>MX Linux 的簡易編碼下載工具</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="266"/>
+        <location filename="../mxcodecs.cpp" line="263"/>
         <source>Copyright (c) MX Linux</source>
         <translation>版權所有 (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="267"/>
+        <location filename="../mxcodecs.cpp" line="264"/>
         <source>License</source>
         <translation>授權條款</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="268"/>
+        <location filename="../mxcodecs.cpp" line="265"/>
         <source>Changelog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="284"/>
+        <location filename="../mxcodecs.cpp" line="281"/>
         <source>&amp;Close</source>
         <translation>關閉（&amp;C）</translation>
     </message>

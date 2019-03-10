@@ -43,7 +43,7 @@
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="97"/>
-        <location filename="../mxcodecs.cpp" line="269"/>
+        <location filename="../mxcodecs.cpp" line="266"/>
         <source>Cancel</source>
         <translation>Atsisakyti</translation>
     </message>
@@ -113,7 +113,7 @@
         <location filename="../mxcodecs.cpp" line="159"/>
         <location filename="../mxcodecs.cpp" line="165"/>
         <location filename="../mxcodecs.cpp" line="194"/>
-        <location filename="../mxcodecs.cpp" line="246"/>
+        <location filename="../mxcodecs.cpp" line="243"/>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
@@ -149,72 +149,72 @@
         <translation>Nerasta jokių atsisiųstų *.deb failų.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="211"/>
+        <location filename="../mxcodecs.cpp" line="208"/>
         <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
         <translation>&lt;b&gt;Įdiegiama...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="215"/>
+        <location filename="../mxcodecs.cpp" line="212"/>
         <source>Error installing %1</source>
         <translation>Klaida, įdiegiant %1</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="239"/>
+        <location filename="../mxcodecs.cpp" line="236"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
         <translation>&lt;b&gt;Įdiegimo procesas užbaigtas&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="242"/>
+        <location filename="../mxcodecs.cpp" line="239"/>
         <source>Finished</source>
         <translation>Užbaigta</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="243"/>
+        <location filename="../mxcodecs.cpp" line="240"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
         <translation>Kodekų failai buvo sėkmingai atsisiųsti ir įdiegti.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="247"/>
+        <location filename="../mxcodecs.cpp" line="244"/>
         <source>Process finished. Errors have occurred during the installation.</source>
         <translation>Procesas užbaigtas. Įdiegimo metu, atsirado klaidų.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="262"/>
+        <location filename="../mxcodecs.cpp" line="259"/>
         <source>About MX Codecs</source>
         <translation>Apie MX kodekai</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="263"/>
+        <location filename="../mxcodecs.cpp" line="260"/>
         <source>MX Codecs</source>
         <translation>MX kodekai</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="263"/>
+        <location filename="../mxcodecs.cpp" line="260"/>
         <source>Version: </source>
         <translation>Versija: </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="265"/>
+        <location filename="../mxcodecs.cpp" line="262"/>
         <source>Simple codecs downloader for MX Linux</source>
         <translation>Paprasta kodekų atsiuntimo programa, skirta MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="266"/>
+        <location filename="../mxcodecs.cpp" line="263"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Autorių teisės (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="267"/>
+        <location filename="../mxcodecs.cpp" line="264"/>
         <source>License</source>
         <translation>Licencija</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="268"/>
+        <location filename="../mxcodecs.cpp" line="265"/>
         <source>Changelog</source>
         <translation>Keitinių žurnalas</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="284"/>
+        <location filename="../mxcodecs.cpp" line="281"/>
         <source>&amp;Close</source>
         <translation>&amp;Užverti</translation>
     </message>

@@ -43,7 +43,7 @@
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="97"/>
-        <location filename="../mxcodecs.cpp" line="269"/>
+        <location filename="../mxcodecs.cpp" line="266"/>
         <source>Cancel</source>
         <translation>Cancel·la</translation>
     </message>
@@ -113,7 +113,7 @@
         <location filename="../mxcodecs.cpp" line="159"/>
         <location filename="../mxcodecs.cpp" line="165"/>
         <location filename="../mxcodecs.cpp" line="194"/>
-        <location filename="../mxcodecs.cpp" line="246"/>
+        <location filename="../mxcodecs.cpp" line="243"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
@@ -149,72 +149,72 @@
         <translation>No s&apos;han trobat fitxers *.deb descarregats</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="211"/>
+        <location filename="../mxcodecs.cpp" line="208"/>
         <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
         <translation>&lt;b&gt;Instal·lant...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="215"/>
+        <location filename="../mxcodecs.cpp" line="212"/>
         <source>Error installing %1</source>
         <translation>Error instal·lant %1</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="239"/>
+        <location filename="../mxcodecs.cpp" line="236"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
         <translation>&lt;b&gt;El procés d&apos;instal·lació ha finalitzat&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="242"/>
+        <location filename="../mxcodecs.cpp" line="239"/>
         <source>Finished</source>
         <translation>Finalitzat</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="243"/>
+        <location filename="../mxcodecs.cpp" line="240"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
         <translation>Els còdecs s&apos;han descarregat i instal·lat amb èxit.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="247"/>
+        <location filename="../mxcodecs.cpp" line="244"/>
         <source>Process finished. Errors have occurred during the installation.</source>
         <translation>Procés finalitzat. S&apos;han produït errors durant la instal·lació.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="262"/>
+        <location filename="../mxcodecs.cpp" line="259"/>
         <source>About MX Codecs</source>
         <translation>Quant a MX Codecs </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="263"/>
+        <location filename="../mxcodecs.cpp" line="260"/>
         <source>MX Codecs</source>
         <translation>MX Codecs </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="263"/>
+        <location filename="../mxcodecs.cpp" line="260"/>
         <source>Version: </source>
         <translation>Versió: </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="265"/>
+        <location filename="../mxcodecs.cpp" line="262"/>
         <source>Simple codecs downloader for MX Linux</source>
         <translation>Descarregador de còdecs senzill per a MX Linux </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="266"/>
+        <location filename="../mxcodecs.cpp" line="263"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux </translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="267"/>
+        <location filename="../mxcodecs.cpp" line="264"/>
         <source>License</source>
         <translation>Llicència</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="268"/>
+        <location filename="../mxcodecs.cpp" line="265"/>
         <source>Changelog</source>
         <translation>Registre de canvis</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="284"/>
+        <location filename="../mxcodecs.cpp" line="281"/>
         <source>&amp;Close</source>
         <translation>Tan&amp;ca </translation>
     </message>

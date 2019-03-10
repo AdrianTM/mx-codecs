@@ -199,11 +199,8 @@ void mxcodecs::installDebs(QString path) {
   qDebug() << "filelist " << fileList;
 
   QString file;
-
-  QString item;
-
-  foreach (item, fileList) {
-      file = "./" + fileList.takeFirst() + " " + file;
+  foreach (const QString &item, fileList) {
+      file.append("./" + item + " ");
   }
 
   qDebug() << "file " << file;
