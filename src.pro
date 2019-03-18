@@ -48,22 +48,33 @@ HEADERS  += mxcodecs.h \
 FORMS    += mxcodecs.ui
 
 TRANSLATIONS += translations/mx-codecs_am.ts \
+                translations/mx-codecs_ar.ts \
+                translations/mx-codecs_bg.ts \
                 translations/mx-codecs_ca.ts \
                 translations/mx-codecs_cs.ts \
                 translations/mx-codecs_da.ts \
                 translations/mx-codecs_de.ts \
                 translations/mx-codecs_el.ts \
                 translations/mx-codecs_es.ts \
+                translations/mx-codecs_et.ts \
+                translations/mx-codecs_eu.ts \
+                translations/mx-codecs_fa.ts \
                 translations/mx-codecs_fi.ts \
                 translations/mx-codecs_fr.ts \
+                translations/mx-codecs_he_IL.ts \
                 translations/mx-codecs_hi.ts \
                 translations/mx-codecs_hr.ts \
                 translations/mx-codecs_hu.ts \
+                translations/mx-codecs_id.ts \
                 translations/mx-codecs_is.ts \
                 translations/mx-codecs_it.ts \
                 translations/mx-codecs_ja.ts \
+                translations/mx-codecs_ja_JP.ts \
                 translations/mx-codecs_kk.ts \
+                translations/mx-codecs_ko.ts \
                 translations/mx-codecs_lt.ts \
+                translations/mx-codecs_mk.ts \
+                translations/mx-codecs_nb.ts \
                 translations/mx-codecs_nl.ts \
                 translations/mx-codecs_pl.ts \
                 translations/mx-codecs_pt.ts \
@@ -71,10 +82,13 @@ TRANSLATIONS += translations/mx-codecs_am.ts \
                 translations/mx-codecs_ro.ts \
                 translations/mx-codecs_ru.ts \
                 translations/mx-codecs_sk.ts \
+                translations/mx-codecs_sl.ts \
                 translations/mx-codecs_sq.ts \
+                translations/mx-codecs_sr.ts \
                 translations/mx-codecs_sv.ts \
                 translations/mx-codecs_tr.ts \
                 translations/mx-codecs_uk.ts \
+                translations/mx-codecs_zh_CN.ts \
                 translations/mx-codecs_zh_TW.ts
 
 RESOURCES += \
