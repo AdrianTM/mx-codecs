@@ -202,7 +202,7 @@
     <message>
         <location filename="mxcodecs.cpp" line="227"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"/>
+        <translation>&amp;बंद करें</translation>
     </message>
 </context>
 </TS>

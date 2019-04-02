@@ -14,7 +14,7 @@
     <message>
         <location filename="main.cpp" line="67"/>
         <source>You must run this program as root.</source>
-        <translation>Musisz uruchomić ten program jako administrator. </translation>
+        <translation>Musisz uruchomić ten program jako administrator. </translation>
     </message>
 </context>
 <context>
@@ -33,12 +33,12 @@ W niektórych krajach ich instalacja może być ograniczona prawnie.&lt;/p&gt;&l
     <message>
         <location filename="mxcodecs.ui" line="44"/>
         <source>Downloading codecs files</source>
-        <translation>Pobieranie kodeków</translation>
+        <translation>Pobieranie plików kodeków</translation>
     </message>
     <message>
         <location filename="mxcodecs.ui" line="94"/>
         <source>Cancel any changes then quit</source>
-        <translation>Cofnij wszelkie zmiany i wyjdź</translation>
+        <translation>Anuluj wszelkie zmiany, a następnie zakończ</translation>
     </message>
     <message>
         <location filename="mxcodecs.ui" line="97"/>
@@ -54,7 +54,7 @@ W niektórych krajach ich instalacja może być ograniczona prawnie.&lt;/p&gt;&l
     <message>
         <location filename="mxcodecs.ui" line="118"/>
         <source>Apply any changes then quit</source>
-        <translation>Zastosuj zmiany i wyjdź</translation>
+        <translation>Zastosuj wszelkie zmiany, a następnie zakończ</translation>
     </message>
     <message>
         <location filename="mxcodecs.ui" line="121"/>
@@ -168,7 +168,7 @@ W niektórych krajach ich instalacja może być ograniczona prawnie.&lt;/p&gt;&l
     <message>
         <location filename="mxcodecs.cpp" line="205"/>
         <source>About MX Codecs</source>
-        <translation>O MX Kodeki</translation>
+        <translation>O programie MX Kodeki</translation>
     </message>
     <message>
         <location filename="mxcodecs.cpp" line="206"/>
@@ -188,7 +188,7 @@ W niektórych krajach ich instalacja może być ograniczona prawnie.&lt;/p&gt;&l
     <message>
         <location filename="mxcodecs.cpp" line="209"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation>Prawa autorskie © MX Linux</translation>
     </message>
     <message>
         <location filename="mxcodecs.cpp" line="210"/>

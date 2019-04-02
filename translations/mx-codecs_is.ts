@@ -53,7 +53,7 @@
     <message>
         <location filename="mxcodecs.ui" line="118"/>
         <source>Apply any changes then quit</source>
-        <translation type="unfinished"/>
+        <translation>Virkja allar breytingar og hætta síðan</translation>
     </message>
     <message>
         <location filename="mxcodecs.ui" line="121"/>
@@ -96,7 +96,7 @@
         <location filename="mxcodecs.cpp" line="125"/>
         <location filename="mxcodecs.cpp" line="132"/>
         <source>&lt;b&gt;Running command...&lt;/b&gt;&lt;p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Keyri skipun...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
         <location filename="mxcodecs.cpp" line="113"/>
@@ -117,12 +117,12 @@
         <location filename="mxcodecs.cpp" line="120"/>
         <location filename="mxcodecs.cpp" line="135"/>
         <source>Error downloading %1</source>
-        <translation type="unfinished"/>
+        <translation>Villa við að sækja %1</translation>
     </message>
     <message>
         <location filename="mxcodecs.cpp" line="139"/>
         <source>&lt;b&gt;Download Finished.&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Niðurhali lokið.&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="mxcodecs.cpp" line="158"/>
@@ -137,12 +137,12 @@
     <message>
         <location filename="mxcodecs.cpp" line="170"/>
         <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Set upp...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
         <location filename="mxcodecs.cpp" line="174"/>
         <source>Error installing %1</source>
-        <translation type="unfinished"/>
+        <translation>Villa við að setja upp %1</translation>
     </message>
     <message>
         <location filename="mxcodecs.cpp" line="182"/>
