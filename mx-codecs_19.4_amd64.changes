@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Fri, 05 Apr 2019 11:28:10 -0400
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source amd64
+Version: 19.4
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (19.4) mx; urgency=medium
+ .
+   * updated translations
+Checksums-Sha1:
+ 673d614afbb26d0131dec1fad47f1a5799d7e915 1169 mx-codecs_19.4.dsc
+ 551d7cdf9699f694f7c3449bdd116b8a10184c31 54496 mx-codecs_19.4.tar.xz
+ 39ffd23688092953b67ce27112234e845f6237d9 11334 mx-codecs_19.4_amd64.buildinfo
+ d8358241c747e7fe5b3559be45b4b4d01437b815 76070 mx-codecs_19.4_amd64.deb
+Checksums-Sha256:
+ 186f443360fd1fb92f1f0a4a1c4c9daf2f951c4a9f77a3edf46bb1ccbb631f7b 1169 mx-codecs_19.4.dsc
+ 103ef5bce5a7bd94ab9449395f689d32d2666db60ec4d140ea1a4f70d6f99b52 54496 mx-codecs_19.4.tar.xz
+ 32baa54745301f1ce57b41898a71e5b5ae7e2f16689f28b90524d9298cd668a8 11334 mx-codecs_19.4_amd64.buildinfo
+ fc0682641100846d5088b4c81bdc235af449f1377d127c5c7529cc5d26c582bd 76070 mx-codecs_19.4_amd64.deb
+Files:
+ ad66f03ffb175ec58a3f997776c3b55d 1169 system optional mx-codecs_19.4.dsc
+ e949da5a945689894d64137ef806c952 54496 system optional mx-codecs_19.4.tar.xz
+ 8304439996a7eb11a2262603b0df4aec 11334 system optional mx-codecs_19.4_amd64.buildinfo
+ c2fa6a9c419e0c2f39c8d330482c59c9 76070 system optional mx-codecs_19.4_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlyndF4THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumGNjB/4j91CAT6GHKVqF8Glu7wK2+0/L9Yfm
+4jVeqOSYP/rhvOMc1bjRZR78JJvQRL/9IFf2KcU4X+MP56J1jsz2rRuyPI15wJXt
+hrwU/atTpt8uM3XKV/u+7JcvDrF4as5trysMbW7C+otdiTbvw6unJKRGdzlpwQTr
+PhKemS6DpBtr7MCTmS5lYtCQKbFW41j9nYs6hI07P8HRixMOT6LjlueVhF/Migbn
+zzE/vdaBua/ujhPZAgK09sTxUqbE+B7zRqRnknwEas3fiD/jovNdX2zbszdq0NMp
+foP4wsyeKO6stbm5wG9hFGSdwNsNi1k3CeylDVU5aYksX/qpJgQjrdHK
+=jxcx
+-----END PGP SIGNATURE-----
