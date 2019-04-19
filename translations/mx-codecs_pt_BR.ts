@@ -43,7 +43,7 @@
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="97"/>
-        <location filename="../mxcodecs.cpp" line="266"/>
+        <location filename="../mxcodecs.cpp" line="256"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
@@ -93,128 +93,128 @@
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="110"/>
-        <location filename="../mxcodecs.cpp" line="117"/>
-        <location filename="../mxcodecs.cpp" line="125"/>
-        <location filename="../mxcodecs.cpp" line="132"/>
-        <location filename="../mxcodecs.cpp" line="140"/>
-        <location filename="../mxcodecs.cpp" line="147"/>
-        <location filename="../mxcodecs.cpp" line="156"/>
-        <location filename="../mxcodecs.cpp" line="163"/>
+        <location filename="../mxcodecs.cpp" line="113"/>
+        <location filename="../mxcodecs.cpp" line="120"/>
+        <location filename="../mxcodecs.cpp" line="128"/>
+        <location filename="../mxcodecs.cpp" line="135"/>
+        <location filename="../mxcodecs.cpp" line="143"/>
+        <location filename="../mxcodecs.cpp" line="150"/>
+        <location filename="../mxcodecs.cpp" line="159"/>
+        <location filename="../mxcodecs.cpp" line="166"/>
         <source>&lt;b&gt;Running command...&lt;/b&gt;&lt;p&gt;</source>
         <translation>&lt;b&gt;Comando em execução...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="113"/>
-        <location filename="../mxcodecs.cpp" line="128"/>
-        <location filename="../mxcodecs.cpp" line="134"/>
-        <location filename="../mxcodecs.cpp" line="143"/>
-        <location filename="../mxcodecs.cpp" line="149"/>
-        <location filename="../mxcodecs.cpp" line="159"/>
-        <location filename="../mxcodecs.cpp" line="165"/>
-        <location filename="../mxcodecs.cpp" line="194"/>
-        <location filename="../mxcodecs.cpp" line="243"/>
+        <location filename="../mxcodecs.cpp" line="116"/>
+        <location filename="../mxcodecs.cpp" line="131"/>
+        <location filename="../mxcodecs.cpp" line="137"/>
+        <location filename="../mxcodecs.cpp" line="146"/>
+        <location filename="../mxcodecs.cpp" line="152"/>
+        <location filename="../mxcodecs.cpp" line="162"/>
+        <location filename="../mxcodecs.cpp" line="168"/>
+        <location filename="../mxcodecs.cpp" line="197"/>
+        <location filename="../mxcodecs.cpp" line="233"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="114"/>
-        <location filename="../mxcodecs.cpp" line="129"/>
-        <location filename="../mxcodecs.cpp" line="144"/>
-        <location filename="../mxcodecs.cpp" line="160"/>
+        <location filename="../mxcodecs.cpp" line="117"/>
+        <location filename="../mxcodecs.cpp" line="132"/>
+        <location filename="../mxcodecs.cpp" line="147"/>
+        <location filename="../mxcodecs.cpp" line="163"/>
         <source>Cannot connect to the download site</source>
         <translation>Não é possível conectar-se ao site de download</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="120"/>
-        <location filename="../mxcodecs.cpp" line="135"/>
-        <location filename="../mxcodecs.cpp" line="150"/>
-        <location filename="../mxcodecs.cpp" line="166"/>
+        <location filename="../mxcodecs.cpp" line="123"/>
+        <location filename="../mxcodecs.cpp" line="138"/>
+        <location filename="../mxcodecs.cpp" line="153"/>
+        <location filename="../mxcodecs.cpp" line="169"/>
         <source>Error downloading %1</source>
         <translation>Erro download de % 1</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="171"/>
+        <location filename="../mxcodecs.cpp" line="174"/>
         <source>&lt;b&gt;Download Finished.&lt;/b&gt;</source>
         <translation>&lt;b&gt;Download concluído.&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="190"/>
+        <location filename="../mxcodecs.cpp" line="193"/>
         <source>Installing downloaded files</source>
         <translation>Instalando arquivos baixados</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="195"/>
+        <location filename="../mxcodecs.cpp" line="198"/>
         <source>No downloaded *.debs files found.</source>
         <translation>Não foram encontrados arquivos * .debs baixados.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="208"/>
+        <location filename="../mxcodecs.cpp" line="211"/>
         <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
         <translation>&lt;b&gt;Instalando...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="212"/>
+        <location filename="../mxcodecs.cpp" line="215"/>
         <source>Error installing %1</source>
         <translation>Erro ao instalar % 1</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="236"/>
+        <location filename="../mxcodecs.cpp" line="226"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
         <translation>&lt;b&gt;Processo de instalação terminou&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="239"/>
+        <location filename="../mxcodecs.cpp" line="229"/>
         <source>Finished</source>
         <translation>Finalizado</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="240"/>
+        <location filename="../mxcodecs.cpp" line="230"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
         <translation>Os arquivos de codecs foram baixados e instalados com sucesso.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="244"/>
+        <location filename="../mxcodecs.cpp" line="234"/>
         <source>Process finished. Errors have occurred during the installation.</source>
         <translation>Processo concluído. Erros ocorridos durante a instalação.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="259"/>
+        <location filename="../mxcodecs.cpp" line="249"/>
         <source>About MX Codecs</source>
         <translation>Sobre os Codecs MX</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="260"/>
+        <location filename="../mxcodecs.cpp" line="250"/>
         <source>MX Codecs</source>
         <translation>MX Codecs</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="260"/>
+        <location filename="../mxcodecs.cpp" line="250"/>
         <source>Version: </source>
         <translation>Versão:</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="262"/>
+        <location filename="../mxcodecs.cpp" line="252"/>
         <source>Simple codecs downloader for MX Linux</source>
         <translation>Downloade simples de Codecs para o MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="263"/>
+        <location filename="../mxcodecs.cpp" line="253"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="264"/>
+        <location filename="../mxcodecs.cpp" line="254"/>
         <source>License</source>
         <translation>licença</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="265"/>
+        <location filename="../mxcodecs.cpp" line="255"/>
         <source>Changelog</source>
         <translation>Relatório de alterações</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="281"/>
+        <location filename="../mxcodecs.cpp" line="271"/>
         <source>&amp;Close</source>
         <translation>&amp;Fechar</translation>
     </message>
