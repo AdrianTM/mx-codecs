@@ -1,3 +1,9 @@
+mx-codecs (19.4.2) mx; urgency=medium
+
+  * additional fix for Jessie
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 20 Apr 2019 10:55:02 -0400
+
 mx-codecs (19.4.1) mx; urgency=medium
 
   * fix for older releases

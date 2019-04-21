@@ -44,7 +44,7 @@ W niektórych krajach ich instalacja może być ograniczona prawnie.&lt;/p&gt;&l
     </message>
     <message>
         <location filename="../mxcodecs.ui" line="97"/>
-        <location filename="../mxcodecs.cpp" line="256"/>
+        <location filename="../mxcodecs.cpp" line="263"/>
         <source>Cancel</source>
         <translation>Anuluj</translation>
     </message>
@@ -114,7 +114,7 @@ W niektórych krajach ich instalacja może być ograniczona prawnie.&lt;/p&gt;&l
         <location filename="../mxcodecs.cpp" line="162"/>
         <location filename="../mxcodecs.cpp" line="168"/>
         <location filename="../mxcodecs.cpp" line="197"/>
-        <location filename="../mxcodecs.cpp" line="233"/>
+        <location filename="../mxcodecs.cpp" line="240"/>
         <source>Error</source>
         <translation>Błąd</translation>
     </message>
@@ -160,62 +160,72 @@ W niektórych krajach ich instalacja może być ograniczona prawnie.&lt;/p&gt;&l
         <translation>Błąd instalacji %1</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="226"/>
+        <location filename="../mxcodecs.cpp" line="219"/>
+        <source>Fix missing dependencies...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.cpp" line="221"/>
+        <source>Error running &apos;apt-get -fm install&apos; command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxcodecs.cpp" line="233"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
         <translation>&lt;b&gt;Proces instalacji został zakończony&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="229"/>
+        <location filename="../mxcodecs.cpp" line="236"/>
         <source>Finished</source>
         <translation>Zakończony</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="230"/>
+        <location filename="../mxcodecs.cpp" line="237"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
         <translation>Pliki kodeków zostały pobrane i zainstalowane.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="234"/>
+        <location filename="../mxcodecs.cpp" line="241"/>
         <source>Process finished. Errors have occurred during the installation.</source>
         <translation>Proces zakończony. Podczas instalacji wystąpiły błędy.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="249"/>
+        <location filename="../mxcodecs.cpp" line="256"/>
         <source>About MX Codecs</source>
         <translation>O programie MX Kodeki</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="250"/>
+        <location filename="../mxcodecs.cpp" line="257"/>
         <source>MX Codecs</source>
         <translation>MX Kodeki</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="250"/>
+        <location filename="../mxcodecs.cpp" line="257"/>
         <source>Version: </source>
         <translation>Wersja:</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="252"/>
+        <location filename="../mxcodecs.cpp" line="259"/>
         <source>Simple codecs downloader for MX Linux</source>
         <translation>Proste pobieranie kodeków dla MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="253"/>
+        <location filename="../mxcodecs.cpp" line="260"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Prawa autorskie © MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="254"/>
+        <location filename="../mxcodecs.cpp" line="261"/>
         <source>License</source>
         <translation>Licencja</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="255"/>
+        <location filename="../mxcodecs.cpp" line="262"/>
         <source>Changelog</source>
         <translation>Dziennik zmian</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="271"/>
+        <location filename="../mxcodecs.cpp" line="278"/>
         <source>&amp;Close</source>
         <translation>&amp;Zamknij</translation>
     </message>

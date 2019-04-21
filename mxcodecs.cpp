@@ -207,7 +207,7 @@ void mxcodecs::installDebs(QString path) {
   }
 
   qDebug() << "file " << file;
-  cmd_str = QString("apt-get -y install %1").arg(file);
+  cmd_str = QString("dpkg -i %1").arg(file);
   updateStatus(tr("<b>Installing...</b><p>")+file, 95);
   lock_file.unlock();
   if (cmd.run(cmd_str) != 0) {
@@ -215,6 +215,13 @@ void mxcodecs::installDebs(QString path) {
                             QString(tr("Error installing %1")).arg(file));
       error = true;
   }
+
+  updateStatus("<b>" + tr("Fix missing dependencies...") + "</b><p>", 99);
+  if (cmd.run("apt-get -f install")) {
+      QMessageBox::critical(0, QString::null, (tr("Error running 'apt-get -fm install' command")));
+      error = true;
+  }
+
 
   while (!fileList.isEmpty()) {
       file = fileList.takeFirst();
