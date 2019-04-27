@@ -128,12 +128,14 @@ QString mxcodecs::downloadDebs() {
   updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 30);
   out = cmd.getOutput(cmd_str);
   if (out == "") {
+      arch_flag = false;
     QMessageBox::critical(0, tr("Error"),
                           tr("Cannot connect to the download site"));
   } else {
     cmd_str = "wget -q " + url + "/" + out;
     updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 40);
     if (cmd.run(cmd_str) != 0) {
+        arch_flag = false;
       QMessageBox::critical(0, tr("Error"),
                             QString(tr("Error downloading %1")).arg(out));
     }
@@ -159,12 +161,14 @@ QString mxcodecs::downloadDebs() {
       updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 70);
       out = cmd.getOutput(cmd_str);
       if (out == "") {
+        i386_flag = false;
         QMessageBox::critical(0, tr("Error"),
                               tr("Cannot connect to the download site"));
       } else {
         cmd_str = "wget -q " + url + "/" + out;
         updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 75);
         if (cmd.run(cmd_str) != 0) {
+            i386_flag =false;
           QMessageBox::critical(0, tr("Error"),
                                 QString(tr("Error downloading %1")).arg(out));
         }
@@ -178,10 +182,13 @@ QString mxcodecs::downloadDebs() {
 
 //install downloaded .debs
 void mxcodecs::installDebs(QString path) {
-  QString cmd_str, out, msg;
+  QString cmd_str, out, msg, arch;
   QDir dir(path);
   dir.setCurrent(path);
   bool error = false;
+
+  // get arch info
+  arch = cmd.getOutput("dpkg --print-architecture");
 
   //filter *.deb file only
   QStringList filter;
@@ -210,6 +217,16 @@ void mxcodecs::installDebs(QString path) {
   cmd_str = QString("dpkg -i %1").arg(file);
   updateStatus(tr("<b>Installing...</b><p>")+file, 95);
   lock_file.unlock();
+  QString cmd_str_2;
+  if (arch_flag) {
+      cmd_str_2 = "dpkg --remove libtxc-dxtn-s2tc:" + arch;
+      cmd.run(cmd_str_2);
+  }
+  if (i386_flag) {
+      cmd_str_2 = "dpkg --remove libtxc-dxtn-s2tc:i386";
+      cmd.run(cmd_str_2);
+  }
+
   if (cmd.run(cmd_str) != 0) {
       QMessageBox::critical(0, QString::null,
                             QString(tr("Error installing %1")).arg(file));

@@ -1,0 +1,22 @@
+Format: 1.8
+Date: Sat, 27 Apr 2019 12:48:41 -0400
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: amd64
+Version: 19.4.3
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (19.4.3) mx; urgency=medium
+ .
+   * revised install of texture packs (remove preinstalled ones first)
+Checksums-Sha1:
+ 0608f9ae8ba3754b685bde6bcaf1c450e885039e 77450 mx-codecs_19.4.3_amd64.deb
+Checksums-Sha256:
+ 7f88153120e6c644f7241afec59758014a64bc9f0124e93aae9d588aa3836e1b 77450 mx-codecs_19.4.3_amd64.deb
+Files:
+ cb7d7c68b038df01ecabe237dab7ffd5 77450 system optional mx-codecs_19.4.3_amd64.deb

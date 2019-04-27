@@ -1,3 +1,9 @@
+mx-codecs (19.4.3) mx; urgency=medium
+
+  * revised install of texture packs (remove preinstalled ones first) 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 27 Apr 2019 12:48:41 -0400
+
 mx-codecs (19.4.2) mx; urgency=medium
 
   * additional fix for Jessie
