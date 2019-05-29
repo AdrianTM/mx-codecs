@@ -52,6 +52,8 @@ public:
 
   QString downloadDebs();
   QString getVersion(QString name);
+  bool i386_flag = true;
+  bool arch_flag = true;
 
 public slots:
   virtual void on_buttonOk_clicked();
