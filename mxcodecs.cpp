@@ -119,7 +119,7 @@ QString mxcodecs::downloadDebs() {
     cmd_str = "wget -q " + url + "/" + out;
     updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 20);
     if (cmd.run(cmd_str) != 0) {
-      QMessageBox::critical(0, QString::null,
+      QMessageBox::critical(0, windowTitle(),
                             QString(tr("Error downloading %1")).arg(out));
     }
   }
@@ -211,14 +211,14 @@ void mxcodecs::installDebs(QString path) {
   updateStatus(tr("<b>Installing...</b><p>")+file, 95);
   lock_file.unlock();
   if (cmd.run(cmd_str) != 0) {
-      QMessageBox::critical(0, QString::null,
+      QMessageBox::critical(0, windowTitle(),
                             QString(tr("Error installing %1")).arg(file));
       error = true;
   }
 
   updateStatus("<b>" + tr("Fix missing dependencies...") + "</b><p>", 99);
   if (cmd.run("apt-get -f install")) {
-      QMessageBox::critical(0, QString::null, (tr("Error running 'apt-get -fm install' command")));
+      QMessageBox::critical(0, windowTitle(), (tr("Error running 'apt-get -fm install' command")));
       error = true;
   }
 
