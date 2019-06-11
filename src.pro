@@ -43,7 +43,8 @@ SOURCES += main.cpp\
     lockfile.cpp
 
 HEADERS  += mxcodecs.h \
-    lockfile.h
+    lockfile.h \
+    version.h
 
 FORMS    += mxcodecs.ui
 

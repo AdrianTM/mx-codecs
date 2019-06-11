@@ -39,31 +39,30 @@ class mxcodecs;
 
 class mxcodecs : public QDialog
 {
-  Q_OBJECT
+    Q_OBJECT
 
 public:
-  explicit mxcodecs(QWidget *parent = 0);
-  ~mxcodecs();
-  // helpers
-  static QString getCmdOut(QString cmd);
-  void updateStatus(QString msg, int val);
-  void displayDoc(QString url);
-  void installDebs(QString path);
+    explicit mxcodecs(QWidget *parent = 0);
+    ~mxcodecs();
+    // helpers
+    static QString getCmdOut(QString cmd);
+    void updateStatus(QString msg, int val);
+    void displayDoc(QString url);
+    void installDebs(QString path);
 
-  QString downloadDebs();
-  QString getVersion(QString name);
-  bool i386_flag = true;
-  bool arch_flag = true;
+    QString downloadDebs();
+    bool i386_flag = true;
+    bool arch_flag = true;
 
 public slots:
-  virtual void on_buttonOk_clicked();
-  virtual void on_buttonAbout_clicked();
-  virtual void on_buttonHelp_clicked();
+    virtual void on_buttonOk_clicked();
+    virtual void on_buttonAbout_clicked();
+    virtual void on_buttonHelp_clicked();
 
 private:
-  Ui::mxcodecs *ui;
-  Cmd cmd;
-  LockFile lock_file;
+    Ui::mxcodecs *ui;
+    Cmd cmd;
+    LockFile lock_file;
 };
 
 #endif // MXCODECS_H
