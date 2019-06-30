@@ -96,7 +96,7 @@ QString mxcodecs::downloadDebs() {
     arch = cmd.getOutput("dpkg --print-architecture");
 
     // get release info
-    release = cmd.getOutput("grep VERSION /etc/os-release | grep -Eo [a-z]+ ");
+    release = cmd.getOutput("grep VERSION= /etc/os-release | grep -Eo [a-z]+ ");
 
     cmd_str = "wget -qO- " + url + "/dists/" + release + "/main/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep libdvdcss2 | awk \'{print $2}\'";
     updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 10);
