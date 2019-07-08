@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Mon, 08 Jul 2019 12:05:46 -0400
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source amd64
+Version: 19.7.1
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (19.7.1) mx; urgency=medium
+ .
+   * update icon
+Checksums-Sha1:
+ 2ad9e72379aaa6309025b9b2661a98a1efee653d 1177 mx-codecs_19.7.1.dsc
+ 82140311304ad15a15683197bf8681f5fcff57f2 51460 mx-codecs_19.7.1.tar.xz
+ 84438bb7fa78b2f1908a9f14fa1f30178c48dbdc 11350 mx-codecs_19.7.1_amd64.buildinfo
+ e41b0c6cd32ef0fc4b2ad19d98468efd88f26cc0 73840 mx-codecs_19.7.1_amd64.deb
+Checksums-Sha256:
+ 7635cbf5e9813a869f2219669ff6c050a5193e166a2ce41a7b349fb505bbb327 1177 mx-codecs_19.7.1.dsc
+ 0fd805a64f1b731c48a447956ed7de70ed9872bb8881714cfbfc666b4202e6ff 51460 mx-codecs_19.7.1.tar.xz
+ 627f90d04ef1e17096b9af2ce57621cf298e13e0aae4ca0d8e59e2427f1f0ee5 11350 mx-codecs_19.7.1_amd64.buildinfo
+ da183eee2e053c5255869f63e4ed756ee6e0c97a499d3899b8770c649e074456 73840 mx-codecs_19.7.1_amd64.deb
+Files:
+ 3f8683b4db4e0ab0852160a4c9132568 1177 system optional mx-codecs_19.7.1.dsc
+ 0f30be622a8e660184b9bdf6acaf0455 51460 system optional mx-codecs_19.7.1.tar.xz
+ 95e31c0271cf475e095c37764ddd20ea 11350 system optional mx-codecs_19.7.1_amd64.buildinfo
+ 10c094440f2e9e33798b77edb79b9b9b 73840 system optional mx-codecs_19.7.1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl0jajcTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumAyiB/43p4F5os532++g89akkZt43DnyKYW0
+9VMa6vEokYdrmT9X6JvZB2VQgT+8dGr/667yA+QCegGXTPJu4WW3a5zluUR6GzAL
+M7+cb1Lh602U6I6pGgoknmK/OyTOc3HKqYVI0Xuln/uvtUqTqjRRahBe3xnfAWUy
+PJ5P4Z/G8sg//ea6TtWbXNXTOMWcuN4Q+3XVCMmvOK0T1IIot7sNh52qd7zGc4Xj
+4l/XC3/ZGLY+WR11zJaIyIczHwGfG1ncaTAphvIiuKw89zAnB8Bu9YJYBEzdl7LX
+xnhoFYQ4bSpAgbrZZzxZOwr9+GPGQV1ZEcOV7PJzMzYupb+Ldhv1jjxI
+=Qoeu
+-----END PGP SIGNATURE-----

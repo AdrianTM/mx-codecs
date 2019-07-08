@@ -1,3 +1,9 @@
+mx-codecs (19.7.1) mx; urgency=medium
+
+  * update icon
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 08 Jul 2019 12:05:46 -0400
+
 mx-codecs (19.7) mx; urgency=medium
 
   * fix window buttons for Buster
