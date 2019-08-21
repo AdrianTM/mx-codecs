@@ -1,3 +1,9 @@
+mx-codecs (19.8) mx; urgency=medium
+
+  * added offline help file
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 21 Aug 2019 13:42:47 -0400
+
 mx-codecs (19.7.1) mx; urgency=medium
 
   * update icon

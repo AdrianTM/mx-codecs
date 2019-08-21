@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Wed, 21 Aug 2019 13:42:47 -0400
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source amd64
+Version: 19.8
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (19.8) mx; urgency=medium
+ .
+   * added offline help file
+Checksums-Sha1:
+ bcb5425d77eb3c67a838e24f163f979a12bf2b0c 1169 mx-codecs_19.8.dsc
+ d26c3a6e3981a2c4483c73f2d8decae7c5550b40 54072 mx-codecs_19.8.tar.xz
+ 0b4be3ad64e54fd0eb2caa3561a3a6e029c3ec79 76322 mx-codecs_19.8_amd64.deb
+Checksums-Sha256:
+ 0a161e0685479eea916953e93b7c129db1dce5fb4f8b71e46c5a56c66c257b83 1169 mx-codecs_19.8.dsc
+ 385e98e6b10aeb4a37496aab75ad47678f401150d08d2a7ce6e6e4c6ad600fc2 54072 mx-codecs_19.8.tar.xz
+ 5401e0f059d4c0eeb37cf6832278c0539f209e65dc873f0950d608b7a9a7a307 76322 mx-codecs_19.8_amd64.deb
+Files:
+ daa9488cd71445b8ebce0302f27ec876 1169 system optional mx-codecs_19.8.dsc
+ 0e9c9a0ee7ab27b8be63443ce014697e 54072 system optional mx-codecs_19.8.tar.xz
+ f7879fdbf4126c65af1f30636c8ed441 76322 system optional mx-codecs_19.8_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl1dgscTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumCsPCADEc6f6KJ80X6GJGaeUX39uQ+nez09L
+aDC6WqSpAMpCysHF9Zbk/Tp+04w1/OhKRDmLhwlmKqZG5X1/fiACIpUuCXGPftzy
+AQXvWBZI8YmQ6ybGFwroAAYdEU6ZfxWd9DWBu3V1q27RSVO+rbb7oPnM9mun6X8v
+J2dGPUGIrxdB2eOrjbDdMDLMqDW6wlFWqfX/T8/eYMxVVgL1SbQK/cRCRsLpz9B4
+CSo4eeUd86IxXRTef1dK2+duRsoAh0/ll3VCs7ADqzMayhr4VxBhtadotxhDIPPN
+HmbZjb4UGANN67BUwb0+ImON5RrIvpf1VMd8FaJAd2FgHXRy1C98rc2G
+=ySFZ
+-----END PGP SIGNATURE-----

@@ -300,7 +300,7 @@ void mxcodecs::on_buttonHelp_clicked() {
     QLocale locale;
     QString lang = locale.bcp47Name();
 
-    QString url = "https://mxlinux.org/wiki/help-files/help-mx-codecs-installer";
+    QString url = "/usr/share/doc/mx-codecs/help/mx-codecs.html";
 
     if (lang.startsWith("fr")) {
         url = "https://mxlinux.org/french-wiki/help-files/help-mx-codecs-installer";
