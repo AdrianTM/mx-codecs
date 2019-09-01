@@ -40,11 +40,13 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mxcodecs.cpp \
-    lockfile.cpp
+    lockfile.cpp \
+    cmd.cpp
 
 HEADERS  += mxcodecs.h \
     lockfile.h \
-    version.h
+    version.h \
+    cmd.h
 
 FORMS    += mxcodecs.ui
 
@@ -94,5 +96,3 @@ TRANSLATIONS += translations/mx-codecs_am.ts \
 
 RESOURCES += \
     images.qrc
-
-unix:!macx: LIBS += -lcmd

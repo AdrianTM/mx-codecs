@@ -1,3 +1,10 @@
+mx-codecs (19.9) mx; urgency=medium
+
+  * update translations
+  * remove libcmd dependency
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 01 Sep 2019 02:10:54 -0400
+
 mx-codecs (19.8) mx; urgency=medium
 
   * added offline help file

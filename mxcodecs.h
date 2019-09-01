@@ -29,8 +29,8 @@
 #include <QMessageBox>
 #include <QComboBox>
 #include <QDir>
+#include <QProcess>
 
-#include "cmd.h"
 #include "lockfile.h"
 
 namespace Ui {
@@ -44,15 +44,14 @@ class mxcodecs : public QDialog
 public:
     explicit mxcodecs(QWidget *parent = 0);
     ~mxcodecs();
-    // helpers
-    static QString getCmdOut(QString cmd);
-    void updateStatus(QString msg, int val);
-    void displayDoc(QString url);
-    void installDebs(QString path);
-
-    QString downloadDebs();
     bool i386_flag = true;
     bool arch_flag = true;
+
+    void updateStatus(const QString &msg, int val);
+    void displayDoc(const QString &url) const;
+    void installDebs(const QString &path);
+
+    QString downloadDebs();
 
 public slots:
     virtual void on_buttonOk_clicked();
@@ -61,8 +60,8 @@ public slots:
 
 private:
     Ui::mxcodecs *ui;
-    Cmd cmd;
     LockFile lock_file;
+    QString arch;
 };
 
 #endif // MXCODECS_H
