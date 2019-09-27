@@ -77,6 +77,7 @@ TRANSLATIONS += translations/mx-codecs_am.ts \
                 translations/mx-codecs_ko.ts \
                 translations/mx-codecs_lt.ts \
                 translations/mx-codecs_mk.ts \
+                translations/mx-codecs_mr.ts \
                 translations/mx-codecs_nb.ts \
                 translations/mx-codecs_nl.ts \
                 translations/mx-codecs_pl.ts \
