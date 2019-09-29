@@ -32,6 +32,7 @@
 #include <QProcess>
 
 #include "lockfile.h"
+#include "cmd.h"
 
 namespace Ui {
 class mxcodecs;
@@ -60,6 +61,7 @@ public slots:
 
 private:
     Ui::mxcodecs *ui;
+    Cmd cmd;
     LockFile lock_file;
     QString arch;
 };

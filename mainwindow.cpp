@@ -41,7 +41,7 @@ mxcodecs::mxcodecs(QWidget *parent) :
     ui->setupUi(this);
 
     // get arch info
-    arch = getCmdOut("dpkg --print-architecture");
+    arch = cmd.getCmdOut("dpkg --print-architecture", true);
 
     setWindowFlags(Qt::Window); // for the close, min and max buttons
     if (ui->buttonOk->icon().isNull()) {
@@ -62,7 +62,8 @@ void mxcodecs::updateStatus(const QString& msg, int val) {
 
 void mxcodecs::displayDoc(const QString& url) const
 {
-    QString user = getCmdOut("logname");
+    Cmd cmd;
+    QString user = cmd.getCmdOut("logname", true);
     if (system("command -v mx-viewer >/dev/null") == 0) {
         system("mx-viewer " + url.toUtf8());
     } else {
@@ -91,25 +92,25 @@ QString mxcodecs::downloadDebs() {
     qApp->processEvents();
 
     // create temp folder and set it current
-    path = getCmdOut("mktemp -d");
+    path = cmd.getCmdOut("mktemp -d");
 
     QDir dir(path);
     dir.mkdir(path);
     dir.setCurrent(path);
 
     // get release info
-    release = getCmdOut("grep VERSION= /etc/os-release | grep -Eo [a-z]+ ");
+    release = cmd.getCmdOut("grep VERSION= /etc/os-release | grep -Eo [a-z]+ ");
 
     cmd_str = "wget -qO- " + url + "/dists/" + release + "/main/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep libdvdcss2 | awk \'{print $2}\'";
     updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 10);
-    out = getCmdOut(cmd_str);
+    out = cmd.getCmdOut(cmd_str);
     if (out == "") {
         QMessageBox::critical(this, tr("Error"),
                               tr("Cannot connect to the download site"));
     } else {
         cmd_str = "wget -q " + url + "/" + out;
         updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 20);
-        if (!run(cmd_str)) {
+        if (!cmd.run(cmd_str)) {
             QMessageBox::critical(this, windowTitle(),
                                   QString(tr("Error downloading %1")).arg(out));
         }
@@ -117,7 +118,7 @@ QString mxcodecs::downloadDebs() {
 
     cmd_str = "wget -qO- " + url + "/dists/" + release + "/non-free/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep w.*codecs | awk \'{print $2}\'";
     updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 30);
-    out = getCmdOut(cmd_str);
+    out = cmd.getCmdOut(cmd_str);
     if (out == "") {
         arch_flag = false;
         QMessageBox::critical(this, tr("Error"),
@@ -125,7 +126,7 @@ QString mxcodecs::downloadDebs() {
     } else {
         cmd_str = "wget -q " + url + "/" + out;
         updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 40);
-        if (!run(cmd_str)) {
+        if (!cmd.run(cmd_str)) {
             arch_flag = false;
             QMessageBox::critical(this, tr("Error"),
                                   QString(tr("Error downloading %1")).arg(out));
@@ -134,14 +135,14 @@ QString mxcodecs::downloadDebs() {
 
     cmd_str = "wget -qO- " + url + "/dists/" + release + "/main/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep libtxc-dxtn0 | awk \'{print $2}\'";
     updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 50);
-    out = getCmdOut(cmd_str);
+    out = cmd.getCmdOut(cmd_str);
     if (out == "") {
         QMessageBox::critical(this, tr("Error"),
                               tr("Cannot connect to the download site"));
     } else {
         cmd_str = "wget -q " + url + "/" + out;
         updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 60);
-        if (!run(cmd_str)) {
+        if (!cmd.run(cmd_str)) {
             QMessageBox::critical(this, tr("Error"),
                                   QString(tr("Error downloading %1")).arg(out));
         }
@@ -150,7 +151,7 @@ QString mxcodecs::downloadDebs() {
     if (arch == "amd64") {
         cmd_str = "wget -qO- " + url + "/dists/" + release + "/main/binary-i386/Packages.gz | zgrep ^Filename | grep libtxc-dxtn0 | awk \'{print $2}\'";
         updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 70);
-        out = getCmdOut(cmd_str);
+        out = cmd.getCmdOut(cmd_str);
         if (out == "") {
             i386_flag = false;
             QMessageBox::critical(this, tr("Error"),
@@ -158,7 +159,7 @@ QString mxcodecs::downloadDebs() {
         } else {
             cmd_str = "wget -q " + url + "/" + out;
             updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 75);
-            if (!run(cmd_str)) {
+            if (!cmd.run(cmd_str)) {
                 i386_flag =false;
                 QMessageBox::critical(this, tr("Error"),
                                       QString(tr("Error downloading %1")).arg(out));
@@ -208,20 +209,20 @@ void mxcodecs::installDebs(const QString& path) {
     QString cmd_str_2;
     if (arch_flag) {
         cmd_str_2 = "dpkg --remove libtxc-dxtn-s2tc:" + arch;
-        run(cmd_str_2);
+        cmd.run(cmd_str_2);
     }
     if (i386_flag) {
         cmd_str_2 = "dpkg --remove libtxc-dxtn-s2tc:i386";
-        run(cmd_str_2);
+        cmd.run(cmd_str_2);
     }
 
-    if (!run(cmd_str)) {
+    if (!cmd.run(cmd_str)) {
         QMessageBox::critical(this, windowTitle(), QString(tr("Error installing %1")).arg(file));
         error = true;
     }
 
     updateStatus("<b>" + tr("Fix missing dependencies...") + "</b><p>", 99);
-    if (!run("apt-get -f install")) {
+    if (!cmd.run("apt-get -f install")) {
         QMessageBox::critical(this, windowTitle(), (tr("Error running %1 command").arg("'apt-get -f install'")));
         error = true;
     }
@@ -278,7 +279,8 @@ void mxcodecs::on_buttonAbout_clicked() {
 
         QTextEdit *text = new QTextEdit;
         text->setReadOnly(true);
-        text->setText(getCmdOut("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
+        Cmd cmd;
+        text->setText(cmd.getCmdOut("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
 
         QPushButton *btnClose = new QPushButton(tr("&Close"));
         btnClose->setIcon(QIcon::fromTheme("window-close"));

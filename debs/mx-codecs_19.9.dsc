@@ -9,24 +9,24 @@ Version: 19.9
 Maintainer: Adrian <adrian@mxlinux.org>
 Homepage: https://github.com/AdrianTM/mx-codecs
 Standards-Version: 3.9.8
-Build-Depends: debhelper (>= 9), qt5-default, qt5-qmake, qttools5-dev-tools
+Build-Depends: debhelper (>= 9), qtbase5-dev, qttools5-dev-tools
 Package-List:
  mx-codecs deb system optional arch=any
 Checksums-Sha1:
- 651be115da164818b889ef61bb5b16527e9c77e5 55388 mx-codecs_19.9.tar.xz
+ 784bbb9ba7343bfe8816a4c73490a78b4f5c3ba9 55644 mx-codecs_19.9.tar.xz
 Checksums-Sha256:
- e6c840a9f0f656970d5358f67769bef3fee1d703cb8c0abfeeae438557fbca4a 55388 mx-codecs_19.9.tar.xz
+ f5209325bc29449425e0305f50ac45fa1494bd8d0c51c098a30e6c1772dd1c23 55644 mx-codecs_19.9.tar.xz
 Files:
- c7ca7c84e4badec8aff370bb255c4231 55388 mx-codecs_19.9.tar.xz
+ a9c95d39854077532db58b08f9f2e4d4 55644 mx-codecs_19.9.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl1rYlETHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJWAB/0W6cVWXJ8qSOv+b2cgmppTonuR+UlO
-1E0wlNEvhpbXqYIf35qcsgh5WGMa3dvg4wZew11eg8SIRlqcyUPARh2/r+/751tV
-KycM52MKIkPRBeUJxK6kco2afbl76/uTatLW5hP7D86g5P299nai+pEF1xq+NBQj
-XyRDLDK7GiM8C2JNHw3FOOEs6zUPsb/LmWGZSeFPth0fzoCKRNAL8j1NZZVVccp9
-oKDuHdCCMWW8qSXfN3YYtnSh80GULfUdfvnqZsZ2QatSp4jFltj24AchAxQbKLxv
-g3cY/Km0AMg3yxtYQP2J8V0w/7kgzQvIc8x6Gc0mztzmogBYOOr7od+u
-=7c5b
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl137GYTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumOYCB/48moLf3qtiNtueRcbuXt1h9JXrYlm5
+MNgFhBMhDnPLUty/BQ7M7j1iJ7mGXcQKUkZmIvhJoAYoQwAuYQv85AqXlSXtPEoV
+emnomWXi961bJq1fbfjB/nb4zuF7chpLK2EznMFyRx02p/KI+yR0n664D4Ltb9O0
+sRKJX6ccH05e85SDaEl6lNPHFpRXcS5pm19AD6C3YapohKmEleYx78JTKu1ZYP1u
+CXmCiaeYmw6T3NR94I7f7VHPg5nxfRGj2ytcB47LI9JUp0ABO7GWjojZxpzavFNw
+RJ1MEkd9jV4rLlxcO09PfQ/7evqN6DB5QIFhO2QQwmT0l7PKehcuMudt
+=LUuP
 -----END PGP SIGNATURE-----
