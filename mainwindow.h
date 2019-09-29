@@ -22,8 +22,8 @@
  * along with MX Codecs.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-#ifndef MXCODECS_H
-#define MXCODECS_H
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
 #include <QDialog>
 #include <QMessageBox>
@@ -32,18 +32,19 @@
 #include <QProcess>
 
 #include "lockfile.h"
+#include "cmd.h"
 
 namespace Ui {
-class mxcodecs;
+class MainWindow;
 }
 
-class mxcodecs : public QDialog
+class MainWindow : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit mxcodecs(QWidget *parent = 0);
-    ~mxcodecs();
+    explicit MainWindow(QWidget *parent = 0);
+    ~MainWindow();
     bool i386_flag = true;
     bool arch_flag = true;
 
@@ -59,9 +60,10 @@ public slots:
     virtual void on_buttonHelp_clicked();
 
 private:
-    Ui::mxcodecs *ui;
+    Ui::MainWindow *ui;
+    Cmd cmd;
     LockFile lock_file;
     QString arch;
 };
 
-#endif // MXCODECS_H
+#endif // MAINWINDOW_H
