@@ -22,8 +22,8 @@
  * along with MX Codecs.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-#include "mxcodecs.h"
-#include "ui_mxcodecs.h"
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
 #include "version.h"
 #include "cmd.h"
 
@@ -33,9 +33,9 @@
 #include <QDebug>
 
 
-mxcodecs::mxcodecs(QWidget *parent) :
+MainWindow::MainWindow(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::mxcodecs), lock_file("/var/lib/dpkg/lock")
+    ui(new Ui::MainWindow), lock_file("/var/lib/dpkg/lock")
 {
     qDebug().noquote() << QCoreApplication::applicationName() << "version:" << VERSION;
     ui->setupUi(this);
@@ -49,18 +49,18 @@ mxcodecs::mxcodecs(QWidget *parent) :
     }
 }
 
-mxcodecs::~mxcodecs()
+MainWindow::~MainWindow()
 {
     delete ui;
 }
 
-void mxcodecs::updateStatus(const QString& msg, int val) {
+void MainWindow::updateStatus(const QString& msg, int val) {
     ui->labelDownload->setText(msg);
     ui->progressBar->setValue(val);
     qApp->processEvents();
 }
 
-void mxcodecs::displayDoc(const QString& url) const
+void MainWindow::displayDoc(const QString& url) const
 {
     Cmd cmd;
     QString user = cmd.getCmdOut("logname", true);
@@ -71,7 +71,7 @@ void mxcodecs::displayDoc(const QString& url) const
     }
 }
 
-void mxcodecs::on_buttonOk_clicked() {
+void MainWindow::on_buttonOk_clicked() {
     if (ui->stackedWidget->currentIndex() == 0) {
         setCursor(QCursor(Qt::WaitCursor));
         installDebs(downloadDebs());
@@ -81,7 +81,7 @@ void mxcodecs::on_buttonOk_clicked() {
 }
 
 //download .deb codecs returns download path
-QString mxcodecs::downloadDebs() {
+QString MainWindow::downloadDebs() {
     QString cmd_str, out, msg;
     QString path, release;
     QString url = "http://deb-multimedia.org";
@@ -173,7 +173,7 @@ QString mxcodecs::downloadDebs() {
 }
 
 //install downloaded .debs
-void mxcodecs::installDebs(const QString& path) {
+void MainWindow::installDebs(const QString& path) {
     QString cmd_str, out, ms;
     QDir dir(path);
     dir.setCurrent(path);
@@ -255,7 +255,7 @@ void mxcodecs::installDebs(const QString& path) {
 
 
 // show about
-void mxcodecs::on_buttonAbout_clicked() {
+void MainWindow::on_buttonAbout_clicked() {
     this->hide();
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Codecs"), "<p align=\"center\"><b><h2>" +
@@ -296,7 +296,7 @@ void mxcodecs::on_buttonAbout_clicked() {
 }
 
 // Help button clicked
-void mxcodecs::on_buttonHelp_clicked() {
+void MainWindow::on_buttonHelp_clicked() {
     QLocale locale;
     QString lang = locale.bcp47Name();
 

@@ -22,7 +22,7 @@
  * along with MX Codecs.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-#include "mxcodecs.h"
+#include "mainwindow.h"
 #include <QApplication>
 #include <QTranslator>
 #include <QLocale>
@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
         } else {
             lock_file.lock();
         }
-        mxcodecs w;
+        MainWindow w;
         w.show();
 
         return a.exec();

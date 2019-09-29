@@ -2,6 +2,217 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="nb">
 <context>
+    <name>MainWindow</name>
+    <message>
+        <location filename="../mainwindow.ui" line="14"/>
+        <source>MX Codecs Installer</source>
+        <translation type="unfinished">MX Codec-installatør</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="27"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;This application allows you to install restricted codecs that permit advanced video and audio functions.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;In some juridictions their distribution may be limited so the user must meet local regulations. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Do you assume legal responsibility for downloading these codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Dette programmet lar deg installere avgrensede codecer som tillater avanserte video- og audiofunksjoner.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;I noen jurisdiksjoner kan distribusjonen være begrenset, brukeren må møte lokale lover og regler.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Tar du juridisk anvar for nedlasting av disse codecene?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="44"/>
+        <source>Downloading codecs files</source>
+        <translation type="unfinished">Laster ned codec filer</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="94"/>
+        <source>Cancel any changes then quit</source>
+        <translation type="unfinished">Forkast alle endringer og avslutt</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="97"/>
+        <location filename="../mainwindow.cpp" line="268"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Avbryt</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="104"/>
+        <source>Alt+N</source>
+        <translation type="unfinished">Alt+N</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="117"/>
+        <source>Apply any changes then quit</source>
+        <translation type="unfinished">Lagre alle endringer og avslutt</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="120"/>
+        <source>OK</source>
+        <translation type="unfinished">OK</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="175"/>
+        <source>About this application</source>
+        <translation type="unfinished">Om applikasjonen</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="178"/>
+        <source>About...</source>
+        <translation type="unfinished">Om...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="185"/>
+        <source>Alt+B</source>
+        <translation type="unfinished">Alt+B</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="214"/>
+        <source>Display help </source>
+        <translation type="unfinished">Vis hjelp</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="217"/>
+        <source>Help</source>
+        <translation type="unfinished">Hjelp</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="224"/>
+        <source>Alt+H</source>
+        <translation type="unfinished">Alt+H</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="105"/>
+        <location filename="../mainwindow.cpp" line="112"/>
+        <location filename="../mainwindow.cpp" line="120"/>
+        <location filename="../mainwindow.cpp" line="128"/>
+        <location filename="../mainwindow.cpp" line="137"/>
+        <location filename="../mainwindow.cpp" line="144"/>
+        <location filename="../mainwindow.cpp" line="153"/>
+        <location filename="../mainwindow.cpp" line="161"/>
+        <source>&lt;b&gt;Running command...&lt;/b&gt;&lt;p&gt;</source>
+        <translation type="unfinished">&lt;b&gt;Utfører kommando&lt;/b&gt;&lt;p&gt;</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="108"/>
+        <location filename="../mainwindow.cpp" line="124"/>
+        <location filename="../mainwindow.cpp" line="131"/>
+        <location filename="../mainwindow.cpp" line="140"/>
+        <location filename="../mainwindow.cpp" line="146"/>
+        <location filename="../mainwindow.cpp" line="157"/>
+        <location filename="../mainwindow.cpp" line="164"/>
+        <location filename="../mainwindow.cpp" line="193"/>
+        <location filename="../mainwindow.cpp" line="246"/>
+        <source>Error</source>
+        <translation type="unfinished">Feil</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="109"/>
+        <location filename="../mainwindow.cpp" line="125"/>
+        <location filename="../mainwindow.cpp" line="141"/>
+        <location filename="../mainwindow.cpp" line="158"/>
+        <source>Cannot connect to the download site</source>
+        <translation type="unfinished">Kan ikke koble til nedlastingssiden</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="115"/>
+        <location filename="../mainwindow.cpp" line="132"/>
+        <location filename="../mainwindow.cpp" line="147"/>
+        <location filename="../mainwindow.cpp" line="165"/>
+        <source>Error downloading %1</source>
+        <translation type="unfinished">Feil ved nedlasting av %1</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="170"/>
+        <source>&lt;b&gt;Download Finished.&lt;/b&gt;</source>
+        <translation type="unfinished">&lt;b&gt;Nedlasting fullført.&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="189"/>
+        <source>Installing downloaded files</source>
+        <translation type="unfinished">Installerer nedlastede filer</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="194"/>
+        <source>No downloaded *.debs files found.</source>
+        <translation type="unfinished">Ingen lagrede *.debs filer funnet.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="207"/>
+        <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
+        <translation type="unfinished">&lt;b&gt;Installerer...&lt;/b&gt;&lt;p&gt;</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="220"/>
+        <source>Error installing %1</source>
+        <translation type="unfinished">Feil ved installasjon av %1</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="224"/>
+        <source>Fix missing dependencies...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="226"/>
+        <source>Error running %1 command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="238"/>
+        <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
+        <translation type="unfinished">&lt;b&gt;Installasjonsprosessen er fullført&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="242"/>
+        <source>Finished</source>
+        <translation type="unfinished">Fullført</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="243"/>
+        <source>Codecs files have been downloaded and installed successfully.</source>
+        <translation type="unfinished">Codecfiler har blitt lagret og installert uten feil.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="247"/>
+        <source>Process finished. Errors have occurred during the installation.</source>
+        <translation type="unfinished">Installasjonsprosess fullført. Feil har forekommet under installasjonen.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="261"/>
+        <source>About MX Codecs</source>
+        <translation type="unfinished">Om MX Codecer</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="262"/>
+        <source>MX Codecs</source>
+        <translation type="unfinished">MX Codecer</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="262"/>
+        <source>Version: </source>
+        <translation type="unfinished">Versjon:</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="264"/>
+        <source>Simple codecs downloader for MX Linux</source>
+        <translation type="unfinished">Enkel codec-nedlaster for MX Linux</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="265"/>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="unfinished">Copyright (c) MX Linux</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="266"/>
+        <source>License</source>
+        <translation type="unfinished">Lisens</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="267"/>
+        <location filename="../mainwindow.cpp" line="277"/>
+        <source>Changelog</source>
+        <translation type="unfinished">Changelog</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="285"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished">&amp;Lukk</translation>
+    </message>
+</context>
+<context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="53"/>
@@ -22,212 +233,144 @@
 <context>
     <name>mxcodecs</name>
     <message>
-        <location filename="../mxcodecs.ui" line="14"/>
         <source>MX Codecs Installer</source>
-        <translation>MX Codec-installatør</translation>
+        <translation type="vanished">MX Codec-installatør</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="27"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;This application allows you to install restricted codecs that permit advanced video and audio functions.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;In some juridictions their distribution may be limited so the user must meet local regulations. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Do you assume legal responsibility for downloading these codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Dette programmet lar deg installere avgrensede codecer som tillater avanserte video- og audiofunksjoner.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;I noen jurisdiksjoner kan distribusjonen være begrenset, brukeren må møte lokale lover og regler.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Tar du juridisk anvar for nedlasting av disse codecene?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Dette programmet lar deg installere avgrensede codecer som tillater avanserte video- og audiofunksjoner.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;I noen jurisdiksjoner kan distribusjonen være begrenset, brukeren må møte lokale lover og regler.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Tar du juridisk anvar for nedlasting av disse codecene?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="44"/>
         <source>Downloading codecs files</source>
-        <translation>Laster ned codec filer</translation>
+        <translation type="vanished">Laster ned codec filer</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="94"/>
         <source>Cancel any changes then quit</source>
-        <translation>Forkast alle endringer og avslutt</translation>
+        <translation type="vanished">Forkast alle endringer og avslutt</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="97"/>
-        <location filename="../mxcodecs.cpp" line="268"/>
         <source>Cancel</source>
-        <translation>Avbryt</translation>
+        <translation type="vanished">Avbryt</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="105"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="vanished">Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="118"/>
         <source>Apply any changes then quit</source>
-        <translation>Lagre alle endringer og avslutt</translation>
+        <translation type="vanished">Lagre alle endringer og avslutt</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="121"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="177"/>
         <source>About this application</source>
-        <translation>Om applikasjonen</translation>
+        <translation type="vanished">Om applikasjonen</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="180"/>
         <source>About...</source>
-        <translation>Om...</translation>
+        <translation type="vanished">Om...</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="188"/>
         <source>Alt+B</source>
-        <translation>Alt+B</translation>
+        <translation type="vanished">Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="217"/>
         <source>Display help </source>
-        <translation>Vis hjelp</translation>
+        <translation type="vanished">Vis hjelp</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="220"/>
         <source>Help</source>
-        <translation>Hjelp</translation>
+        <translation type="vanished">Hjelp</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.ui" line="228"/>
         <source>Alt+H</source>
-        <translation>Alt+H</translation>
+        <translation type="vanished">Alt+H</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="105"/>
-        <location filename="../mxcodecs.cpp" line="112"/>
-        <location filename="../mxcodecs.cpp" line="120"/>
-        <location filename="../mxcodecs.cpp" line="128"/>
-        <location filename="../mxcodecs.cpp" line="137"/>
-        <location filename="../mxcodecs.cpp" line="144"/>
-        <location filename="../mxcodecs.cpp" line="153"/>
-        <location filename="../mxcodecs.cpp" line="161"/>
         <source>&lt;b&gt;Running command...&lt;/b&gt;&lt;p&gt;</source>
-        <translation>&lt;b&gt;Utfører kommando&lt;/b&gt;&lt;p&gt;</translation>
+        <translation type="vanished">&lt;b&gt;Utfører kommando&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="108"/>
-        <location filename="../mxcodecs.cpp" line="124"/>
-        <location filename="../mxcodecs.cpp" line="131"/>
-        <location filename="../mxcodecs.cpp" line="140"/>
-        <location filename="../mxcodecs.cpp" line="146"/>
-        <location filename="../mxcodecs.cpp" line="157"/>
-        <location filename="../mxcodecs.cpp" line="164"/>
-        <location filename="../mxcodecs.cpp" line="193"/>
-        <location filename="../mxcodecs.cpp" line="246"/>
         <source>Error</source>
-        <translation>Feil</translation>
+        <translation type="vanished">Feil</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="109"/>
-        <location filename="../mxcodecs.cpp" line="125"/>
-        <location filename="../mxcodecs.cpp" line="141"/>
-        <location filename="../mxcodecs.cpp" line="158"/>
         <source>Cannot connect to the download site</source>
-        <translation>Kan ikke koble til nedlastingssiden</translation>
+        <translation type="vanished">Kan ikke koble til nedlastingssiden</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="115"/>
-        <location filename="../mxcodecs.cpp" line="132"/>
-        <location filename="../mxcodecs.cpp" line="147"/>
-        <location filename="../mxcodecs.cpp" line="165"/>
         <source>Error downloading %1</source>
-        <translation>Feil ved nedlasting av %1</translation>
+        <translation type="vanished">Feil ved nedlasting av %1</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="170"/>
         <source>&lt;b&gt;Download Finished.&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Nedlasting fullført.&lt;/b&gt;</translation>
+        <translation type="vanished">&lt;b&gt;Nedlasting fullført.&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="189"/>
         <source>Installing downloaded files</source>
-        <translation>Installerer nedlastede filer</translation>
+        <translation type="vanished">Installerer nedlastede filer</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="194"/>
         <source>No downloaded *.debs files found.</source>
-        <translation>Ingen lagrede *.debs filer funnet.</translation>
+        <translation type="vanished">Ingen lagrede *.debs filer funnet.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="207"/>
         <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
-        <translation>&lt;b&gt;Installerer...&lt;/b&gt;&lt;p&gt;</translation>
+        <translation type="vanished">&lt;b&gt;Installerer...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="220"/>
         <source>Error installing %1</source>
-        <translation>Feil ved installasjon av %1</translation>
+        <translation type="vanished">Feil ved installasjon av %1</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="224"/>
-        <source>Fix missing dependencies...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxcodecs.cpp" line="226"/>
-        <source>Error running %1 command</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxcodecs.cpp" line="238"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Installasjonsprosessen er fullført&lt;/b&gt;</translation>
+        <translation type="vanished">&lt;b&gt;Installasjonsprosessen er fullført&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="242"/>
         <source>Finished</source>
-        <translation>Fullført</translation>
+        <translation type="vanished">Fullført</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="243"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
-        <translation>Codecfiler har blitt lagret og installert uten feil.</translation>
+        <translation type="vanished">Codecfiler har blitt lagret og installert uten feil.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="247"/>
         <source>Process finished. Errors have occurred during the installation.</source>
-        <translation>Installasjonsprosess fullført. Feil har forekommet under installasjonen.</translation>
+        <translation type="vanished">Installasjonsprosess fullført. Feil har forekommet under installasjonen.</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="261"/>
         <source>About MX Codecs</source>
-        <translation>Om MX Codecer</translation>
+        <translation type="vanished">Om MX Codecer</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="262"/>
         <source>MX Codecs</source>
-        <translation>MX Codecer</translation>
+        <translation type="vanished">MX Codecer</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="262"/>
         <source>Version: </source>
-        <translation>Versjon:</translation>
+        <translation type="vanished">Versjon:</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="264"/>
         <source>Simple codecs downloader for MX Linux</source>
-        <translation>Enkel codec-nedlaster for MX Linux</translation>
+        <translation type="vanished">Enkel codec-nedlaster for MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="265"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation type="vanished">Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="266"/>
         <source>License</source>
-        <translation>Lisens</translation>
+        <translation type="vanished">Lisens</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="267"/>
-        <location filename="../mxcodecs.cpp" line="277"/>
         <source>Changelog</source>
-        <translation>Changelog</translation>
+        <translation type="vanished">Changelog</translation>
     </message>
     <message>
-        <location filename="../mxcodecs.cpp" line="285"/>
         <source>&amp;Close</source>
-        <translation>&amp;Lukk</translation>
+        <translation type="vanished">&amp;Lukk</translation>
     </message>
 </context>
 </TS>

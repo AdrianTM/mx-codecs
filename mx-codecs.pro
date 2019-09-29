@@ -39,16 +39,18 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mxcodecs.cpp \
     lockfile.cpp \
-    cmd.cpp
+    cmd.cpp \
+    mainwindow.cpp
 
-HEADERS  += mxcodecs.h \
+HEADERS  += \
     lockfile.h \
     version.h \
-    cmd.h
+    cmd.h \
+    mainwindow.h
 
-FORMS    += mxcodecs.ui
+FORMS    += \
+    mainwindow.ui
 
 TRANSLATIONS += translations/mx-codecs_am.ts \
                 translations/mx-codecs_ar.ts \
