@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="mk" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="mr" version="2.0">
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <source>MX Codecs Installer</source>
-        <translation type="unfinished"/>
+        <translation>एमएक्स कोडेक्स इन्स्टॉलर</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="27"/>
@@ -14,23 +14,23 @@
     <message>
         <location filename="../mainwindow.ui" line="44"/>
         <source>Downloading codecs files</source>
-        <translation type="unfinished"/>
+        <translation> कोडेक फायली डाउनलोड करत आहे</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="94"/>
         <source>Cancel any changes then quit</source>
-        <translation type="unfinished"/>
+        <translation>सर्व बदल रद्द करा आणि बंद करा</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="97"/>
         <location filename="../mainwindow.cpp" line="268"/>
         <source>Cancel</source>
-        <translation type="unfinished"/>
+        <translation>रद्द करा</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="104"/>
         <source>Alt+N</source>
-        <translation type="unfinished"/>
+        <translation>Alt+N</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="117"/>
@@ -40,37 +40,37 @@
     <message>
         <location filename="../mainwindow.ui" line="120"/>
         <source>OK</source>
-        <translation type="unfinished"/>
+        <translation> ठीक आहे</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="175"/>
         <source>About this application</source>
-        <translation type="unfinished"/>
+        <translation>या अनुप्रयोगाबद्दल</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="178"/>
         <source>About...</source>
-        <translation type="unfinished"/>
+        <translation>विषयी</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="185"/>
         <source>Alt+B</source>
-        <translation type="unfinished"/>
+        <translation>Alt+B</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="214"/>
         <source>Display help </source>
-        <translation type="unfinished"/>
+        <translation>मदत दाखवा</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="217"/>
         <source>Help</source>
-        <translation>Помош</translation>
+        <translation>मदत</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="224"/>
         <source>Alt+H</source>
-        <translation type="unfinished"/>
+        <translation>Alt+H</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="105"/>
@@ -82,7 +82,7 @@
         <location filename="../mainwindow.cpp" line="153"/>
         <location filename="../mainwindow.cpp" line="161"/>
         <source>&lt;b&gt;Running command...&lt;/b&gt;&lt;p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;चालू कमांड&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="108"/>
@@ -95,7 +95,7 @@
         <location filename="../mainwindow.cpp" line="193"/>
         <location filename="../mainwindow.cpp" line="246"/>
         <source>Error</source>
-        <translation type="unfinished"/>
+        <translation>त्रुटी</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="109"/>
@@ -103,7 +103,7 @@
         <location filename="../mainwindow.cpp" line="141"/>
         <location filename="../mainwindow.cpp" line="158"/>
         <source>Cannot connect to the download site</source>
-        <translation type="unfinished"/>
+        <translation>डाउनलोड साइटशी कनेक्ट करू शकत नाही</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="115"/>
@@ -111,32 +111,32 @@
         <location filename="../mainwindow.cpp" line="147"/>
         <location filename="../mainwindow.cpp" line="165"/>
         <source>Error downloading %1</source>
-        <translation type="unfinished"/>
+        <translation>% 1 डाउनलोड करताना त्रुटी</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="170"/>
         <source>&lt;b&gt;Download Finished.&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;डाउनलोड पूर्ण झाले&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="189"/>
         <source>Installing downloaded files</source>
-        <translation type="unfinished"/>
+        <translation>डाउनलोड केलेल्या फायली इन्स्टॉल करत आहे</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="194"/>
         <source>No downloaded *.debs files found.</source>
-        <translation type="unfinished"/>
+        <translation>कोणत्याही *.debs फायली डाउनलोड केलेल्या आढळल्या नाहीत</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="207"/>
         <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;इन्स्टॉल करीत आहे...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Error installing %1</source>
-        <translation type="unfinished"/>
+        <translation>इन्स्टॉल करतांना त्रुटी %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="224"/>
@@ -151,63 +151,63 @@
     <message>
         <location filename="../mainwindow.cpp" line="238"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;इन्स्टॉल करण्याची प्रक्रिया समाप्त&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="242"/>
         <source>Finished</source>
-        <translation type="unfinished"/>
+        <translation>समाप्त</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="243"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
-        <translation type="unfinished"/>
+        <translation>कोडेक फायली डाउनलोड आणि यशस्वीरित्या इन्स्टॉल केल्या गेल्या आहेत. </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>Process finished. Errors have occurred during the installation.</source>
-        <translation type="unfinished"/>
+        <translation>प्रक्रिया समाप्त. स्थापना दरम्यान त्रुटी आली.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="261"/>
         <source>About MX Codecs</source>
-        <translation type="unfinished"/>
+        <translation>एमएक्स कोडेक्स बद्दल</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
         <source>MX Codecs</source>
-        <translation type="unfinished"/>
+        <translation>एमएक्स कोडेक्स</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
         <source>Version: </source>
-        <translation type="unfinished"/>
+        <translation>आवृत्ती:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="264"/>
         <source>Simple codecs downloader for MX Linux</source>
-        <translation type="unfinished"/>
+        <translation>एमएक्स लिनक्ससाठी साधे कोडेक्स डाउनलोडर</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="265"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"/>
+        <translation>कॉपीराइट (c) एमएक्स लिनक्स</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="266"/>
         <source>License</source>
-        <translation type="unfinished"/>
+        <translation>परवाना</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="267"/>
         <location filename="../mainwindow.cpp" line="277"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>बदल सूची</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="285"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"/>
+        <translation>बंद</translation>
     </message>
 </context>
 <context>
@@ -215,17 +215,17 @@
     <message>
         <location filename="../main.cpp" line="53"/>
         <source>Unable to get exclusive lock</source>
-        <translation type="unfinished"/>
+        <translation>अनन्य लॉक मिळविण्यात अक्षम</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="54"/>
         <source>Another package management application (like Synaptic or apt-get), is already running. Please close that application first</source>
-        <translation type="unfinished"/>
+        <translation>दुसरा पॅकेज व्यवस्थापन अनुप्रयोग (जसे Synaptic किंवा apt-get), आधीच चालू आहे. प्रथम ते अनुप्रयोग बंद करा</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="67"/>
         <source>You must run this program as root.</source>
-        <translation type="unfinished"/>
+        <translation>आपण हा प्रोग्राम रूट म्हणूनच चालवावा.</translation>
     </message>
 </context>
 </TS>

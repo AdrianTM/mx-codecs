@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>mxcodecs</class>
- <widget class="QDialog" name="mxcodecs">
+ <class>MainWindow</class>
+ <widget class="QDialog" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -24,7 +24,7 @@
        <item>
         <widget class="QLabel" name="labelAccept">
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;This application allows you to install restricted codecs that permit advanced video and audio functions.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;In some juridictions their distribution may be limited so the user must meet local regulations. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Do you assume legal responsibility for downloading these codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;This application allows you to install restricted codecs that permit advanced video and audio functions.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;In some jurisdictions, their distribution may be limited. Please check the regulations in your area. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Do you assume legal responsibility for downloading these codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="textFormat">
           <enum>Qt::RichText</enum>
@@ -98,8 +98,7 @@
        </property>
        <property name="icon">
         <iconset theme="window-close">
-         <normaloff/>
-        </iconset>
+         <normaloff>.</normaloff>.</iconset>
        </property>
        <property name="shortcut">
         <string>Alt+N</string>
@@ -115,15 +114,14 @@
      <item row="0" column="6">
       <widget class="QPushButton" name="buttonOk">
        <property name="toolTip">
-        <string>Apply any changes then quit</string>
+        <string>Begin codec download and installation</string>
        </property>
        <property name="text">
         <string>OK</string>
        </property>
        <property name="icon">
         <iconset theme="dialog-ok">
-         <normaloff/>
-        </iconset>
+         <normaloff>.</normaloff>.</iconset>
        </property>
        <property name="shortcut">
         <string/>
@@ -181,8 +179,7 @@
        </property>
        <property name="icon">
         <iconset theme="help-about">
-         <normaloff/>
-        </iconset>
+         <normaloff>.</normaloff>.</iconset>
        </property>
        <property name="shortcut">
         <string>Alt+B</string>
@@ -221,8 +218,7 @@
        </property>
        <property name="icon">
         <iconset theme="help-contents">
-         <normaloff/>
-        </iconset>
+         <normaloff>.</normaloff>.</iconset>
        </property>
        <property name="shortcut">
         <string>Alt+H</string>
@@ -244,7 +240,7 @@
   <connection>
    <sender>buttonCancel</sender>
    <signal>pressed()</signal>
-   <receiver>mxcodecs</receiver>
+   <receiver>MainWindow</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">

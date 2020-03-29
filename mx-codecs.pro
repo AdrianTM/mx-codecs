@@ -39,14 +39,18 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mxcodecs.cpp \
-    lockfile.cpp
+    lockfile.cpp \
+    cmd.cpp \
+    mainwindow.cpp
 
-HEADERS  += mxcodecs.h \
+HEADERS  += \
     lockfile.h \
-    version.h
+    version.h \
+    cmd.h \
+    mainwindow.h
 
-FORMS    += mxcodecs.ui
+FORMS    += \
+    mainwindow.ui
 
 TRANSLATIONS += translations/mx-codecs_am.ts \
                 translations/mx-codecs_ar.ts \
@@ -74,6 +78,7 @@ TRANSLATIONS += translations/mx-codecs_am.ts \
                 translations/mx-codecs_ko.ts \
                 translations/mx-codecs_lt.ts \
                 translations/mx-codecs_mk.ts \
+                translations/mx-codecs_mr.ts \
                 translations/mx-codecs_nb.ts \
                 translations/mx-codecs_nl.ts \
                 translations/mx-codecs_pl.ts \
@@ -93,5 +98,3 @@ TRANSLATIONS += translations/mx-codecs_am.ts \
 
 RESOURCES += \
     images.qrc
-
-unix:!macx: LIBS += -lcmd

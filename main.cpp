@@ -22,7 +22,7 @@
  * along with MX Codecs.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-#include "mxcodecs.h"
+#include "mainwindow.h"
 #include <QApplication>
 #include <QTranslator>
 #include <QLocale>
@@ -34,7 +34,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    a.setWindowIcon(QIcon("/usr/share/pixmaps/mx-codecs.png"));
+    a.setWindowIcon(QIcon::fromTheme("mx-codecs"));
 
     QTranslator qtTran;
     qtTran.load(QString("qt_") + QLocale::system().name());
@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
         } else {
             lock_file.lock();
         }
-        mxcodecs w;
+        MainWindow w;
         w.show();
 
         return a.exec();

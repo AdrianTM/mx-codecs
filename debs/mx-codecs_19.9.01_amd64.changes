@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Sun, 29 Sep 2019 12:57:37 -0400
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source amd64
+Version: 19.9.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (19.9.01) mx; urgency=medium
+ .
+   * update translations
+Checksums-Sha1:
+ 19e3f2b9aaa0750c7336531095326da74845e2d1 1162 mx-codecs_19.9.01.dsc
+ 2e20bbd97b62bd2bc4fbc63b36b6fe3c21f5c040 64912 mx-codecs_19.9.01.tar.xz
+ 8b6b82745a8627c4d6b3ff5e08f8fe07efd61e23 619458 mx-codecs-dbgsym_19.9.01_amd64.deb
+ 0d037abdbbba8d22a177899096b0b4aaff3d4e09 11272 mx-codecs_19.9.01_amd64.buildinfo
+ ee9b821debc1b0b568b40b8f33537e94bac26494 76178 mx-codecs_19.9.01_amd64.deb
+Checksums-Sha256:
+ 54627842cbcee39dce41ed8b6cbf9106ca1f5374452f17718f088cb0c131286d 1162 mx-codecs_19.9.01.dsc
+ 80eb2629280029548736b4989579d74fcd8a4c4a893be1872c7fc9340bd0aa8f 64912 mx-codecs_19.9.01.tar.xz
+ ba74beaed62211d9ca02c1f4e528e21744b17962962a25637db953c71443e810 619458 mx-codecs-dbgsym_19.9.01_amd64.deb
+ d86a9c59ccba1f3b461e5700b909e2d285f830e1cd17a4cae2999859ce361f31 11272 mx-codecs_19.9.01_amd64.buildinfo
+ 8c7e438b92660a27eb4d63f0d5d4513ef344fac57611b8f39d8abb0090b70e4b 76178 mx-codecs_19.9.01_amd64.deb
+Files:
+ 8e5d57179b9538a979a251454f73ebe1 1162 system optional mx-codecs_19.9.01.dsc
+ ffdc6bfb4114eea74f99843c3654674a 64912 system optional mx-codecs_19.9.01.tar.xz
+ a6e69f82abceed4b1a70b0ddcc064cad 619458 debug optional mx-codecs-dbgsym_19.9.01_amd64.deb
+ 7ad4fe5d201ead52e3c0a4afbe4b5bc9 11272 system optional mx-codecs_19.9.01_amd64.buildinfo
+ 8aec086fa20cbda4b4fe857b2190d27a 76178 system optional mx-codecs_19.9.01_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl2Q8NwTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumEo9B/9lk8LHUNOCI0Y1F9BGOs4kXVaeG+xn
+2L7Oyi1IDkTwM9lg2eV5t389cRzi6XzopsprJj2XL6ks9JdbX8xUgSTGW3BSFonn
+DLafv37Evp3JP16c2Urj7UqQV+rLCNtT28dMR7dgRZlzsrD0+7GXlWCOGYVT9n/m
+dLi0xxk5CdivWdmFmKPzSkbU1F/HydmHGe93OzYoC4IlXGIFM4ItQIYDZKDkFyNN
+ashDjN0AvHcbjpEGye1HwoE/cu7b/R+4fUxVwgUt9GRhcpPR4u1L3+FwuUICH/S/
+AeRg1gv1b2XUdRnLqDNXkLdNd2tYtJUrDILQ0ikSVHKbBWuJUUSRJ97q
+=hZBh
+-----END PGP SIGNATURE-----

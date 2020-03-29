@@ -1,6 +1,7 @@
-license.html		 usr/share/doc/mx-codecs
-mx-codecs		 usr/sbin
-mx-codecs.desktop	 usr/share/applications
-mx-codecs.png            usr/share/icons/hicolor/48x48/apps
-mx-codecs.png            usr/share/pixmaps
-translations/*.qm	 usr/share/mx-codecs/locale
+help/*			usr/share/doc/mx-codecs/help
+license.html		usr/share/doc/mx-codecs
+mx-codecs		usr/sbin
+mx-codecs.desktop	usr/share/applications
+icons/mx-codecs.svg	usr/share/icons/hicolor/scalable/apps
+icons/mx-codecs.png	usr/share/icons/hicolor/40x40/apps
+translations/*.qm	usr/share/mx-codecs/locale

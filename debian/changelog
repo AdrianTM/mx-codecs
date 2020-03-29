@@ -1,3 +1,34 @@
+mx-codecs (19.9.01) mx; urgency=medium
+
+  * update translations
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 29 Sep 2019 12:57:37 -0400
+
+mx-codecs (19.9) mx; urgency=medium
+
+  * update translations
+  * remove libcmd dependency
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 01 Sep 2019 02:10:54 -0400
+
+mx-codecs (19.8) mx; urgency=medium
+
+  * added offline help file
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 21 Aug 2019 13:42:47 -0400
+
+mx-codecs (19.7.1) mx; urgency=medium
+
+  * update icon
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 08 Jul 2019 12:05:46 -0400
+
+mx-codecs (19.7) mx; urgency=medium
+
+  * fix window buttons for Buster
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 07 Jul 2019 13:35:00 -0400
+
 mx-codecs (19.6.01) mx; urgency=medium
 
   * added buster support 
