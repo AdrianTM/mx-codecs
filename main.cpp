@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
         LockFile lock_file("/var/lib/dpkg/lock");
         if (lock_file.isLocked()) {
             QApplication::beep();
-            QMessageBox::critical(0, QApplication::tr("Unable to get exclusive lock"),
+            QMessageBox::critical(nullptr, QApplication::tr("Unable to get exclusive lock"),
                                   QApplication::tr("Another package management application (like Synaptic or apt-get), "\
                                                    "is already running. Please close that application first"));
             return 1;
@@ -62,10 +62,11 @@ int main(int argc, char *argv[])
 
         return a.exec();
     } else {
-        QApplication::beep();
-        QMessageBox::critical(0, QString::null,
-                              QApplication::tr("You must run this program as root."));
-        return 1;
+        system("su-to-root -X -c " + QCoreApplication::applicationFilePath().toUtf8() + "&");
+//        QApplication::beep();
+//        QMessageBox::critical(0, QString::null,
+//                              QApplication::tr("You must run this program as root."));
+//        return 1;
     }
 
 }

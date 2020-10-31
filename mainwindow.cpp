@@ -262,7 +262,7 @@ void MainWindow::on_buttonAbout_clicked() {
                        tr("MX Codecs") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
                        VERSION + "</p><p align=\"center\"><h3>" +
                        tr("Simple codecs downloader for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
-                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
+                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", nullptr, this);
     QPushButton *btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
     QPushButton *btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
     QPushButton *btnCancel = msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
