@@ -1,5 +1,4 @@
-help/*			usr/share/doc/mx-codecs/help
-license.html		usr/share/doc/mx-codecs
+help			usr/share/doc/mx-codecs
 mx-codecs		usr/sbin
 mx-codecs.desktop	usr/share/applications
 icons/mx-codecs.svg	usr/share/icons/hicolor/scalable/apps

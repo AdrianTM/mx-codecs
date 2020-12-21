@@ -251,4 +251,4 @@ mx-codecs (0.13.98+git20140221-mx140+1) mx; urgency=low
 
   * Initial packaging.
 
- -- Steven Pusser (Stevo) <maintainer@mepiscommunity.org>  Sat, 22 Feb 2014 07:10:53 -0800
+ -- Steven Pusser [stevep@mxlinux.org]  Sat, 22 Feb 2014 07:10:53 -0800
