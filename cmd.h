@@ -2,7 +2,6 @@
 #define CMD_H
 
 #include <QProcess>
-#include <QString>
 
 class Cmd: public QProcess
 {

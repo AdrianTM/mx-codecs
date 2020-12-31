@@ -22,22 +22,20 @@
  * along with MX Codecs.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
+#include <QDebug>
+#include <QDir>
+#include <QTextEdit>
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "version.h"
 #include "cmd.h"
 
-#include <QDir>
-#include <QTextEdit>
-
-#include <QDebug>
-
-
 MainWindow::MainWindow(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::MainWindow), lock_file("/var/lib/dpkg/lock")
 {
-    qDebug().noquote() << QCoreApplication::applicationName() << "version:" << VERSION;
+    qDebug().noquote() << qApp->applicationName() << "version:" << VERSION;
     ui->setupUi(this);
 
     // get arch info
@@ -60,6 +58,12 @@ void MainWindow::updateStatus(const QString& msg, int val) {
     qApp->processEvents();
 }
 
+// Check if online
+bool MainWindow::checkOnline() const
+{
+    return (system("wget -q --spider http://mxrepo.com >/dev/null 2>&1 || wget -q --spider http://google.com >/dev/null 2>&1 ") == 0);
+}
+
 void MainWindow::displayDoc(const QString& url) const
 {
     Cmd cmd;
@@ -74,6 +78,11 @@ void MainWindow::displayDoc(const QString& url) const
 void MainWindow::on_buttonOk_clicked() {
     if (ui->stackedWidget->currentIndex() == 0) {
         setCursor(QCursor(Qt::WaitCursor));
+        if (!checkOnline()) {
+            QMessageBox::critical(this, tr("Error"), tr("Internet is not available, won't be able to download the list of packages"));
+            setCursor(QCursor(Qt::ArrowCursor));
+            return;
+        }
         installDebs(downloadDebs());
     } else {
         qApp->exit(0);
@@ -248,11 +257,6 @@ void MainWindow::installDebs(const QString& path) {
         qApp->exit(1);
     }
 }
-
-
-/////////////////////////////////////////////////////////////////////////
-// slots
-
 
 // show about
 void MainWindow::on_buttonAbout_clicked() {

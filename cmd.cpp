@@ -1,7 +1,7 @@
-#include "cmd.h"
-
 #include <QDebug>
 #include <QEventLoop>
+
+#include "cmd.h"
 
 Cmd::Cmd(QObject *parent)
     : QProcess(parent)
@@ -40,10 +40,10 @@ bool Cmd::run(const QString &cmd, QByteArray &output, bool quiet)
     }
     if (!quiet) qDebug().noquote() << cmd;
     QEventLoop loop;
-    connect(this, static_cast<void (QProcess::*)(int)>(&QProcess::finished), &loop, &QEventLoop::quit);
+    connect(this, QOverload<int>::of(&QProcess::finished), &loop, &QEventLoop::quit);
     start("/bin/bash", QStringList() << "-c" << cmd);
     loop.exec();
-    disconnect(this, static_cast<void (QProcess::*)(int)>(&QProcess::finished), 0, 0);
+    disconnect(this, QOverload<int>::of(&QProcess::finished), nullptr, nullptr);
     output = readAll().trimmed();
     return (exitStatus() == QProcess::NormalExit && exitCode() == 0);
 }

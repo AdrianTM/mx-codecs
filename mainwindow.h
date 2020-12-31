@@ -25,10 +25,10 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QDialog>
-#include <QMessageBox>
 #include <QComboBox>
+#include <QDialog>
 #include <QDir>
+#include <QMessageBox>
 #include <QProcess>
 
 #include "lockfile.h"
@@ -48,16 +48,17 @@ public:
     bool i386_flag = true;
     bool arch_flag = true;
 
-    void updateStatus(const QString &msg, int val);
+    bool checkOnline() const;
     void displayDoc(const QString &url) const;
     void installDebs(const QString &path);
+    void updateStatus(const QString &msg, int val);
 
     QString downloadDebs();
 
 public slots:
-    virtual void on_buttonOk_clicked();
     virtual void on_buttonAbout_clicked();
     virtual void on_buttonHelp_clicked();
+    virtual void on_buttonOk_clicked();
 
 private:
     Ui::MainWindow *ui;
