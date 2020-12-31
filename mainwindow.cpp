@@ -101,7 +101,11 @@ QString MainWindow::downloadDebs() {
     qApp->processEvents();
 
     // create temp folder and set it current
-    path = cmd.getCmdOut("mktemp -d");
+    if (!tempdir.isValid()) {
+        QMessageBox::critical(this, tr("Error"), tr("Could not create temp directory. "));
+        exit(EXIT_FAILURE);
+    }
+    path = tempdir.path();
 
     QDir dir(path);
     dir.mkdir(path);

@@ -30,6 +30,7 @@
 #include <QDir>
 #include <QMessageBox>
 #include <QProcess>
+#include <QTemporaryDir>
 
 #include "lockfile.h"
 #include "cmd.h"
@@ -65,6 +66,7 @@ private:
     Cmd cmd;
     LockFile lock_file;
     QString arch;
+    QTemporaryDir tempdir;
 };
 
 #endif // MAINWINDOW_H
