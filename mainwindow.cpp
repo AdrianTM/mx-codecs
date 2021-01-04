@@ -30,7 +30,6 @@
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "version.h"
 #include "cmd.h"
 #include "about.h"
 
@@ -38,7 +37,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::MainWindow), lock_file("/var/lib/dpkg/lock"), reply(nullptr)
 {
-    qDebug().noquote() << qApp->applicationName() << "version:" << VERSION;
+    qDebug().noquote() << qApp->applicationName() << "version:" << qApp->applicationVersion();
     ui->setupUi(this);
     ui->stackedWidget->setCurrentIndex(0);
 
@@ -68,16 +67,20 @@ bool MainWindow::checkOnline()
     QNetworkReply::NetworkError error = QNetworkReply::NoError;
     QEventLoop loop;
 
+    QNetworkRequest request;
+    request.setRawHeader("User-Agent", qApp->applicationName().toUtf8() + "/" + qApp->applicationVersion().toUtf8() + " (linux-gnu)");
+
     QStringList addresses{"http://mxrepo.com", "http://google.com"}; // list of addresses to try
     for (const QString &address : addresses) {
         error = QNetworkReply::NoError;
-        reply = manager.get(QNetworkRequest(QUrl(address)));
+        request.setUrl(QUrl(address));
+        reply = manager.get(request);
         connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
         connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), [&error](const QNetworkReply::NetworkError &err) {error = err;} ); // errorOccured only in Qt >= 5.15
         connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), &loop, &QEventLoop::quit);
         loop.exec();
         reply->disconnect();
-        if (error == QNetworkReply::NoError || error == QNetworkReply::UnknownContentError) {
+        if (error == QNetworkReply::NoError) {
             return true;
         }
     }
@@ -153,7 +156,7 @@ QString MainWindow::downloadDebs() {
         exit(EXIT_FAILURE);
     }
     path = tempdir.path();
-    QDir().setCurrent(path);
+    QDir::setCurrent(path);
 
     // get release info
     release = cmd.getCmdOut("grep VERSION= /etc/os-release |grep -Eo [a-z]+ ");
@@ -273,7 +276,7 @@ void MainWindow::installDebs(const QString& path) {
 void MainWindow::on_buttonAbout_clicked() {
     this->hide();
     displayAboutMsgBox(tr("About MX Codecs"), "<p align=\"center\"><b><h2>" + this->windowTitle() +"</h2></b></p><p align=\"center\">" +
-                       tr("Version: ") + VERSION + "</p><p align=\"center\"><h3>" +
+                       tr("Version: ") + qApp->applicationVersion() + "</p><p align=\"center\"><h3>" +
                        tr("Simple codecs downloader for MX Linux") +
                        "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>",
