@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 04 Jan 2021 03:31:29 -0500
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source amd64
+Version: 21.1
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (21.1) mx; urgency=medium
+ .
+   * remove wget dependency
+   * minor fixes
+Checksums-Sha1:
+ 1f760f15ec9693ccd118b7283e7a8714aa686fd7 1150 mx-codecs_21.1.dsc
+ 4a04b4ef9039e9b6910e73da12a8e31bcd6cf30d 54720 mx-codecs_21.1.tar.xz
+ c14d29bccb271a8518060bce5e4d94a361811a47 775702 mx-codecs-dbgsym_21.1_amd64.deb
+ ae61ff946e4070e9ea05e507163124587115933d 10658 mx-codecs_21.1_amd64.buildinfo
+ 241ab01553ef50ac0148e3854e0a1ab2e96aaac9 75580 mx-codecs_21.1_amd64.deb
+Checksums-Sha256:
+ 915533cb8b4425db85b04f79377db9fbc922f3b34d7f0285f8828229d78d8315 1150 mx-codecs_21.1.dsc
+ e4c3f53fac557266c90fc9ddfb18a6670f5d5e8233d704a504790b4f59cb0ca1 54720 mx-codecs_21.1.tar.xz
+ f1c0be16857cc1212075cb69f2690ae3d44fe6a20048c2a0783dbf62bb2d509c 775702 mx-codecs-dbgsym_21.1_amd64.deb
+ 904f48608233537b0ce4d454cdee33fe34dd93f2582cb901091c538176e8bb2d 10658 mx-codecs_21.1_amd64.buildinfo
+ 046f2480cef68abe439306c18fb5c966709e352e1c0ea8280a2b9a0ccad28088 75580 mx-codecs_21.1_amd64.deb
+Files:
+ 023ea77d5188342afbe693951b10df7f 1150 system optional mx-codecs_21.1.dsc
+ 9e2a974bf94b5d8fe477aa11fb7409ce 54720 system optional mx-codecs_21.1.tar.xz
+ 9539104c25193c838d16eb78f55cac1d 775702 debug extra mx-codecs-dbgsym_21.1_amd64.deb
+ 3e6600e4e785d0f3ad706880b0a03f8b 10658 system optional mx-codecs_21.1_amd64.buildinfo
+ 9f3e0334cc83b9cefa539771758d73b8 75580 system optional mx-codecs_21.1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl/y1ZwTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumB8GB/sF7QZCmXZvHJxUR+NFOrs6YVJmdEeA
+41ub7PDqojgD2Zeb5TdEHUa9yJ1ddZ9nbbtOBcDrcIYVgRhax/OFnCVzMXUyc770
+U3U1G+9///6HRXrbS+VxDzCEhzRW70rLKtk36VvKLqTf7cPnaNDJ9+GL/tAA4/tX
+f+HQKOpOfc3Xfn4Pea0HHT/HRVbSS7BQuax8GxDSypT4TjOfJsAiSt9f6nv9vXbu
+onRNmDQxCpDPdbdJiMS5L/9SY4qdJjRqSQZ0elO/J9jdOaHreCUFKZFZzixCLFNv
++l+aC8k4uyWdZRWzxOKyN2psPHwCIEc3RVE5/q23edmnB85pOaoFcLO5
+=n9oT
+-----END PGP SIGNATURE-----

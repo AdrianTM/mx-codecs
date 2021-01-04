@@ -41,13 +41,15 @@ TEMPLATE = app
 SOURCES += main.cpp\
     lockfile.cpp \
     cmd.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    about.cpp
 
 HEADERS  += \
     lockfile.h \
     version.h \
     cmd.h \
-    mainwindow.h
+    mainwindow.h \
+    about.h
 
 FORMS    += \
     mainwindow.ui

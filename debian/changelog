@@ -1,3 +1,10 @@
+mx-codecs (21.1) mx; urgency=medium
+
+  * remove wget dependency
+  * minor fixes
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 04 Jan 2021 03:31:29 -0500
+
 mx-codecs (19.9.01) mx; urgency=medium
 
   * update translations

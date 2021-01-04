@@ -27,12 +27,12 @@
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
 #include <QTemporaryFile>
-#include <QTextEdit>
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "version.h"
 #include "cmd.h"
+#include "about.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QDialog(parent),
@@ -65,7 +65,6 @@ void MainWindow::updateStatus(const QString& msg, int val) {
 // Check if online
 bool MainWindow::checkOnline()
 {
-
     QNetworkReply::NetworkError error = QNetworkReply::NoError;
     QEventLoop loop;
 
@@ -84,17 +83,6 @@ bool MainWindow::checkOnline()
     }
     qDebug() << "No network detected:" << reply->url() << error;
     return false;
-}
-
-void MainWindow::displayDoc(const QString& url) const
-{
-    Cmd cmd;
-    QString user = cmd.getCmdOut("logname", true);
-    if (system("command -v mx-viewer >/dev/null") == 0) {
-        system("mx-viewer " + url.toUtf8());
-    } else {
-        system("runuser -l " + user.toUtf8() + " -c \"env XDG_RUNTIME_DIR=/run/user/$(id -u " + user.toUtf8() + ") xdg-open " + url.toUtf8() + "\"&");
-    }
 }
 
 void MainWindow::on_buttonOk_clicked() {
@@ -165,9 +153,7 @@ QString MainWindow::downloadDebs() {
         exit(EXIT_FAILURE);
     }
     path = tempdir.path();
-
-    QDir dir;
-    dir.setCurrent(path);
+    QDir().setCurrent(path);
 
     // get release info
     release = cmd.getCmdOut("grep VERSION= /etc/os-release |grep -Eo [a-z]+ ");
@@ -286,41 +272,12 @@ void MainWindow::installDebs(const QString& path) {
 // show about
 void MainWindow::on_buttonAbout_clicked() {
     this->hide();
-    QMessageBox msgBox(QMessageBox::NoIcon,
-                       tr("About MX Codecs"), "<p align=\"center\"><b><h2>" +
-                       tr("MX Codecs") + "</h2></b></p><p align=\"center\">" + tr("Version: ") +
-                       VERSION + "</p><p align=\"center\"><h3>" +
-                       tr("Simple codecs downloader for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
-                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", nullptr, this);
-    QPushButton *btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
-    QPushButton *btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
-    QPushButton *btnCancel = msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
-    btnCancel->setIcon(QIcon::fromTheme("window-close"));
-
-    msgBox.exec();
-
-    if (msgBox.clickedButton() == btnLicense) {
-        displayDoc("file:///usr/share/doc/mx-codecs/license.html");
-    } else if (msgBox.clickedButton() == btnChangelog) {
-        QDialog *changelog = new QDialog(this);
-        changelog->setWindowTitle(tr("Changelog"));
-        changelog->resize(600, 500);
-
-        QTextEdit *text = new QTextEdit;
-        text->setReadOnly(true);
-        Cmd cmd;
-        text->setText(cmd.getCmdOut("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
-
-        QPushButton *btnClose = new QPushButton(tr("&Close"));
-        btnClose->setIcon(QIcon::fromTheme("window-close"));
-        connect(btnClose, &QPushButton::clicked, changelog, &QDialog::close);
-
-        QVBoxLayout *layout = new QVBoxLayout;
-        layout->addWidget(text);
-        layout->addWidget(btnClose);
-        changelog->setLayout(layout);
-        changelog->exec();
-    }
+    displayAboutMsgBox(tr("About MX Codecs"), "<p align=\"center\"><b><h2>" + this->windowTitle() +"</h2></b></p><p align=\"center\">" +
+                       tr("Version: ") + VERSION + "</p><p align=\"center\"><h3>" +
+                       tr("Simple codecs downloader for MX Linux") +
+                       "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
+                       tr("Copyright (c) MX Linux") + "<br /><br /></p>",
+                       "file:///usr/share/doc/mx-codecs/license.html", tr("%1 License").arg(this->windowTitle()), true);
     this->show();
 }
 
@@ -329,11 +286,11 @@ void MainWindow::on_buttonHelp_clicked() {
     QLocale locale;
     QString lang = locale.bcp47Name();
 
-    QString url = "/usr/share/doc/mx-codecs/mx-codecs.html";
+    QString url = "file:///usr/share/doc/mx-codecs/mx-codecs.html";
 
     if (lang.startsWith("fr")) {
         url = "https://mxlinux.org/french-wiki/help-files/help-mx-codecs-installer";
     }
-    displayDoc(url);
+    displayDoc(url, tr("%1 Help").arg(this->windowTitle()), true);
 }
 

@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="hu" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="hu">
 <context>
     <name>MainWindow</name>
     <message>
@@ -9,7 +11,7 @@
     <message>
         <location filename="../mainwindow.ui" line="27"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;This application allows you to install restricted codecs that permit advanced video and audio functions.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;In some jurisdictions, their distribution may be limited. Please check the regulations in your area. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Do you assume legal responsibility for downloading these codecs?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="44"/>
@@ -17,215 +19,273 @@
         <translation>Kodekfájlok letöltése</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="94"/>
+        <location filename="../mainwindow.ui" line="100"/>
         <source>Cancel any changes then quit</source>
         <translation>Változtatások visszavonása és kilépés</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="97"/>
-        <location filename="../mainwindow.cpp" line="268"/>
+        <location filename="../mainwindow.ui" line="103"/>
         <source>Cancel</source>
         <translation>Mégsem</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="104"/>
+        <location filename="../mainwindow.ui" line="110"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="117"/>
+        <location filename="../mainwindow.ui" line="129"/>
         <source>Begin codec download and installation</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="120"/>
+        <location filename="../mainwindow.ui" line="132"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="175"/>
+        <location filename="../mainwindow.ui" line="193"/>
         <source>About this application</source>
         <translation>Az alkalmazásról</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="178"/>
+        <location filename="../mainwindow.ui" line="196"/>
         <source>About...</source>
         <translation>Névjegy</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="185"/>
+        <location filename="../mainwindow.ui" line="203"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="214"/>
+        <location filename="../mainwindow.ui" line="232"/>
         <source>Display help </source>
         <translation>Súgó megjelenítése</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="217"/>
+        <location filename="../mainwindow.ui" line="235"/>
         <source>Help</source>
         <translation>Súgó</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="224"/>
+        <location filename="../mainwindow.ui" line="242"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="105"/>
-        <location filename="../mainwindow.cpp" line="112"/>
-        <location filename="../mainwindow.cpp" line="120"/>
-        <location filename="../mainwindow.cpp" line="128"/>
-        <location filename="../mainwindow.cpp" line="137"/>
-        <location filename="../mainwindow.cpp" line="144"/>
-        <location filename="../mainwindow.cpp" line="153"/>
-        <location filename="../mainwindow.cpp" line="161"/>
+        <location filename="../mainwindow.cpp" line="166"/>
+        <location filename="../mainwindow.cpp" line="170"/>
+        <location filename="../mainwindow.cpp" line="176"/>
+        <location filename="../mainwindow.cpp" line="199"/>
         <source>&lt;b&gt;Running command...&lt;/b&gt;&lt;p&gt;</source>
         <translation>&lt;b&gt;Parancs futtatása...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="108"/>
-        <location filename="../mainwindow.cpp" line="124"/>
+        <location filename="../mainwindow.cpp" line="92"/>
         <location filename="../mainwindow.cpp" line="131"/>
-        <location filename="../mainwindow.cpp" line="140"/>
-        <location filename="../mainwindow.cpp" line="146"/>
-        <location filename="../mainwindow.cpp" line="157"/>
-        <location filename="../mainwindow.cpp" line="164"/>
-        <location filename="../mainwindow.cpp" line="193"/>
-        <location filename="../mainwindow.cpp" line="246"/>
+        <location filename="../mainwindow.cpp" line="152"/>
+        <location filename="../mainwindow.cpp" line="187"/>
+        <location filename="../mainwindow.cpp" line="195"/>
+        <location filename="../mainwindow.cpp" line="224"/>
+        <location filename="../mainwindow.cpp" line="268"/>
         <source>Error</source>
         <translation>Hiba</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="109"/>
-        <location filename="../mainwindow.cpp" line="125"/>
-        <location filename="../mainwindow.cpp" line="141"/>
-        <location filename="../mainwindow.cpp" line="158"/>
+        <location filename="../mainwindow.cpp" line="188"/>
         <source>Cannot connect to the download site</source>
         <translation>Nem sikerült a csatlakozás a letöltőoldalhoz</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="115"/>
-        <location filename="../mainwindow.cpp" line="132"/>
-        <location filename="../mainwindow.cpp" line="147"/>
-        <location filename="../mainwindow.cpp" line="165"/>
+        <location filename="../mainwindow.cpp" line="108"/>
         <source>Error downloading %1</source>
         <translation>Hibás letöltés %1</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="92"/>
+        <source>Internet is not available, won&apos;t be able to download the list of packages</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="131"/>
+        <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="152"/>
+        <source>Could not create temp directory. </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="166"/>
+        <source>downloading Packages.gz from &apos;main&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="170"/>
+        <source>downloading Packages.gz from &apos;non-free&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="176"/>
+        <source>downloading Packages.gz from i386 &apos;main&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="180"/>
         <source>&lt;b&gt;Download Finished.&lt;/b&gt;</source>
         <translation>&lt;b&gt;A letöltés kész.&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="189"/>
+        <location filename="../mainwindow.cpp" line="196"/>
+        <source>Cannot connect find %1 package</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="220"/>
         <source>Installing downloaded files</source>
         <translation>Letöltött fájlok telepítése</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="194"/>
+        <location filename="../mainwindow.cpp" line="225"/>
         <source>No downloaded *.debs files found.</source>
         <translation>A letöltött *.deb fájlok nem találhatóak.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="207"/>
+        <location filename="../mainwindow.cpp" line="246"/>
         <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
         <translation>&lt;b&gt;Telepítés...&lt;/b&gt;&lt;p&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="220"/>
+        <location filename="../mainwindow.cpp" line="248"/>
         <source>Error installing %1</source>
         <translation>Hibás telepítés %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="224"/>
+        <location filename="../mainwindow.cpp" line="253"/>
         <source>Fix missing dependencies...</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="226"/>
+        <location filename="../mainwindow.cpp" line="255"/>
         <source>Error running %1 command</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="238"/>
+        <location filename="../mainwindow.cpp" line="260"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
         <translation>&lt;b&gt;A telepítési folyamat kész&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="242"/>
+        <location filename="../mainwindow.cpp" line="264"/>
         <source>Finished</source>
         <translation>Kész</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="243"/>
+        <location filename="../mainwindow.cpp" line="265"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
         <translation>Kodekfájlok sikeresen letöltve és telepítve.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="247"/>
+        <location filename="../mainwindow.cpp" line="269"/>
         <source>Process finished. Errors have occurred during the installation.</source>
         <translation>A folyamat kész. Hibák történtek a telepítés során.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="261"/>
+        <location filename="../mainwindow.cpp" line="277"/>
         <source>About MX Codecs</source>
         <translation>Az MX kodektelepítőről</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
-        <source>MX Codecs</source>
-        <translation>MX kodektelepítő</translation>
+        <location filename="../mainwindow.cpp" line="282"/>
+        <source>%1 License</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
+        <location filename="../mainwindow.cpp" line="296"/>
+        <source>%1 Help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>MX Codecs</source>
+        <translation type="vanished">MX kodektelepítő</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="278"/>
         <source>Version: </source>
         <translation>Verzió:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="264"/>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>Simple codecs downloader for MX Linux</source>
         <translation>Egyszerű kodekletöltő MX Linuxhoz</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="265"/>
+        <location filename="../mainwindow.cpp" line="281"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="266"/>
         <source>License</source>
-        <translation>Liszensz</translation>
+        <translation type="vanished">Liszensz</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="267"/>
-        <location filename="../mainwindow.cpp" line="277"/>
         <source>Changelog</source>
-        <translation>Változásbejegyzés</translation>
+        <translation type="vanished">Változásbejegyzés</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="285"/>
         <source>&amp;Close</source>
-        <translation>&amp;Bezár</translation>
+        <translation type="vanished">&amp;Bezár</translation>
     </message>
 </context>
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="../main.cpp" line="53"/>
         <source>Unable to get exclusive lock</source>
-        <translation>Egy másik csomagkezelő alkalmazás - a Synaptic, vagy az apt-get - már fut. Kérem zárja be először ezt az alkalmazást!</translation>
+        <translation type="vanished">Egy másik csomagkezelő alkalmazás - a Synaptic, vagy az apt-get - már fut. Kérem zárja be először ezt az alkalmazást!</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="54"/>
         <source>Another package management application (like Synaptic or apt-get), is already running. Please close that application first</source>
-        <translation>Egy másik csomagkezelő alkalmazás (vagy a Synaptic, vagy az apt-get) már fut. Kérem zárja be először ezt az alkalmazást!</translation>
+        <translation type="vanished">Egy másik csomagkezelő alkalmazás (vagy a Synaptic, vagy az apt-get) már fut. Kérem zárja be először ezt az alkalmazást!</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="67"/>
         <source>You must run this program as root.</source>
-        <translation>Root felhasználóként kell futtatnia ezt a programot!</translation>
+        <translation type="vanished">Root felhasználóként kell futtatnia ezt a programot!</translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="32"/>
+        <source>License</source>
+        <translation type="unfinished">Liszensz</translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="33"/>
+        <location filename="../about.cpp" line="43"/>
+        <source>Changelog</source>
+        <translation type="unfinished">Változásbejegyzés</translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="34"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Mégsem</translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="51"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished">&amp;Bezár</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../main.cpp" line="56"/>
+        <source>Unable to get exclusive lock</source>
+        <translation type="unfinished">Egy másik csomagkezelő alkalmazás - a Synaptic, vagy az apt-get - már fut. Kérem zárja be először ezt az alkalmazást!</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="57"/>
+        <source>Another package management application (like Synaptic or apt-get), is already running. Please close that application first</source>
+        <translation type="unfinished">Egy másik csomagkezelő alkalmazás (vagy a Synaptic, vagy az apt-get) már fut. Kérem zárja be először ezt az alkalmazást!</translation>
     </message>
 </context>
 </TS>

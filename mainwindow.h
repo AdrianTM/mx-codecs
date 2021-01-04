@@ -51,7 +51,6 @@ public:
     bool arch_flag = true;
 
     bool checkOnline();
-    void displayDoc(const QString &url) const;
     void installDebs(const QString &path);
     void updateStatus(const QString &msg, int val);
 
