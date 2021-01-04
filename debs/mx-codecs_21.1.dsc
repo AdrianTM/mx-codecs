@@ -13,20 +13,20 @@ Build-Depends: debhelper (>= 9), qtbase5-dev, qttools5-dev-tools
 Package-List:
  mx-codecs deb system optional arch=any
 Checksums-Sha1:
- 4a04b4ef9039e9b6910e73da12a8e31bcd6cf30d 54720 mx-codecs_21.1.tar.xz
+ 082f98393074293fac3348dd054a61f867df490d 54708 mx-codecs_21.1.tar.xz
 Checksums-Sha256:
- e4c3f53fac557266c90fc9ddfb18a6670f5d5e8233d704a504790b4f59cb0ca1 54720 mx-codecs_21.1.tar.xz
+ 4b101556b62bef6ae4882628da7604eae5e29ae2ff4411bdd0967d6979a14518 54708 mx-codecs_21.1.tar.xz
 Files:
- 9e2a974bf94b5d8fe477aa11fb7409ce 54720 mx-codecs_21.1.tar.xz
+ ea5658459e05fdb7a9646ac5677be55d 54708 mx-codecs_21.1.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl/y1ZkTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumNXcB/9FQyogv5TQ9aZF829gCkl8uHcYDGjM
-PrsDvobVk90bDttWcKKmX0ZNK9rTiKMV/90FGNoMZNYHFnXc1BJc8I+A/5aL/9bu
-oJmlDqDkhl87wnCq8dfwIf8G1GwUwDdlILlwHqQs37hPwurPtvTF57O6NNYMydN9
-xy28cmgVogyPwV+WklqTrc8pbGigZi6mb8MO2/Bp2VU/pFj3zTIPdNshxl1/phbd
-F0lEj53KDT/4QjtcSGyDmA1OIUNKjw0lLcEcHpVIX6rciLrVtIBpTHC+sbklbZ7+
-oCZJm+aZO7Sae+ev0qz+cJqQAbPVgXjcT6ObexVPaNIOUHStAQnAg9o7
-=JB4J
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl/zNVETHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumL0mB/sGqagQbT3Jj+6p32Qw+75YWCrlRxxL
+E5Hus20p6XoirSQQ8jbS8oOTpdgyfJ9iw/Ouzf6xHllzA+lhpljdvd+PihZGJFIp
+MLDk3AQJt6Ii+MbyM+c6+9l21VeAgVViLERdVP9MhBmMr3FDIdRID5Yrnu7GZtKQ
+SpqQM49S8z1hULCr2EBFb1xxxy6Wj70DIPFKgD9n2oOUMCKdDjVWAuCuMgRzqoiy
+aMp29qrX4FKRAX1ZdBXAKSDkcCSjb5SUxxNLwH73HuGwEtuT0eW6jjUJEgw/S2Ms
++UNhRF3e8WV3lTpHtcoeZNapjVEml31lgEXtugrUbLlQnN6NKu9vi+wk
+=NbZy
 -----END PGP SIGNATURE-----

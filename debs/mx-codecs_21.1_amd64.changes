@@ -19,32 +19,32 @@ Changes:
    * remove wget dependency
    * minor fixes
 Checksums-Sha1:
- 1f760f15ec9693ccd118b7283e7a8714aa686fd7 1150 mx-codecs_21.1.dsc
- 4a04b4ef9039e9b6910e73da12a8e31bcd6cf30d 54720 mx-codecs_21.1.tar.xz
- c14d29bccb271a8518060bce5e4d94a361811a47 775702 mx-codecs-dbgsym_21.1_amd64.deb
- ae61ff946e4070e9ea05e507163124587115933d 10658 mx-codecs_21.1_amd64.buildinfo
- 241ab01553ef50ac0148e3854e0a1ab2e96aaac9 75580 mx-codecs_21.1_amd64.deb
+ 0f9def27d122690875382b6acaa866864b34a142 1150 mx-codecs_21.1.dsc
+ 082f98393074293fac3348dd054a61f867df490d 54708 mx-codecs_21.1.tar.xz
+ 509a3c45219e4b4926c9b938add978571a7dffc6 775932 mx-codecs-dbgsym_21.1_amd64.deb
+ b4e51046ddf8a496abc0f7715b08e835f2e9844a 10658 mx-codecs_21.1_amd64.buildinfo
+ 5e54a28afe0957379efc1097e9e9398ed77715f1 75598 mx-codecs_21.1_amd64.deb
 Checksums-Sha256:
- 915533cb8b4425db85b04f79377db9fbc922f3b34d7f0285f8828229d78d8315 1150 mx-codecs_21.1.dsc
- e4c3f53fac557266c90fc9ddfb18a6670f5d5e8233d704a504790b4f59cb0ca1 54720 mx-codecs_21.1.tar.xz
- f1c0be16857cc1212075cb69f2690ae3d44fe6a20048c2a0783dbf62bb2d509c 775702 mx-codecs-dbgsym_21.1_amd64.deb
- 904f48608233537b0ce4d454cdee33fe34dd93f2582cb901091c538176e8bb2d 10658 mx-codecs_21.1_amd64.buildinfo
- 046f2480cef68abe439306c18fb5c966709e352e1c0ea8280a2b9a0ccad28088 75580 mx-codecs_21.1_amd64.deb
+ c44b95340b0b14a87dd7dca98f2f70002549257f43140a3651a1abb60b8410be 1150 mx-codecs_21.1.dsc
+ 4b101556b62bef6ae4882628da7604eae5e29ae2ff4411bdd0967d6979a14518 54708 mx-codecs_21.1.tar.xz
+ b70af888cedb93cf6e3df5977d865d15461b4c98d093394a033ba52038ea2d8c 775932 mx-codecs-dbgsym_21.1_amd64.deb
+ 77b78ae71a58d2bedcc1ce88966ab20e63104ce23456d4dcc8db4ab06001b316 10658 mx-codecs_21.1_amd64.buildinfo
+ d92ef15efd2b1408e74d6638c9829373b5918029b1f81d35685c8d59b22a1adb 75598 mx-codecs_21.1_amd64.deb
 Files:
- 023ea77d5188342afbe693951b10df7f 1150 system optional mx-codecs_21.1.dsc
- 9e2a974bf94b5d8fe477aa11fb7409ce 54720 system optional mx-codecs_21.1.tar.xz
- 9539104c25193c838d16eb78f55cac1d 775702 debug extra mx-codecs-dbgsym_21.1_amd64.deb
- 3e6600e4e785d0f3ad706880b0a03f8b 10658 system optional mx-codecs_21.1_amd64.buildinfo
- 9f3e0334cc83b9cefa539771758d73b8 75580 system optional mx-codecs_21.1_amd64.deb
+ 4893f3d951ac1d3c9996db234caa96b5 1150 system optional mx-codecs_21.1.dsc
+ ea5658459e05fdb7a9646ac5677be55d 54708 system optional mx-codecs_21.1.tar.xz
+ d455868fe22df7f25f78361adb88d162 775932 debug extra mx-codecs-dbgsym_21.1_amd64.deb
+ c307c5644a45d1ea326049ff55c465f4 10658 system optional mx-codecs_21.1_amd64.buildinfo
+ 8f1c6c552f426e77335cc288b7c6dafd 75598 system optional mx-codecs_21.1_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl/y1ZwTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumB8GB/sF7QZCmXZvHJxUR+NFOrs6YVJmdEeA
-41ub7PDqojgD2Zeb5TdEHUa9yJ1ddZ9nbbtOBcDrcIYVgRhax/OFnCVzMXUyc770
-U3U1G+9///6HRXrbS+VxDzCEhzRW70rLKtk36VvKLqTf7cPnaNDJ9+GL/tAA4/tX
-f+HQKOpOfc3Xfn4Pea0HHT/HRVbSS7BQuax8GxDSypT4TjOfJsAiSt9f6nv9vXbu
-onRNmDQxCpDPdbdJiMS5L/9SY4qdJjRqSQZ0elO/J9jdOaHreCUFKZFZzixCLFNv
-+l+aC8k4uyWdZRWzxOKyN2psPHwCIEc3RVE5/q23edmnB85pOaoFcLO5
-=n9oT
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl/zNWkTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumKvWB/0aXQPGf24nZ+Ujq89yLvunyBgxrODC
+Brt96q3Znednc7WJZx5aW2KKUYP872Odvrx2iN32rWHs9Ijvaf2wPe+mUFlvVX+H
+JsTxnMf46HDlYEqK/7CkYjtXCf1dEjSxblQtTztAysuT1NhBQgOOBCVmnILigZis
+41qmGHbOuwRtT7ne57etWY3tMEKrnxMHe5aEqJtDL6kEkCitlXrXu86XkwOJPkgi
+Q84AtWvITgSsbqDC4pKazO1pqIuQZpwYA9bkbIQAX0RQZI6M1vDSTwrQUL70Gu61
+T7NN2BJAhbhSVuZimoh6j8TgbeLssN1brZb7ix1m9W2JYMfTR114kPC5
+=lybm
 -----END PGP SIGNATURE-----
