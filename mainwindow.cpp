@@ -24,6 +24,9 @@
 
 #include <QDebug>
 #include <QDir>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+#include <QTemporaryFile>
 #include <QTextEdit>
 
 #include "mainwindow.h"
@@ -33,10 +36,11 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::MainWindow), lock_file("/var/lib/dpkg/lock")
+    ui(new Ui::MainWindow), lock_file("/var/lib/dpkg/lock"), reply(nullptr)
 {
     qDebug().noquote() << qApp->applicationName() << "version:" << VERSION;
     ui->setupUi(this);
+    ui->stackedWidget->setCurrentIndex(0);
 
     // get arch info
     arch = cmd.getCmdOut("dpkg --print-architecture", true);
@@ -59,9 +63,27 @@ void MainWindow::updateStatus(const QString& msg, int val) {
 }
 
 // Check if online
-bool MainWindow::checkOnline() const
+bool MainWindow::checkOnline()
 {
-    return (system("wget -q --spider http://mxrepo.com >/dev/null 2>&1 || wget -q --spider http://google.com >/dev/null 2>&1 ") == 0);
+
+    QNetworkReply::NetworkError error = QNetworkReply::NoError;
+    QEventLoop loop;
+
+    QStringList addresses{"http://mxrepo.com", "http://google.com"}; // list of addresses to try
+    for (const QString &address : addresses) {
+        error = QNetworkReply::NoError;
+        reply = manager.get(QNetworkRequest(QUrl(address)));
+        connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+        connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), [&error](const QNetworkReply::NetworkError &err) {error = err;} ); // errorOccured only in Qt >= 5.15
+        connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), &loop, &QEventLoop::quit);
+        loop.exec();
+        reply->disconnect();
+        if (error == QNetworkReply::NoError || error == QNetworkReply::UnknownContentError) {
+            return true;
+        }
+    }
+    qDebug() << "No network detected:" << reply->url() << error;
+    return false;
 }
 
 void MainWindow::displayDoc(const QString& url) const
@@ -85,11 +107,48 @@ void MainWindow::on_buttonOk_clicked() {
         }
         installDebs(downloadDebs());
     } else {
-        qApp->exit(0);
+        qApp->quit();
     }
 }
 
-//download .deb codecs returns download path
+bool MainWindow::downloadDeb(const QString &url, const QString &filepath)
+{
+    QFileInfo fi(filepath);
+    QFile tofile(fi.fileName());
+    if (!(downloadFile(url + "/" + filepath, tofile))) {
+        QMessageBox::critical(this, windowTitle(),
+                              QString(tr("Error downloading %1")).arg(fi.fileName()));
+        return false;
+    }
+    return true;
+}
+
+bool MainWindow::downloadFile(const QString &url, QFile &file)
+{
+    if (!file.open(QIODevice::WriteOnly)) {
+        qDebug() << "Could not open file:" << file.fileName();
+        return false;
+    }
+
+    reply = manager.get(QNetworkRequest(QUrl(url)));
+    QEventLoop loop;
+
+    bool success = true;
+    connect(reply, &QNetworkReply::readyRead, [this, &file, &success]() { success = file.write(reply->readAll()); });
+    connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+    loop.exec();
+    reply->disconnect();
+
+    if (!success) {
+        QMessageBox::warning(this, tr("Error"), tr("There was an error writing file: %1. Please check if you have enough free space on your drive").arg(file.fileName()));
+        exit(EXIT_FAILURE);
+    }
+
+    file.close();
+    return (reply->error() == QNetworkReply::NoError);
+}
+
+// download .deb codecs returns download path
 QString MainWindow::downloadDebs() {
     QString cmd_str, out, msg;
     QString path, release;
@@ -107,88 +166,60 @@ QString MainWindow::downloadDebs() {
     }
     path = tempdir.path();
 
-    QDir dir(path);
-    dir.mkdir(path);
+    QDir dir;
     dir.setCurrent(path);
 
     // get release info
-    release = cmd.getCmdOut("grep VERSION= /etc/os-release | grep -Eo [a-z]+ ");
+    release = cmd.getCmdOut("grep VERSION= /etc/os-release |grep -Eo [a-z]+ ");
 
-    cmd_str = "wget -qO- " + url + "/dists/" + release + "/main/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep libdvdcss2 | awk \'{print $2}\'";
-    updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 10);
-    out = cmd.getCmdOut(cmd_str);
-    if (out == "") {
-        QMessageBox::critical(this, tr("Error"),
-                              tr("Cannot connect to the download site"));
-    } else {
-        cmd_str = "wget -q " + url + "/" + out;
-        updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 20);
-        if (!cmd.run(cmd_str)) {
-            QMessageBox::critical(this, windowTitle(),
-                                  QString(tr("Error downloading %1")).arg(out));
-        }
-    }
+    int idx = 0;
 
-    cmd_str = "wget -qO- " + url + "/dists/" + release + "/non-free/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep w.*codecs | awk \'{print $2}\'";
-    updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 30);
-    out = cmd.getCmdOut(cmd_str);
-    if (out == "") {
-        arch_flag = false;
-        QMessageBox::critical(this, tr("Error"),
-                              tr("Cannot connect to the download site"));
-    } else {
-        cmd_str = "wget -q " + url + "/" + out;
-        updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 40);
-        if (!cmd.run(cmd_str)) {
-            arch_flag = false;
-            QMessageBox::critical(this, tr("Error"),
-                                  QString(tr("Error downloading %1")).arg(out));
-        }
-    }
+    QTemporaryFile file;
+    updateStatus(tr("<b>Running command...</b><p>") + tr("downloading Packages.gz from 'main'"), idx += 10);
+    downloadInfoAndPackage(url, release, "main", arch, file, QStringList{"libdvdcss2", "libtxc-dxtn0"}, idx += 10);
 
-    cmd_str = "wget -qO- " + url + "/dists/" + release + "/main/binary-" + arch + "/Packages.gz | zgrep ^Filename | grep libtxc-dxtn0 | awk \'{print $2}\'";
-    updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 50);
-    out = cmd.getCmdOut(cmd_str);
-    if (out == "") {
-        QMessageBox::critical(this, tr("Error"),
-                              tr("Cannot connect to the download site"));
-    } else {
-        cmd_str = "wget -q " + url + "/" + out;
-        updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 60);
-        if (!cmd.run(cmd_str)) {
-            QMessageBox::critical(this, tr("Error"),
-                                  QString(tr("Error downloading %1")).arg(out));
-        }
-    }
-    //if 64 bit, also install 32 bit libtxc-dxtn0 package
+    QTemporaryFile file_nonfree;
+    updateStatus(tr("<b>Running command...</b><p>") + tr("downloading Packages.gz from 'non-free'"), idx += 10);
+    if (!downloadInfoAndPackage(url, release, "non-free", arch, file_nonfree, QStringList{"w.*codecs.*deb"}, idx +=10)) arch_flag = false;
+
+    // if 64 bit, also install 32 bit libtxc-dxtn0 package
     if (arch == "amd64") {
-        cmd_str = "wget -qO- " + url + "/dists/" + release + "/main/binary-i386/Packages.gz | zgrep ^Filename | grep libtxc-dxtn0 | awk \'{print $2}\'";
-        updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 70);
-        out = cmd.getCmdOut(cmd_str);
-        if (out == "") {
-            i386_flag = false;
-            QMessageBox::critical(this, tr("Error"),
-                                  tr("Cannot connect to the download site"));
-        } else {
-            cmd_str = "wget -q " + url + "/" + out;
-            updateStatus(tr("<b>Running command...</b><p>") + cmd_str, 75);
-            if (!cmd.run(cmd_str)) {
-                i386_flag =false;
-                QMessageBox::critical(this, tr("Error"),
-                                      QString(tr("Error downloading %1")).arg(out));
-            }
-        }
+        QTemporaryFile file_i386;
+        updateStatus(tr("<b>Running command...</b><p>") + tr("downloading Packages.gz from i386 'main'"), idx += 10);
+        if (!downloadInfoAndPackage(url, release, "main", "i386", file_i386, QStringList{"libtxc-dxtn0"}, idx += 10)) i386_flag = false;
     }
 
-    updateStatus(tr("<b>Download Finished.</b>"), 85);
-
+    updateStatus(tr("<b>Download Finished.</b>"), idx += 10);
     return path;
 }
 
-//install downloaded .debs
+bool MainWindow::downloadInfoAndPackage(const QString &url, const QString &release, const QString &repo, const QString &arch, QFile &file, QStringList search_terms, int progress)
+{
+    if (!downloadFile(url + "/dists/" + release + "/" + repo + "/binary-" + arch + "/Packages.gz", file)) {
+        QMessageBox::critical(this, tr("Error"),
+                              tr("Cannot connect to the download site"));
+        return false;
+    }
+
+    for (const QString &search_deb : search_terms) {
+        QString out = cmd.getCmdOut("zgrep ^Filename " + file.fileName() + " |grep " + search_deb + " |cut -d' ' -f2 |head -n1");
+        if (out.isEmpty()) {
+            QMessageBox::critical(this, tr("Error"),
+                                  tr("Cannot connect find %1 package").arg(search_deb));
+            return false;
+        } else {
+            updateStatus(tr("<b>Running command...</b><p>") + "downloading: " + out, progress);
+            downloadDeb(url, out);
+        }
+        progress += 10;
+    }
+    return true;
+}
+
+// install downloaded .debs
 void MainWindow::installDebs(const QString& path) {
     QString cmd_str, out, ms;
-    QDir dir(path);
+    QDir dir;
     dir.setCurrent(path);
     bool error = false;
 
@@ -198,26 +229,17 @@ void MainWindow::installDebs(const QString& path) {
     dir.setNameFilters(filter);
 
     QStringList fileList = dir.entryList();
-
     ui->groupBox->setTitle(tr("Installing downloaded files"));
 
     int size = fileList.size();
     if (size == 0) {
         QMessageBox::critical(this, tr("Error"),
                               tr("No downloaded *.debs files found."));
-        qApp->exit(1);
+        qApp->exit(EXIT_FAILURE);
     }
 
     qDebug() << "filelist " << fileList;
 
-    QString file;
-    foreach (const QString &item, fileList) {
-        file.append("./" + item + " ");
-    }
-
-    qDebug() << "file " << file;
-    cmd_str = QString("dpkg -i %1").arg(file);
-    updateStatus(tr("<b>Installing...</b><p>")+file, 95);
     lock_file.unlock();
     QString cmd_str_2;
     if (arch_flag) {
@@ -229,9 +251,15 @@ void MainWindow::installDebs(const QString& path) {
         cmd.run(cmd_str_2);
     }
 
-    if (!cmd.run(cmd_str)) {
-        QMessageBox::critical(this, windowTitle(), QString(tr("Error installing %1")).arg(file));
-        error = true;
+    int idx = ui->progressBar->value();
+    int inc = (100 - idx) / fileList.size();
+
+    for (const QString &file : fileList) {
+        updateStatus(tr("<b>Installing...</b><p>") + file, idx += inc);
+        if (!cmd.run("dpkg -i " + file)) {
+            QMessageBox::critical(this, windowTitle(), QString(tr("Error installing %1")).arg(file));
+            error = true;
+        }
     }
 
     updateStatus("<b>" + tr("Fix missing dependencies...") + "</b><p>", 99);
@@ -240,25 +268,18 @@ void MainWindow::installDebs(const QString& path) {
         error = true;
     }
 
-
-    while (!fileList.isEmpty()) {
-        file = fileList.takeFirst();
-        dir.remove(file);
-    }
-
-    dir.rmdir(path);
-    ui->groupBox->setTitle("");
+    ui->groupBox->setTitle(QString());
     updateStatus(tr("<b>Installation process has finished</b>"), 100);
 
     setCursor(QCursor(Qt::ArrowCursor));
     if (!error) {
         QMessageBox::information(this, tr("Finished"),
                                  tr("Codecs files have been downloaded and installed successfully."));
-        qApp->exit(0);
+        qApp->exit(EXIT_SUCCESS);
     } else {
         QMessageBox::critical(this, tr("Error"),
                               tr("Process finished. Errors have occurred during the installation."));
-        qApp->exit(1);
+        qApp->exit(EXIT_FAILURE);
     }
 }
 

@@ -29,7 +29,8 @@
 #include <QDialog>
 #include <QDir>
 #include <QMessageBox>
-#include <QProcess>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
 #include <QTemporaryDir>
 
 #include "lockfile.h"
@@ -49,7 +50,7 @@ public:
     bool i386_flag = true;
     bool arch_flag = true;
 
-    bool checkOnline() const;
+    bool checkOnline();
     void displayDoc(const QString &url) const;
     void installDebs(const QString &path);
     void updateStatus(const QString &msg, int val);
@@ -67,6 +68,14 @@ private:
     LockFile lock_file;
     QString arch;
     QTemporaryDir tempdir;
+
+    QNetworkAccessManager manager;
+    QNetworkReply* reply;
+
+    bool downloadInfoAndPackage(const QString &url, const QString &release, const QString &repo, const QString &arch, QFile &file, QStringList search_terms, int progress);
+    bool downloadDeb(const QString &url, const QString &filepath);
+    bool downloadFile(const QString &url, QFile &file);
+
 };
 
 #endif // MAINWINDOW_H
