@@ -1,3 +1,9 @@
+mx-codecs (21.1.01) mx; urgency=medium
+
+  * update to only install non-free codecs on x86 architectures 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 26 Jan 2021 23:14:52 -0500
+
 mx-codecs (21.1) mx; urgency=medium
 
   * remove wget dependency

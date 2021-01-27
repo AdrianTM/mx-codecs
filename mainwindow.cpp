@@ -167,9 +167,12 @@ QString MainWindow::downloadDebs() {
     updateStatus(tr("<b>Running command...</b><p>") + tr("downloading Packages.gz from 'main'"), idx += 10);
     downloadInfoAndPackage(url, release, "main", arch, file, QStringList{"libdvdcss2", "libtxc-dxtn0"}, idx += 10);
 
-    QTemporaryFile file_nonfree;
-    updateStatus(tr("<b>Running command...</b><p>") + tr("downloading Packages.gz from 'non-free'"), idx += 10);
-    if (!downloadInfoAndPackage(url, release, "non-free", arch, file_nonfree, QStringList{"w.*codecs.*deb"}, idx +=10)) arch_flag = false;
+    //download and install w32 or w64 codecs on x86 platforms
+    if (arch == "amd64" || arch == "i386"){
+        QTemporaryFile file_nonfree;
+        updateStatus(tr("<b>Running command...</b><p>") + tr("downloading Packages.gz from 'non-free'"), idx += 10);
+        if (!downloadInfoAndPackage(url, release, "non-free", arch, file_nonfree, QStringList{"w.*codecs.*deb"}, idx +=10)) arch_flag = false;
+    }
 
     // if 64 bit, also install 32 bit libtxc-dxtn0 package
     if (arch == "amd64") {
