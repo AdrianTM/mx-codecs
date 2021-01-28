@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 26 Jan 2021 23:14:52 -0500
+Source: mx-codecs
+Binary: mx-codecs mx-codecs-dbgsym
+Architecture: armhf
+Version: 21.1.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (21.1.01) mx; urgency=medium
+ .
+   * update to only install non-free codecs on x86 architectures
+Checksums-Sha1:
+ 8feb53666d4dff7864d9c8833f5b36ed3e8b4e78 968188 mx-codecs-dbgsym_21.1.01_armhf.deb
+ c682d26a6817b82932d187da16abd9e5ada95056 10200 mx-codecs_21.1.01_armhf.buildinfo
+ a6ad8ea5e3fba9862189cd800e2b85827c21377b 73260 mx-codecs_21.1.01_armhf.deb
+Checksums-Sha256:
+ 6c7957e61400f3ec05a45dd6dcd22f02e558e9bbd0b0aed86ee4ecfc2076c346 968188 mx-codecs-dbgsym_21.1.01_armhf.deb
+ aac450237d1f55e0f0a63b199c24fa52f2f765659bf57e4c5614ab732ad5a5d0 10200 mx-codecs_21.1.01_armhf.buildinfo
+ 172aa1afa1613b690b6a28643ed2b54fa30c21c24397f5f929d71e323b4a8715 73260 mx-codecs_21.1.01_armhf.deb
+Files:
+ 9da18cad85b362f97ffa66d523847c47 968188 debug optional mx-codecs-dbgsym_21.1.01_armhf.deb
+ ccde4c99b5f2649af314cf8ca98f43db 10200 system optional mx-codecs_21.1.01_armhf.buildinfo
+ b2ff3a5179c2b8cc35ae50181a8c7d5d 73260 system optional mx-codecs_21.1.01_armhf.deb

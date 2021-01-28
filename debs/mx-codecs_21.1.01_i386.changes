@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 26 Jan 2021 23:14:52 -0500
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: i386
+Version: 21.1.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (21.1.01) mx; urgency=medium
+ .
+   * update to only install non-free codecs on x86 architectures
+Checksums-Sha1:
+ dc1655074dcc8893dd57e0cf4d0186b795ebed18 766600 mx-codecs-dbgsym_21.1.01_i386.deb
+ c08699261aec29e65766c384428af726198f4625 10626 mx-codecs_21.1.01_i386.buildinfo
+ 1cc4d19091cfccd3a838cdde7661f0a61bf51c6f 77860 mx-codecs_21.1.01_i386.deb
+Checksums-Sha256:
+ d25273d5189a79233a0ee46e4e8357ee1ccec30ec81ddc7f71242b47b4b1b630 766600 mx-codecs-dbgsym_21.1.01_i386.deb
+ ef3efb4d97c6ea53f8a5820ad275fbd236d137a85423d67a65f8070634dd0c44 10626 mx-codecs_21.1.01_i386.buildinfo
+ e62430da6de93174ff22379c78b064f5aa8bb01b93b58cdc38d4cc7c3ae29aee 77860 mx-codecs_21.1.01_i386.deb
+Files:
+ 16add13a17f29af71face0996c587fc8 766600 debug optional mx-codecs-dbgsym_21.1.01_i386.deb
+ aa8a23d4737de5be78639c441e039b39 10626 system optional mx-codecs_21.1.01_i386.buildinfo
+ 44a016805d6a96f3fdd43f7ffd97bcff 77860 system optional mx-codecs_21.1.01_i386.deb
