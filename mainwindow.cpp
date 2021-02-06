@@ -45,9 +45,8 @@ MainWindow::MainWindow(QWidget *parent) :
     arch = cmd.getCmdOut("dpkg --print-architecture", true);
 
     setWindowFlags(Qt::Window); // for the close, min and max buttons
-    if (ui->buttonOk->icon().isNull()) {
+    if (ui->buttonOk->icon().isNull())
         ui->buttonOk->setIcon(QIcon(":/icons/dialog-ok.svg"));
-    }
 }
 
 MainWindow::~MainWindow()
@@ -80,9 +79,8 @@ bool MainWindow::checkOnline()
         connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), &loop, &QEventLoop::quit);
         loop.exec();
         reply->disconnect();
-        if (error == QNetworkReply::NoError) {
+        if (error == QNetworkReply::NoError)
             return true;
-        }
     }
     qDebug() << "No network detected:" << reply->url() << error;
     return false;
@@ -294,9 +292,8 @@ void MainWindow::on_buttonHelp_clicked() {
 
     QString url = "file:///usr/share/doc/mx-codecs/mx-codecs.html";
 
-    if (lang.startsWith("fr")) {
+    if (lang.startsWith("fr"))
         url = "https://mxlinux.org/french-wiki/help-files/help-mx-codecs-installer";
-    }
     displayDoc(url, tr("%1 Help").arg(this->windowTitle()), true);
 }
 
