@@ -37,7 +37,7 @@ LockFile::LockFile(QString file_name)
 bool LockFile::isLocked()
 {
     fd = open(file_name.toUtf8(), O_RDONLY);
-    if(fd < -1) {
+    if (fd < -1) {
         perror("open");
         return false;
     }
@@ -47,7 +47,7 @@ bool LockFile::isLocked()
 bool LockFile::lock()
 {
     fd = open(file_name.toUtf8(), O_WRONLY);
-    if(fd < -1) {
+    if (fd < -1) {
         perror("open");
         return false;
     }
