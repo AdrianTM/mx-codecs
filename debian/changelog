@@ -1,3 +1,10 @@
+mx-codecs (21.7) mx; urgency=medium
+
+  * Download only header not the entire page for network check
+  * Use shorter timeout for network check than the default 
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 15 Jul 2021 14:15:36 -0400
+
 mx-codecs (21.1.01) mx; urgency=medium
 
   * update to only install non-free codecs on x86 architectures 
