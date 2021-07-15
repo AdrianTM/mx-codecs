@@ -27,6 +27,7 @@
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
 #include <QTemporaryFile>
+#include <QTimer>
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -63,20 +64,19 @@ void MainWindow::updateStatus(const QString& msg, int val) {
 // Check if online
 bool MainWindow::checkOnline()
 {
-    QNetworkReply::NetworkError error = QNetworkReply::NoError;
-    QEventLoop loop;
-
     QNetworkRequest request;
     request.setRawHeader("User-Agent", qApp->applicationName().toUtf8() + "/" + qApp->applicationVersion().toUtf8() + " (linux-gnu)");
 
-    QStringList addresses{"http://mxrepo.com", "http://google.com"}; // list of addresses to try
-    for (const QString &address : addresses) {
-        error = QNetworkReply::NoError;
+    QNetworkReply::NetworkError error = QNetworkReply::NoError;
+    for (const QString &address : {"http://mxrepo.com", "http://google.com"}) {
+        error = QNetworkReply::NoError; // reset for each tried address
         request.setUrl(QUrl(address));
-        reply = manager.get(request);
+        reply = manager.head(request);
+        QEventLoop loop;
         connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
         connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), [&error](const QNetworkReply::NetworkError &err) {error = err;} ); // errorOccured only in Qt >= 5.15
         connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), &loop, &QEventLoop::quit);
+        QTimer::singleShot(5000, &loop, [&loop, &error]() {error = QNetworkReply::TimeoutError; loop.quit();} ); // manager.setTransferTimeout(time) // only in Qt >= 5.15
         loop.exec();
         reply->disconnect();
         if (error == QNetworkReply::NoError)
