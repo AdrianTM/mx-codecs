@@ -67,7 +67,7 @@ bool MainWindow::checkOnline()
     QNetworkRequest request;
     request.setRawHeader("User-Agent", qApp->applicationName().toUtf8() + "/" + qApp->applicationVersion().toUtf8() + " (linux-gnu)");
 
-    QNetworkReply::NetworkError error = QNetworkReply::NoError;
+    auto error = QNetworkReply::NoError;
     for (const QString &address : {"http://mxrepo.com", "http://google.com"}) {
         error = QNetworkReply::NoError; // reset for each tried address
         request.setUrl(QUrl(address));
@@ -90,7 +90,8 @@ void MainWindow::on_buttonOk_clicked() {
     if (ui->stackedWidget->currentIndex() == 0) {
         setCursor(QCursor(Qt::WaitCursor));
         if (!checkOnline()) {
-            QMessageBox::critical(this, tr("Error"), tr("Internet is not available, won't be able to download the list of packages"));
+            QMessageBox::critical(this, tr("Error"),
+                                  tr("Internet is not available, won't be able to download the list of packages"));
             setCursor(QCursor(Qt::ArrowCursor));
             return;
         }
@@ -105,8 +106,7 @@ bool MainWindow::downloadDeb(const QString &url, const QString &filepath)
     QFileInfo fi(filepath);
     QFile tofile(fi.fileName());
     if (!(downloadFile(url + "/" + filepath, tofile))) {
-        QMessageBox::critical(this, windowTitle(),
-                              QString(tr("Error downloading %1")).arg(fi.fileName()));
+        QMessageBox::critical(this, windowTitle(), QString(tr("Error downloading %1")).arg(fi.fileName()));
         return false;
     }
     return true;
@@ -129,7 +129,8 @@ bool MainWindow::downloadFile(const QString &url, QFile &file)
     reply->disconnect();
 
     if (!success) {
-        QMessageBox::warning(this, tr("Error"), tr("There was an error writing file: %1. Please check if you have enough free space on your drive").arg(file.fileName()));
+        QMessageBox::warning(this, tr("Error"),
+                             tr("There was an error writing file: %1. Please check if you have enough free space on your drive").arg(file.fileName()));
         exit(EXIT_FAILURE);
     }
 
@@ -186,16 +187,14 @@ QString MainWindow::downloadDebs() {
 bool MainWindow::downloadInfoAndPackage(const QString &url, const QString &release, const QString &repo, const QString &arch, QFile &file, QStringList search_terms, int progress)
 {
     if (!downloadFile(url + "/dists/" + release + "/" + repo + "/binary-" + arch + "/Packages.gz", file)) {
-        QMessageBox::critical(this, tr("Error"),
-                              tr("Cannot connect to the download site"));
+        QMessageBox::critical(this, tr("Error"), tr("Cannot connect to the download site"));
         return false;
     }
 
     for (const QString &search_deb : search_terms) {
         QString out = cmd.getCmdOut("zgrep ^Filename " + file.fileName() + " |grep " + search_deb + " |cut -d' ' -f2 |head -n1");
         if (out.isEmpty()) {
-            QMessageBox::critical(this, tr("Error"),
-                                  tr("Cannot connect find %1 package").arg(search_deb));
+            QMessageBox::critical(this, tr("Error"), tr("Cannot connect find %1 package").arg(search_deb));
             return false;
         } else {
             updateStatus(tr("<b>Running command...</b><p>") + "downloading: " + out, progress);
@@ -223,8 +222,7 @@ void MainWindow::installDebs(const QString& path) {
 
     int size = fileList.size();
     if (size == 0) {
-        QMessageBox::critical(this, tr("Error"),
-                              tr("No downloaded *.debs files found."));
+        QMessageBox::critical(this, tr("Error"), tr("No downloaded *.debs files found."));
         qApp->exit(EXIT_FAILURE);
     }
 
