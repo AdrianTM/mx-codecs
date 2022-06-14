@@ -47,8 +47,8 @@ class MainWindow : public QDialog
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    bool i386_flag = true;
     bool arch_flag = true;
+    bool i386_flag = true;
 
     bool checkOnline();
     void installDebs(const QString &path);
@@ -57,9 +57,9 @@ public:
     QString downloadDebs();
 
 public slots:
-    virtual void on_buttonAbout_clicked();
-    virtual void on_buttonHelp_clicked();
-    virtual void on_buttonOk_clicked();
+    void buttonHelp_clicked();
+    void buttonAbout_clicked();
+    void buttonOk_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -71,9 +71,10 @@ private:
     QNetworkAccessManager manager;
     QNetworkReply* reply;
 
-    bool downloadInfoAndPackage(const QString &url, const QString &release, const QString &repo, const QString &arch, QFile &file, QStringList search_terms, int progress);
     bool downloadDeb(const QString &url, const QString &filepath);
     bool downloadFile(const QString &url, QFile &file);
+    bool downloadInfoAndPackage(const QString &url, const QString &release, const QString &repo, const QString &arch,
+                                QFile &file, const QStringList &search_terms, int progress);
 
 };
 

@@ -43,15 +43,15 @@ int main(int argc, char *argv[])
     app.setApplicationVersion(VERSION);
 
     QTranslator qtTran;
-    if (qtTran.load(QLocale::system(), "qt", "_", QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
+    if (qtTran.load(QLocale(), QStringLiteral("qt"), QStringLiteral("_"), QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         app.installTranslator(&qtTran);
 
     QTranslator qtBaseTran;
-    if (qtBaseTran.load("qtbase_" + QLocale::system().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
+    if (qtBaseTran.load("qtbase_" + QLocale().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         app.installTranslator(&qtBaseTran);
 
     QTranslator appTran;
-    if (appTran.load(app.applicationName() + "_" + QLocale::system().name(), "/usr/share/" + app.applicationName() + "/locale"))
+    if (appTran.load(app.applicationName() + "_" + QLocale().name(), "/usr/share/" + app.applicationName() + "/locale"))
         app.installTranslator(&appTran);
 
     // root guard
@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
 
     if (getuid() == 0) {
         // Don't start app if Synaptic/apt-get is running, lock dpkg otherwise while the program runs
-        LockFile lock_file("/var/lib/dpkg/lock");
+        LockFile lock_file(QStringLiteral("/var/lib/dpkg/lock"));
         if (lock_file.isLocked()) {
             QApplication::beep();
             QMessageBox::critical(nullptr, QObject::tr("Unable to get exclusive lock"),

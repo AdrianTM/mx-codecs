@@ -28,7 +28,7 @@
 
 #include <QDebug>
 
-LockFile::LockFile(QString file_name)
+LockFile::LockFile(const QString &file_name)
 {
     this->file_name = file_name;
 }

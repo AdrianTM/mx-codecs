@@ -31,7 +31,7 @@
 class LockFile
 {
 public:
-    LockFile(QString fileName);
+    LockFile(const QString &file_name);
 
     bool isLocked();
     bool lock();
@@ -39,7 +39,7 @@ public:
 
 private:
     QString file_name;
-    int fd;
+    int fd{};
 
 };
 
