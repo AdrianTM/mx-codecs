@@ -32,9 +32,13 @@
 #include "mainwindow.h"
 #include "version.h"
 
+QString starting_home = qEnvironmentVariable("HOME");
+
 int main(int argc, char *argv[])
 {
+    qputenv("XDG_RUNTIME_DIR", "/run/user/0");
     QApplication app(argc, argv);
+    qputenv("HOME", "/root");
     app.setWindowIcon(QIcon::fromTheme(app.applicationName()));
     app.setApplicationVersion(VERSION);
 
@@ -51,7 +55,7 @@ int main(int argc, char *argv[])
         app.installTranslator(&appTran);
 
     // root guard
-    if (system("logname |grep -q ^root$") == 0) {
+    if (QProcess::execute(QStringLiteral("/bin/bash"), {"-c", "logname |grep -q ^root$"}) == 0) {
         QMessageBox::critical(nullptr, QObject::tr("Error"),
                               QObject::tr("You seem to be logged in as root, please log out and log in as normal user to use this program."));
         exit(EXIT_FAILURE);
@@ -73,6 +77,6 @@ int main(int argc, char *argv[])
         w.show();
         return app.exec();
     } else {
-        system("su-to-root -X -c " + QApplication::applicationFilePath().toUtf8() + "&");
+        QProcess::startDetached(QStringLiteral("/usr/bin/mx-cleanup-launcher"), {});
     }
 }
