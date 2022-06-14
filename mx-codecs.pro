@@ -30,7 +30,7 @@
 
 
 QT       += core gui network
-CONFIG   += c++11
+CONFIG   += c++1z
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
