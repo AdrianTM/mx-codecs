@@ -10,8 +10,7 @@ Homepage: https://github.com/AdrianTM/mx-codecs
 
 Package: mx-codecs
 Architecture: any
-Depends: menu, 
-	mx-viewer | xdg-utils, 
+Depends: mx-viewer | xdg-utils, 
 	${misc:Depends}, 
 	${shlibs:Depends}
 Description: restricted codecs installer
