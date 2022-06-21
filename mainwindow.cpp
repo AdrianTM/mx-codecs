@@ -48,7 +48,6 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->buttonOk, &QPushButton::clicked, this, &MainWindow::buttonOk_clicked);
 
     ui->stackedWidget->setCurrentIndex(0);
-
     // get arch info
     arch = cmd.getCmdOut(QStringLiteral("dpkg --print-architecture"), true);
 
@@ -68,8 +67,7 @@ void MainWindow::updateStatus(const QString& msg, int val) {
     QApplication::processEvents();
 }
 
-// Check if online
-bool MainWindow::checkOnline()
+bool MainWindow::isOnline()
 {
     QNetworkRequest request;
     request.setRawHeader("User-Agent", QApplication::applicationName().toUtf8() + "/" +
@@ -98,7 +96,7 @@ bool MainWindow::checkOnline()
 void MainWindow::buttonOk_clicked() {
     if (ui->stackedWidget->currentIndex() == 0) {
         setCursor(QCursor(Qt::WaitCursor));
-        if (!checkOnline()) {
+        if (!isOnline()) {
             QMessageBox::critical(this, tr("Error"),
                                   tr("Internet is not available, won't be able to download the list of packages"));
             setCursor(QCursor(Qt::ArrowCursor));
@@ -149,10 +147,6 @@ bool MainWindow::downloadFile(const QString &url, QFile &file)
 
 // download .deb codecs returns download path
 QString MainWindow::downloadDebs() {
-    QString path;
-    QString release;
-    QString url = QStringLiteral("http://deb-multimedia.org");
-
     //set progressBar and refresh
     ui->progressBar->setValue(0);
     ui->stackedWidget->setCurrentIndex(1);
@@ -163,20 +157,20 @@ QString MainWindow::downloadDebs() {
         QMessageBox::critical(this, tr("Error"), tr("Could not create temp directory. "));
         exit(EXIT_FAILURE);
     }
-    path = tempdir.path();
+    QString path = tempdir.path();
     QDir::setCurrent(path);
 
     // get release info
-    release = cmd.getCmdOut(QStringLiteral("grep VERSION= /etc/os-release |grep -Eo [a-z]+ "));
+    QString release = cmd.getCmdOut(QStringLiteral("grep VERSION= /etc/os-release |grep -Eo [a-z]+ "));
 
     int idx = 0;
     const int inc = 10;
-
     QTemporaryFile file;
+    QString url = QStringLiteral("http://deb-multimedia.org");
     updateStatus(tr("<b>Running command...</b><p>") + tr("downloading Packages.gz from 'main'"), idx += inc);
     downloadInfoAndPackage(url, release, QStringLiteral("main"), arch, file, QStringList{"libdvdcss2", "libtxc-dxtn0"}, idx += inc);
 
-    //download and install w32 or w64 codecs on x86 platforms
+    // download and install w32 or w64 codecs on x86 platforms
     if (arch == QLatin1String("amd64") || arch == QLatin1String("i386")){
         QTemporaryFile file_nonfree;
         updateStatus(tr("<b>Running command...</b><p>") + tr("downloading Packages.gz from 'non-free'"), idx += inc);
@@ -219,22 +213,17 @@ bool MainWindow::downloadInfoAndPackage(const QString &url, const QString &relea
     return true;
 }
 
-// install downloaded .debs
 void MainWindow::installDebs(const QString& path) {
-    QDir dir;
     QDir::setCurrent(path);
-    bool error = false;
-
-    //filter *.deb file only
     QStringList filter;
     filter << QStringLiteral("*.deb");
+    QDir dir;
     dir.setNameFilters(filter);
 
     QStringList fileList = dir.entryList();
     ui->groupBox->setTitle(tr("Installing downloaded files"));
 
-    int size = fileList.size();
-    if (size == 0) {
+    if (fileList.isEmpty()) {
         QMessageBox::critical(this, tr("Error"), tr("No downloaded *.debs files found."));
         QApplication::exit(EXIT_FAILURE);
     }
@@ -242,19 +231,16 @@ void MainWindow::installDebs(const QString& path) {
     qDebug() << "filelist " << fileList;
 
     lock_file.unlock();
-    QString cmd_str_2;
-    if (arch_flag) {
-        cmd_str_2 = "dpkg --remove libtxc-dxtn-s2tc:" + arch;
-        cmd.run(cmd_str_2);
-    }
-    if (i386_flag) {
-        cmd_str_2 = QStringLiteral("dpkg --remove libtxc-dxtn-s2tc:i386");
-        cmd.run(cmd_str_2);
-    }
+    if (arch_flag)
+        cmd.run("dpkg --remove libtxc-dxtn-s2tc:" + arch);
+
+    if (i386_flag)
+        cmd.run(QStringLiteral("dpkg --remove libtxc-dxtn-s2tc:i386"));
 
     int idx = ui->progressBar->value();
     int inc = (ui->progressBar->maximum() - idx) / fileList.size();
 
+    bool error = false;
     for (const QString &file : fileList) {
         updateStatus(tr("<b>Installing...</b><p>") + file, idx += inc);
         if (!cmd.run("dpkg -i " + file)) {
@@ -284,7 +270,6 @@ void MainWindow::installDebs(const QString& path) {
     }
 }
 
-// show about
 void MainWindow::buttonAbout_clicked() {
     this->hide();
     displayAboutMsgBox(tr("About MX Codecs"), "<p align=\"center\"><b><h2>" + this->windowTitle() +"</h2></b></p><p align=\"center\">" +
@@ -296,13 +281,10 @@ void MainWindow::buttonAbout_clicked() {
     this->show();
 }
 
-// Help button clicked
 void MainWindow::buttonHelp_clicked() {
     QLocale locale;
     QString lang = locale.bcp47Name();
-
     QString url = QStringLiteral("file:///usr/share/doc/mx-codecs/mx-codecs.html");
-
     if (lang.startsWith(QLatin1String("fr")))
         url = QStringLiteral("https://mxlinux.org/french-wiki/help-files/help-mx-codecs-installer");
     displayDoc(url, tr("%1 Help").arg(this->windowTitle()), true);

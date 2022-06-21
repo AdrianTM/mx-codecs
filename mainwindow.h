@@ -50,7 +50,7 @@ public:
     bool arch_flag = true;
     bool i386_flag = true;
 
-    bool checkOnline();
+    bool isOnline();
     void installDebs(const QString &path);
     void updateStatus(const QString &msg, int val);
 
