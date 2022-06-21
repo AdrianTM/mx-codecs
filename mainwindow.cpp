@@ -29,16 +29,19 @@
 #include <QTemporaryFile>
 #include <QTimer>
 
+#include "about.h"
+#include "cmd.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "cmd.h"
-#include "about.h"
+#include <chrono>
+
+using namespace std::chrono_literals;
 
 MainWindow::MainWindow(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::MainWindow), lock_file(QStringLiteral("/var/lib/dpkg/lock")), reply(nullptr)
 {
-    qDebug().noquote() << qApp->applicationName() << "version:" << qApp->applicationVersion();
+    qDebug().noquote() << QApplication::applicationName() << "version:" << QApplication::applicationVersion();
     ui->setupUi(this);
     connect(ui->buttonAbout, &QPushButton::clicked, this, &MainWindow::buttonAbout_clicked);
     connect(ui->buttonHelp, &QPushButton::clicked, this, &MainWindow::buttonHelp_clicked);
@@ -62,15 +65,15 @@ MainWindow::~MainWindow()
 void MainWindow::updateStatus(const QString& msg, int val) {
     ui->labelDownload->setText(msg);
     ui->progressBar->setValue(val);
-    qApp->processEvents();
+    QApplication::processEvents();
 }
 
 // Check if online
 bool MainWindow::checkOnline()
 {
     QNetworkRequest request;
-    request.setRawHeader("User-Agent", qApp->applicationName().toUtf8() + "/" +
-                         qApp->applicationVersion().toUtf8() + " (linux-gnu)");
+    request.setRawHeader("User-Agent", QApplication::applicationName().toUtf8() + "/" +
+                         QApplication::applicationVersion().toUtf8() + " (linux-gnu)");
 
     auto error = QNetworkReply::NoError;
     for (const QString &address : {"http://mxrepo.com", "http://google.com"}) {
@@ -82,7 +85,7 @@ bool MainWindow::checkOnline()
         connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error),
                 [&error](QNetworkReply::NetworkError err) {error = err;} ); // errorOccured only in Qt >= 5.15
         connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), &loop, &QEventLoop::quit);
-        QTimer::singleShot(5000, &loop, [&loop, &error]() {error = QNetworkReply::TimeoutError; loop.quit();} ); // manager.setTransferTimeout(time) // only in Qt >= 5.15
+        QTimer::singleShot(5s, &loop, [&loop, &error]() {error = QNetworkReply::TimeoutError; loop.quit();} ); // manager.setTransferTimeout(time) // only in Qt >= 5.15
         loop.exec();
         reply->disconnect();
         if (error == QNetworkReply::NoError)
@@ -103,7 +106,7 @@ void MainWindow::buttonOk_clicked() {
         }
         installDebs(downloadDebs());
     } else {
-        qApp->quit();
+        QApplication::quit();
     }
 }
 
@@ -153,7 +156,7 @@ QString MainWindow::downloadDebs() {
     //set progressBar and refresh
     ui->progressBar->setValue(0);
     ui->stackedWidget->setCurrentIndex(1);
-    qApp->processEvents();
+    QApplication::processEvents();
 
     // create temp folder and set it current
     if (!tempdir.isValid()) {
@@ -177,14 +180,16 @@ QString MainWindow::downloadDebs() {
     if (arch == QLatin1String("amd64") || arch == QLatin1String("i386")){
         QTemporaryFile file_nonfree;
         updateStatus(tr("<b>Running command...</b><p>") + tr("downloading Packages.gz from 'non-free'"), idx += inc);
-        if (!downloadInfoAndPackage(url, release, QStringLiteral("non-free"), arch, file_nonfree, QStringList{"w.*codecs.*deb"}, idx += inc)) arch_flag = false;
+        if (!downloadInfoAndPackage(url, release, QStringLiteral("non-free"), arch, file_nonfree,
+                                    QStringList{"w.*codecs.*deb"}, idx += inc)) arch_flag = false;
     }
 
     // if 64 bit, also install 32 bit libtxc-dxtn0 package
     if (arch == QLatin1String("amd64")) {
         QTemporaryFile file_i386;
         updateStatus(tr("<b>Running command...</b><p>") + tr("downloading Packages.gz from i386 'main'"), idx += inc);
-        if (!downloadInfoAndPackage(url, release, QStringLiteral("main"), QStringLiteral("i386"), file_i386, QStringList{"libtxc-dxtn0"}, idx += inc)) i386_flag = false;
+        if (!downloadInfoAndPackage(url, release, QStringLiteral("main"), QStringLiteral("i386"), file_i386,
+                                    QStringList{"libtxc-dxtn0"}, idx += inc)) i386_flag = false;
     }
 
     updateStatus(tr("<b>Download Finished.</b>"), idx += inc);
@@ -199,6 +204,7 @@ bool MainWindow::downloadInfoAndPackage(const QString &url, const QString &relea
         return false;
     }
 
+    const int step = 10;
     for (const QString &search_deb : search_terms) {
         QString out = cmd.getCmdOut("zgrep ^Filename " + file.fileName() + " |grep " + search_deb + " |cut -d' ' -f2 |head -n1");
         if (out.isEmpty()) {
@@ -208,7 +214,7 @@ bool MainWindow::downloadInfoAndPackage(const QString &url, const QString &relea
             updateStatus(tr("<b>Running command...</b><p>") + "downloading: " + out, progress);
             downloadDeb(url, out);
         }
-        progress += 10;
+        progress += step;
     }
     return true;
 }
@@ -230,7 +236,7 @@ void MainWindow::installDebs(const QString& path) {
     int size = fileList.size();
     if (size == 0) {
         QMessageBox::critical(this, tr("Error"), tr("No downloaded *.debs files found."));
-        qApp->exit(EXIT_FAILURE);
+        QApplication::exit(EXIT_FAILURE);
     }
 
     qDebug() << "filelist " << fileList;
@@ -270,11 +276,11 @@ void MainWindow::installDebs(const QString& path) {
     if (!error) {
         QMessageBox::information(this, tr("Finished"),
                                  tr("Codecs files have been downloaded and installed successfully."));
-        qApp->exit(EXIT_SUCCESS);
+        QApplication::exit(EXIT_SUCCESS);
     } else {
         QMessageBox::critical(this, tr("Error"),
                               tr("Process finished. Errors have occurred during the installation."));
-        qApp->exit(EXIT_FAILURE);
+        QApplication::exit(EXIT_FAILURE);
     }
 }
 
@@ -282,7 +288,7 @@ void MainWindow::installDebs(const QString& path) {
 void MainWindow::buttonAbout_clicked() {
     this->hide();
     displayAboutMsgBox(tr("About MX Codecs"), "<p align=\"center\"><b><h2>" + this->windowTitle() +"</h2></b></p><p align=\"center\">" +
-                       tr("Version: ") + qApp->applicationVersion() + "</p><p align=\"center\"><h3>" +
+                       tr("Version: ") + QApplication::applicationVersion() + "</p><p align=\"center\"><h3>" +
                        tr("Simple codecs downloader for MX Linux") +
                        R"(</h3></p><p align="center"><a href="http://mxlinux.org">http://mxlinux.org</a><br /></p><p align="center">)" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>",

@@ -21,19 +21,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-
 #include "lockfile.h"
 #include <unistd.h>
 #include <sys/file.h>
-
-#include <QDebug>
 
 LockFile::LockFile(const QString &file_name)
 {
     this->file_name = file_name;
 }
 
-//checks if file is locked by another process (if locked by the same process returns false)
+// checks if file is locked by another process (if locked by the same process returns false)
 bool LockFile::isLocked()
 {
     fd = open(file_name.toUtf8(), O_RDONLY);

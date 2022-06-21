@@ -32,27 +32,27 @@
 #include "mainwindow.h"
 #include "version.h"
 
-QString starting_home = qEnvironmentVariable("HOME");
+extern const QString starting_home = qEnvironmentVariable("HOME");
 
 int main(int argc, char *argv[])
 {
     qputenv("XDG_RUNTIME_DIR", "/run/user/0");
     QApplication app(argc, argv);
     qputenv("HOME", "/root");
-    app.setWindowIcon(QIcon::fromTheme(app.applicationName()));
-    app.setApplicationVersion(VERSION);
+    QApplication::setWindowIcon(QIcon::fromTheme(QApplication::applicationName()));
+    QApplication::setApplicationVersion(VERSION);
 
     QTranslator qtTran;
     if (qtTran.load(QLocale(), QStringLiteral("qt"), QStringLiteral("_"), QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
-        app.installTranslator(&qtTran);
+        QApplication::installTranslator(&qtTran);
 
     QTranslator qtBaseTran;
     if (qtBaseTran.load("qtbase_" + QLocale().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
-        app.installTranslator(&qtBaseTran);
+        QApplication::installTranslator(&qtBaseTran);
 
     QTranslator appTran;
-    if (appTran.load(app.applicationName() + "_" + QLocale().name(), "/usr/share/" + app.applicationName() + "/locale"))
-        app.installTranslator(&appTran);
+    if (appTran.load(QApplication::applicationName() + "_" + QLocale().name(), "/usr/share/" + QApplication::applicationName() + "/locale"))
+        QApplication::installTranslator(&appTran);
 
     // root guard
     if (QProcess::execute(QStringLiteral("/bin/bash"), {"-c", "logname |grep -q ^root$"}) == 0) {
@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
         }
         MainWindow w;
         w.show();
-        return app.exec();
+        return QApplication::exec();
     } else {
         QProcess::startDetached(QStringLiteral("/usr/bin/mx-cleanup-launcher"), {});
     }
