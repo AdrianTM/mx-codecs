@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="nb">
+<TS version="2.1" language="en_US">
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <source>MX Codecs Installer</source>
-        <translation>MX Codec-installatør</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="27"/>
@@ -16,22 +16,22 @@
     <message>
         <location filename="../mainwindow.ui" line="44"/>
         <source>Downloading codecs files</source>
-        <translation>Laster ned codec filer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="100"/>
         <source>Cancel any changes then quit</source>
-        <translation>Forkast alle endringer og avslutt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="103"/>
         <source>Cancel</source>
-        <translation>Avbryt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="110"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="129"/>
@@ -41,45 +41,37 @@
     <message>
         <location filename="../mainwindow.ui" line="132"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="193"/>
         <source>About this application</source>
-        <translation>Om applikasjonen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="196"/>
         <source>About...</source>
-        <translation>Om...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="203"/>
         <source>Alt+B</source>
-        <translation>Alt+B</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="232"/>
         <source>Display help </source>
-        <translation>Vis hjelp</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="235"/>
         <source>Help</source>
-        <translation>Hjelp</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="242"/>
         <source>Alt+H</source>
-        <translation>Alt+H</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="170"/>
-        <location filename="../mainwindow.cpp" line="176"/>
-        <location filename="../mainwindow.cpp" line="184"/>
-        <location filename="../mainwindow.cpp" line="208"/>
-        <source>&lt;b&gt;Running command...&lt;/b&gt;&lt;p&gt;</source>
-        <translation>&lt;b&gt;Utfører kommando&lt;/b&gt;&lt;p&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="100"/>
@@ -90,21 +82,16 @@
         <location filename="../mainwindow.cpp" line="227"/>
         <location filename="../mainwindow.cpp" line="267"/>
         <source>Error</source>
-        <translation>Feil</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="197"/>
-        <source>Cannot connect to the download site</source>
-        <translation>Kan ikke koble til nedlastingssiden</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="116"/>
-        <source>Error downloading %1</source>
-        <translation>Feil ved nedlasting av %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="101"/>
         <source>Internet is not available, won&apos;t be able to download the list of packages</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="116"/>
+        <source>Error downloading %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -115,6 +102,14 @@
     <message>
         <location filename="../mainwindow.cpp" line="157"/>
         <source>Could not create temp directory. </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="170"/>
+        <location filename="../mainwindow.cpp" line="176"/>
+        <location filename="../mainwindow.cpp" line="184"/>
+        <location filename="../mainwindow.cpp" line="208"/>
+        <source>&lt;b&gt;Running command...&lt;/b&gt;&lt;p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -135,7 +130,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="189"/>
         <source>&lt;b&gt;Download Finished.&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Nedlasting fullført.&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="197"/>
+        <source>Cannot connect to the download site</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
@@ -145,22 +145,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="224"/>
         <source>Installing downloaded files</source>
-        <translation>Installerer nedlastede filer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="227"/>
         <source>No downloaded *.debs files found.</source>
-        <translation>Ingen lagrede *.debs filer funnet.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
         <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
-        <translation>&lt;b&gt;Installerer...&lt;/b&gt;&lt;p&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>Error installing %1</source>
-        <translation>Feil ved installasjon av %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="252"/>
@@ -175,27 +175,42 @@
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>&lt;b&gt;Installation process has finished&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Installasjonsprosessen er fullført&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="263"/>
         <source>Finished</source>
-        <translation>Fullført</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="264"/>
         <source>Codecs files have been downloaded and installed successfully.</source>
-        <translation>Codecfiler har blitt lagret og installert uten feil.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="268"/>
         <source>Process finished. Errors have occurred during the installation.</source>
-        <translation>Installasjonsprosess fullført. Feil har forekommet under installasjonen.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="275"/>
         <source>About MX Codecs</source>
-        <translation>Om MX Codecer</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="276"/>
+        <source>Version: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="277"/>
+        <source>Simple codecs downloader for MX Linux</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="279"/>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="280"/>
@@ -207,71 +222,34 @@
         <source>%1 Help</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>MX Codecs</source>
-        <translation type="vanished">MX Codecer</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="276"/>
-        <source>Version: </source>
-        <translation>Versjon:</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="277"/>
-        <source>Simple codecs downloader for MX Linux</source>
-        <translation>Enkel codec-nedlaster for MX Linux</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="279"/>
-        <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Lisens</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Changelog</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Lukk</translation>
-    </message>
-</context>
-<context>
-    <name>QApplication</name>
-    <message>
-        <source>Another package management application (like Synaptic or apt-get), is already running. Please close that application first</source>
-        <translation type="vanished">En annen pakkeinstallasjons applikasjon (som Synaptic eller apt-get) kjører allerede. Vennligst steng den applikasjonen først.</translation>
-    </message>
-    <message>
-        <source>You must run this program as root.</source>
-        <translation type="vanished">Du må kjøre dette programmet som root.</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="obsolete">Lisens</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="obsolete">Changelog</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="obsolete">Avbryt</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="obsolete">&amp;Lukk</translation>
-    </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
+        <location filename="../about.cpp" line="41"/>
+        <source>License</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="42"/>
+        <location filename="../about.cpp" line="51"/>
+        <source>Changelog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="43"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="63"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../main.cpp" line="62"/>
         <source>Error</source>
-        <translation type="unfinished">Feil</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.cpp" line="63"/>
@@ -286,28 +264,7 @@
     <message>
         <location filename="../main.cpp" line="73"/>
         <source>Another package management application (like Synaptic or apt-get), is already running. Please close that application first</source>
-        <translation type="unfinished">En annen pakkeinstallasjons applikasjon (som Synaptic eller apt-get) kjører allerede. Vennligst steng den applikasjonen først.</translation>
-    </message>
-    <message>
-        <location filename="../about.cpp" line="41"/>
-        <source>License</source>
-        <translation type="unfinished">Lisens</translation>
-    </message>
-    <message>
-        <location filename="../about.cpp" line="42"/>
-        <location filename="../about.cpp" line="51"/>
-        <source>Changelog</source>
-        <translation type="unfinished">Changelog</translation>
-    </message>
-    <message>
-        <location filename="../about.cpp" line="43"/>
-        <source>Cancel</source>
-        <translation type="unfinished">Avbryt</translation>
-    </message>
-    <message>
-        <location filename="../about.cpp" line="63"/>
-        <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Lukk</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

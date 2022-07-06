@@ -273,22 +273,22 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="59"/>
+        <location filename="../main.cpp" line="62"/>
         <source>Error</source>
         <translation type="unfinished">Klaida</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="60"/>
+        <location filename="../main.cpp" line="63"/>
         <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="69"/>
+        <location filename="../main.cpp" line="72"/>
         <source>Unable to get exclusive lock</source>
         <translation type="unfinished">Nepavyko gauti išskirtinio užrakto</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="70"/>
+        <location filename="../main.cpp" line="73"/>
         <source>Another package management application (like Synaptic or apt-get), is already running. Please close that application first</source>
         <translation type="unfinished">Jau yra vykdoma kita (tokia kaip Synaptic ar apt-get) paketų tvarkymo programa. Prašome, iš pradžių, užverti tą programą</translation>
     </message>

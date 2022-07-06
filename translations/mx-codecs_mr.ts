@@ -273,22 +273,22 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="59"/>
+        <location filename="../main.cpp" line="62"/>
         <source>Error</source>
         <translation type="unfinished">त्रुटी</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="60"/>
+        <location filename="../main.cpp" line="63"/>
         <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="69"/>
+        <location filename="../main.cpp" line="72"/>
         <source>Unable to get exclusive lock</source>
         <translation type="unfinished">अनन्य लॉक मिळविण्यात अक्षम</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="70"/>
+        <location filename="../main.cpp" line="73"/>
         <source>Another package management application (like Synaptic or apt-get), is already running. Please close that application first</source>
         <translation type="unfinished">दुसरा पॅकेज व्यवस्थापन अनुप्रयोग (जसे Synaptic किंवा apt-get), आधीच चालू आहे. प्रथम ते अनुप्रयोग बंद करा</translation>
     </message>
