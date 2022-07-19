@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.0" language="is">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.0" language="or">
 <context>
     <name>MainWindow</name>
     <message>
@@ -25,12 +25,12 @@
         <location filename="../mainwindow.ui" line="97"/>
         <location filename="../mainwindow.cpp" line="268"/>
         <source>Cancel</source>
-        <translation>Hætta við</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="104"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="117"/>
@@ -40,37 +40,37 @@
     <message>
         <location filename="../mainwindow.ui" line="120"/>
         <source>OK</source>
-        <translation>Í lagi</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="175"/>
         <source>About this application</source>
-        <translation>Um þetta forrit</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="178"/>
         <source>About...</source>
-        <translation>Um hugbúnaðinn...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="185"/>
         <source>Alt+B</source>
-        <translation>Alt+B</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="214"/>
         <source>Display help </source>
-        <translation>Birta hjálp</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="217"/>
         <source>Help</source>
-        <translation>Hjálp</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="224"/>
         <source>Alt+H</source>
-        <translation>Alt+H</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="105"/>
@@ -82,7 +82,7 @@
         <location filename="../mainwindow.cpp" line="153"/>
         <location filename="../mainwindow.cpp" line="161"/>
         <source>&lt;b&gt;Running command...&lt;/b&gt;&lt;p&gt;</source>
-        <translation>&lt;b&gt;Keyri skipun...&lt;/b&gt;&lt;p&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="108"/>
@@ -95,7 +95,7 @@
         <location filename="../mainwindow.cpp" line="193"/>
         <location filename="../mainwindow.cpp" line="246"/>
         <source>Error</source>
-        <translation>Villa</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="109"/>
@@ -111,12 +111,12 @@
         <location filename="../mainwindow.cpp" line="147"/>
         <location filename="../mainwindow.cpp" line="165"/>
         <source>Error downloading %1</source>
-        <translation>Villa við að sækja %1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="170"/>
         <source>&lt;b&gt;Download Finished.&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Niðurhali lokið.&lt;/b&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="189"/>
@@ -131,12 +131,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="207"/>
         <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
-        <translation>&lt;b&gt;Set upp...&lt;/b&gt;&lt;p&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Error installing %1</source>
-        <translation>Villa við að setja upp %1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="224"/>
@@ -156,7 +156,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="242"/>
         <source>Finished</source>
-        <translation>Lokið</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="243"/>
@@ -181,7 +181,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
         <source>Version: </source>
-        <translation>Útgáfa:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="264"/>
@@ -191,23 +191,23 @@
     <message>
         <location filename="../mainwindow.cpp" line="265"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Höfundarréttur (c) MX Linux</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="266"/>
         <source>License</source>
-        <translation>Notkunarleyfi</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="267"/>
         <location filename="../mainwindow.cpp" line="277"/>
         <source>Changelog</source>
-        <translation>Breytingaskrá</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="285"/>
         <source>&amp;Close</source>
-        <translation>&amp;Loka</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>

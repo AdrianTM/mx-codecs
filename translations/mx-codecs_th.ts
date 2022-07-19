@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.0" language="is">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.0" language="th">
 <context>
     <name>MainWindow</name>
     <message>
@@ -14,18 +14,18 @@
     <message>
         <location filename="../mainwindow.ui" line="44"/>
         <source>Downloading codecs files</source>
-        <translation type="unfinished"/>
+        <translation>กำลังดาวน์โหลดไฟล์ Codec</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="94"/>
         <source>Cancel any changes then quit</source>
-        <translation type="unfinished"/>
+        <translation>ยกเลิกการเปลี่ยนแปลงทั้งหมดและออก</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="97"/>
         <location filename="../mainwindow.cpp" line="268"/>
         <source>Cancel</source>
-        <translation>Hætta við</translation>
+        <translation>ยกเลิก</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="104"/>
@@ -35,22 +35,22 @@
     <message>
         <location filename="../mainwindow.ui" line="117"/>
         <source>Begin codec download and installation</source>
-        <translation type="unfinished"/>
+        <translation>เริ่มการดาวน์โหลดและติดตั้ง codec</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="120"/>
         <source>OK</source>
-        <translation>Í lagi</translation>
+        <translation>ตกลง</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="175"/>
         <source>About this application</source>
-        <translation>Um þetta forrit</translation>
+        <translation>เกี่ยวกับแอปพลิเคชันนี้</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="178"/>
         <source>About...</source>
-        <translation>Um hugbúnaðinn...</translation>
+        <translation>เกี่ยวกับ...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="185"/>
@@ -60,12 +60,12 @@
     <message>
         <location filename="../mainwindow.ui" line="214"/>
         <source>Display help </source>
-        <translation>Birta hjálp</translation>
+        <translation>แสดงหน้าช่วยเหลือ</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="217"/>
         <source>Help</source>
-        <translation>Hjálp</translation>
+        <translation>ช่วยเหลือ</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="224"/>
@@ -82,7 +82,7 @@
         <location filename="../mainwindow.cpp" line="153"/>
         <location filename="../mainwindow.cpp" line="161"/>
         <source>&lt;b&gt;Running command...&lt;/b&gt;&lt;p&gt;</source>
-        <translation>&lt;b&gt;Keyri skipun...&lt;/b&gt;&lt;p&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="108"/>
@@ -95,7 +95,7 @@
         <location filename="../mainwindow.cpp" line="193"/>
         <location filename="../mainwindow.cpp" line="246"/>
         <source>Error</source>
-        <translation>Villa</translation>
+        <translation>ข้อผิดพลาด</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="109"/>
@@ -111,12 +111,12 @@
         <location filename="../mainwindow.cpp" line="147"/>
         <location filename="../mainwindow.cpp" line="165"/>
         <source>Error downloading %1</source>
-        <translation>Villa við að sækja %1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="170"/>
         <source>&lt;b&gt;Download Finished.&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Niðurhali lokið.&lt;/b&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="189"/>
@@ -131,12 +131,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="207"/>
         <source>&lt;b&gt;Installing...&lt;/b&gt;&lt;p&gt;</source>
-        <translation>&lt;b&gt;Set upp...&lt;/b&gt;&lt;p&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="220"/>
         <source>Error installing %1</source>
-        <translation>Villa við að setja upp %1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="224"/>
@@ -156,7 +156,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="242"/>
         <source>Finished</source>
-        <translation>Lokið</translation>
+        <translation>เสร็จสิ้น</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="243"/>
@@ -171,7 +171,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="261"/>
         <source>About MX Codecs</source>
-        <translation type="unfinished"/>
+        <translation>เกี่ยวกับ MX Codecs</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
@@ -181,7 +181,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
         <source>Version: </source>
-        <translation>Útgáfa:</translation>
+        <translation>เวอร์ชัน:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="264"/>
@@ -191,23 +191,23 @@
     <message>
         <location filename="../mainwindow.cpp" line="265"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Höfundarréttur (c) MX Linux</translation>
+        <translation>สงวนลิขสิทธิ์ (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="266"/>
         <source>License</source>
-        <translation>Notkunarleyfi</translation>
+        <translation>สัญญาอนุญาต</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="267"/>
         <location filename="../mainwindow.cpp" line="277"/>
         <source>Changelog</source>
-        <translation>Breytingaskrá</translation>
+        <translation>Changelog</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="285"/>
         <source>&amp;Close</source>
-        <translation>&amp;Loka</translation>
+        <translation>&amp;ปิด</translation>
     </message>
 </context>
 <context>
@@ -225,7 +225,7 @@
     <message>
         <location filename="../main.cpp" line="67"/>
         <source>You must run this program as root.</source>
-        <translation type="unfinished"/>
+        <translation>คุณต้องรันโปรแกรมนี้เป็น root</translation>
     </message>
 </context>
 </TS>
