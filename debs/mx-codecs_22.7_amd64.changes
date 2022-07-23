@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sat, 23 Jul 2022 11:22:35 -0400
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source amd64
+Version: 22.7
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (22.7) mx; urgency=medium
+ .
+   * translation refresh
+Checksums-Sha1:
+ 8e40e26e5ae772d0d4719201977dd634e0fd8195 592 mx-codecs_22.7.dsc
+ ae068b895f2fab2be5e1ed771e1a5b82215caf2f 291052 mx-codecs_22.7.tar.xz
+ 75bad2f3e01df18556de9cd55d5e3f7a287d9c2e 10448 mx-codecs_22.7_amd64.buildinfo
+ 858bff60878469dbc139e337a6e823477065fcd5 87900 mx-codecs_22.7_amd64.deb
+Checksums-Sha256:
+ 4a4b30545476e9223f2c49fa9dd1104d1d0e37a6fc74421d3fb49a9fe6de0029 592 mx-codecs_22.7.dsc
+ 3108b60e40738837a53bc7ae47e0a51eacb8645cf679ab0bd88b18b594f16216 291052 mx-codecs_22.7.tar.xz
+ 697900f448f858b9523526f19d6b05f244d4e637eb7daa5befdd4ddb3da6c2fc 10448 mx-codecs_22.7_amd64.buildinfo
+ d3eb57177b31463b7fa2708cc83003c5186715cd68a69f771f7363dddc9e9a8a 87900 mx-codecs_22.7_amd64.deb
+Files:
+ 0a0e2cbc408b40cefb9c3d4dfa104a06 592 system optional mx-codecs_22.7.dsc
+ 96030b7aca726b9e7ffb9df1dd46f5bb 291052 system optional mx-codecs_22.7.tar.xz
+ 9e8cb04f591650aac896a90147a69afd 10448 system optional mx-codecs_22.7_amd64.buildinfo
+ a0c4389e11b26c3bbf26a35d881a6b14 87900 system optional mx-codecs_22.7_amd64.deb
