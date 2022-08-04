@@ -70,6 +70,7 @@ void MainWindow::updateStatus(const QString& msg, int val) {
 bool MainWindow::isOnline()
 {
     QNetworkRequest request;
+    request.setAttribute(QNetworkRequest::RedirectPolicyAttribute, QNetworkRequest::NoLessSafeRedirectPolicy);
     request.setRawHeader("User-Agent", QApplication::applicationName().toUtf8() + "/" +
                          QApplication::applicationVersion().toUtf8() + " (linux-gnu)");
 
