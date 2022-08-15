@@ -69,6 +69,7 @@ TRANSLATIONS += translations/mx-codecs_am.ts \
                 translations/mx-codecs_fa.ts \
                 translations/mx-codecs_fi.ts \
                 translations/mx-codecs_fr.ts \
+                translations/mx-codecs_fr_BE.ts \
                 translations/mx-codecs_he_IL.ts \
                 translations/mx-codecs_hi.ts \
                 translations/mx-codecs_hr.ts \
