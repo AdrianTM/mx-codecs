@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Wed, 17 Aug 2022 21:47:07 -0400
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source amd64
+Version: 22.8
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (22.8) mx; urgency=medium
+ .
+   * Fix: launching Firefox from Help
+Checksums-Sha1:
+ a743f5381f5a91467da013c50dc3739a376c27c3 1151 mx-codecs_22.8.dsc
+ ff1c765fa676ec6e752d359879928b009053d788 65656 mx-codecs_22.8.tar.xz
+ 69d08a00c3ef47eb8e104585f51538bd2ca87d9f 10710 mx-codecs_22.8_amd64.buildinfo
+ 646e8142354bf415565220a8ce226b86095c17fb 88236 mx-codecs_22.8_amd64.deb
+Checksums-Sha256:
+ ee89288afc80e454acbf022ae56acea24bedb50bbc02371955399711601cf952 1151 mx-codecs_22.8.dsc
+ 4e5da88770450ba00636ebccbb329bdd98934f2e6a71049472a7b47ee7225364 65656 mx-codecs_22.8.tar.xz
+ e5bc74b8e7e4b6405cd6add0ef6f08063b184520b7b9d45828c0027f2ae7a396 10710 mx-codecs_22.8_amd64.buildinfo
+ 3c578f9f335ec8f18bf4561b2896cda7232aa03eccc7036baf82ebaa9649d9fb 88236 mx-codecs_22.8_amd64.deb
+Files:
+ 681a4c666983ac4e55872e2330cc1d46 1151 system optional mx-codecs_22.8.dsc
+ e7c037267139dbc37ddbf9b0233a4a16 65656 system optional mx-codecs_22.8.tar.xz
+ e1808f05d2d65a0ee65985c84b3955c4 10710 system optional mx-codecs_22.8_amd64.buildinfo
+ 77b741445f53e2d7ca7178fcd082426c 88236 system optional mx-codecs_22.8_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmL9mlcTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumHtEB/0ZojJliGRYX4OJOLPLB4VEwEfVoBy5
+ct2g2Da8vEhvXElu3X97OdMNE7M76d5JpiQYKS9n/NtlRp6tB/HJwsMTrsZAVKct
+E5V83xTvUuuBYtZlyes8kcU6Gt7cZwaP8ZTk/9yMqTPV5xbYYOveBF/inexAy7wj
+EC6gByGf8LvHSpXcDX7GiJczRIriXtEYBj2Sf1Q1h7hNS6/mBQPySAX/1SRgmDfh
+FO3Eo3AuRhzSaNJhs3VwkLQ1Ej78pJrO0sJZtIeirzD+6LR3c4pjmfGjjxWF7vUx
+ItdTzVH2U4+VdEy/orwPw2d1OzBYCFW7AW7QlY5MQq+Zb57y5O4Ae0LK
+=hVvr
+-----END PGP SIGNATURE-----
