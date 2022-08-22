@@ -278,7 +278,7 @@ void MainWindow::buttonAbout_clicked() {
                        tr("Simple codecs downloader for MX Linux") +
                        R"(</h3></p><p align="center"><a href="http://mxlinux.org">http://mxlinux.org</a><br /></p><p align="center">)" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>",
-                       QStringLiteral("file:///usr/share/doc/mx-codecs/license.html"), tr("%1 License").arg(this->windowTitle()), true);
+                       QStringLiteral("file:///usr/share/doc/mx-codecs/license.html"), tr("%1 License").arg(this->windowTitle()));
     this->show();
 }
 
@@ -288,6 +288,6 @@ void MainWindow::buttonHelp_clicked() {
     QString url = QStringLiteral("file:///usr/share/doc/mx-codecs/mx-codecs.html");
     if (lang.startsWith(QLatin1String("fr")))
         url = QStringLiteral("https://mxlinux.org/french-wiki/help-files/help-mx-codecs-installer");
-    displayDoc(url, tr("%1 Help").arg(this->windowTitle()), true);
+    displayDoc(url, tr("%1 Help").arg(this->windowTitle()));
 }
 
