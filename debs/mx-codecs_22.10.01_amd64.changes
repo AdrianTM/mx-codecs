@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 26 Oct 2022 19:57:53 -0400
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source amd64
+Version: 22.10.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (22.10.01) mx; urgency=medium
+ .
+   * update translations
+Checksums-Sha1:
+ cf9f9bd1a43b520aae95797d852377cfe709ba76 608 mx-codecs_22.10.01.dsc
+ 3b9cf03eab9bdb6c7ffb7dc1f49fe126171bd648 314920 mx-codecs_22.10.01.tar.xz
+ 148180c1798cc0f60e5094ce949c3dfacab5fb30 10476 mx-codecs_22.10.01_amd64.buildinfo
+ b38116e1a2e6950566baf7979a9a85e955163470 88648 mx-codecs_22.10.01_amd64.deb
+Checksums-Sha256:
+ ebe057e430354c4c3c48770f7d5c4ee4c4ca9be3f50c76187c1e614fea95ff26 608 mx-codecs_22.10.01.dsc
+ 3c9994da4ef38d8bd8f037aac07220492df7d37773d88ea1028f8f8a84c8a958 314920 mx-codecs_22.10.01.tar.xz
+ e67908daf0a90e73f89c16c94f6c18ca64695e168867da5596030a2a0073c17c 10476 mx-codecs_22.10.01_amd64.buildinfo
+ a9ce6a09cd86fbef2939c7ef9a856e60df9ccdfae1e240396ecc6a14fdb69573 88648 mx-codecs_22.10.01_amd64.deb
+Files:
+ d72b04c01b8a87b0ab5cf8b7608426f6 608 system optional mx-codecs_22.10.01.dsc
+ d85663f9d9fc3b483a93a157c92c751d 314920 system optional mx-codecs_22.10.01.tar.xz
+ fc85a5d4def5f10f6ca4675384d178cd 10476 system optional mx-codecs_22.10.01_amd64.buildinfo
+ bc67e5feb87faeae36886f82f3d3a7ee 88648 system optional mx-codecs_22.10.01_amd64.deb
