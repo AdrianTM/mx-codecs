@@ -85,6 +85,6 @@ int main(int argc, char *argv[])
         w.show();
         return QApplication::exec();
     } else {
-        QProcess::startDetached(QStringLiteral("/usr/bin/mx-cleanup-launcher"), {});
+        QProcess::startDetached(QStringLiteral("/usr/bin/mx-codecs-launcher"), {});
     }
 }
