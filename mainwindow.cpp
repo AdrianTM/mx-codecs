@@ -170,7 +170,7 @@ QString MainWindow::downloadDebs()
     QDir::setCurrent(path);
 
     // get release info
-    QString release = cmd.getCmdOut(QStringLiteral("grep VERSION /etc/os-release |grep -Eo [a-z]+ "));
+    QString release = cmd.getCmdOut(QStringLiteral("grep VERSION_CODENAME /etc/os-release |grep -Eo [a-z]+ "));
     qDebug() << "release is " << release;
     int idx = 0;
     const int inc = 10;
