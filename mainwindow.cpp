@@ -184,7 +184,7 @@ QString MainWindow::downloadDebs()
     if (arch == QLatin1String("amd64") || arch == QLatin1String("i386")) {
         QTemporaryFile file_nonfree;
         updateStatus(tr("<b>Running command...</b><p>") + tr("downloading Packages.gz from 'non-free'"), idx += inc);
-        if (!downloadInfoAndPackage(url, release, QStringLiteral("non-free"), arch, file_nonfree,
+        if (!downloadInfoAndPackage(url, "bullseye", QStringLiteral("non-free"), arch, file_nonfree,
                                     QStringList {"w.*codecs.*deb"}, idx += inc))
             arch_flag = false;
     }
