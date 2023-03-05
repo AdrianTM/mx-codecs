@@ -1,3 +1,9 @@
+mx-codecs (23.03.01) mx; urgency=medium
+
+  * make work with bookworm 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 04 Mar 2023 22:04:29 -0500
+
 mx-codecs (22.10.01) mx; urgency=medium
 
   * update translations
