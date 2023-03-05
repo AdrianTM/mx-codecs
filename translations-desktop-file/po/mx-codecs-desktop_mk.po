@@ -1,14 +1,14 @@
 # Macedonian translations for PACKAGE package.
-# Copyright (C) 2022 THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) 2023 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2022.
+# Automatically generated, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:16-0500\n"
-"PO-Revision-Date: 2022-12-08 22:16-0500\n"
+"POT-Creation-Date: 2023-03-04 22:02-0500\n"
+"PO-Revision-Date: 2023-03-04 22:02-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: mk\n"
