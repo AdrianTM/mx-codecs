@@ -1,0 +1,41 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sat, 11 Mar 2023 15:10:51 -0500
+Source: mx-codecs
+Architecture: source
+Version: 23.03.02
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-codecs (23.03.02) mx; urgency=medium
+ .
+   * Detect proxy
+   * Update translations
+Checksums-Sha1:
+ faf6682afadd145a0801000c2e83a7aeb66a72e6 1167 mx-codecs_23.03.02.dsc
+ 912c8ee783df99c45f5dacc1a3b981f2c6fb122e 75076 mx-codecs_23.03.02.tar.xz
+ 8da03baab424f85a66fb559dcfc1afd9325d087e 10742 mx-codecs_23.03.02_amd64.buildinfo
+Checksums-Sha256:
+ 433c58d5841074a0bb25764cf2dee5b52539e5317f43f303b607990412ba518e 1167 mx-codecs_23.03.02.dsc
+ 9b067b2ced4afbe517b294d01bce21e28e9d7e18a0fa065f7587f59d410776d9 75076 mx-codecs_23.03.02.tar.xz
+ 463cc10bbd290b48a690f5aad2e84ea0031b66f548e049eef097af879218cdde 10742 mx-codecs_23.03.02_amd64.buildinfo
+Files:
+ 54e376a5c2deca6a0bb6bb61ed8d1591 1167 system optional mx-codecs_23.03.02.dsc
+ 51f3bc6feedd801afa763dab1e90ac16 75076 system optional mx-codecs_23.03.02.tar.xz
+ a78fd8a27ac8823724a3814400eaa395 10742 system optional mx-codecs_23.03.02_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmQM4ZkTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumMlhB/9XSJEaxxU5iBFOcUTxX/E8KdDDENZc
+ZhzCbx5MPzw6+FANMClZ6g3KD7WDPNCyp/4UUeAia8t2yhnaF8w0hA5gGTsS8xF8
+hBZHD53otnD05wH3aX+JXu3wKE7qOrAmclGDsGgMUDySZo65n/35ojxLgeRLR6Yx
+T9UMeRjPHD6/hKS7RrmiPmCqfm6Li6q6B/lpN3N2Rs/HXZQ6nkfl1NVADwdfCxUK
++uMilG6EjgsM2RwzUV1VjWGkjnnOVNoI7mPB288+R4dKKHFXi6n9nC3FthSJTwD1
+vPFcKXAVgnOZ6t5F7yJMo5g6iGu+Ti6HQ3fYzOxic9xMdq3XgQO/bn3z
+=CNwg
+-----END PGP SIGNATURE-----

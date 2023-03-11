@@ -1,3 +1,10 @@
+mx-codecs (23.03.02) mx; urgency=medium
+
+  * Detect proxy
+  * Update translations
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 11 Mar 2023 15:10:51 -0500
+
 mx-codecs (23.03.01) mx; urgency=medium
 
   * make work with bookworm 

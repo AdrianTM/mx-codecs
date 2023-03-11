@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sat, 11 Mar 2023 15:10:51 -0500
+Source: mx-codecs
+Binary: mx-codecs
+Architecture: source amd64
+Version: 23.03.02
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-codecs  - restricted codecs installer
+Changes:
+ mx-codecs (23.03.02) mx; urgency=medium
+ .
+   * Detect proxy
+   * Update translations
+Checksums-Sha1:
+ faf6682afadd145a0801000c2e83a7aeb66a72e6 1167 mx-codecs_23.03.02.dsc
+ 912c8ee783df99c45f5dacc1a3b981f2c6fb122e 75076 mx-codecs_23.03.02.tar.xz
+ 8da03baab424f85a66fb559dcfc1afd9325d087e 10742 mx-codecs_23.03.02_amd64.buildinfo
+ 8a1f387a0e4604da63fd131709ab171278212612 92264 mx-codecs_23.03.02_amd64.deb
+Checksums-Sha256:
+ 433c58d5841074a0bb25764cf2dee5b52539e5317f43f303b607990412ba518e 1167 mx-codecs_23.03.02.dsc
+ 9b067b2ced4afbe517b294d01bce21e28e9d7e18a0fa065f7587f59d410776d9 75076 mx-codecs_23.03.02.tar.xz
+ 463cc10bbd290b48a690f5aad2e84ea0031b66f548e049eef097af879218cdde 10742 mx-codecs_23.03.02_amd64.buildinfo
+ f4ef7e0a64bb4709a40624b6aa8d038c5fb12e9f2e0dbf54c89ebada08f2fcf5 92264 mx-codecs_23.03.02_amd64.deb
+Files:
+ 54e376a5c2deca6a0bb6bb61ed8d1591 1167 system optional mx-codecs_23.03.02.dsc
+ 51f3bc6feedd801afa763dab1e90ac16 75076 system optional mx-codecs_23.03.02.tar.xz
+ a78fd8a27ac8823724a3814400eaa395 10742 system optional mx-codecs_23.03.02_amd64.buildinfo
+ fdab1bf7cfead9a0225e647e939e352f 92264 system optional mx-codecs_23.03.02_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmQM4ZkTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJytB/0TCL4fIRWlj9db2cdtEEDyZxW5tGOn
+vDj/Ef9lu5KfhSQPDUJVuF68TR5R5UHp5ZYsAsm/z8gE9hBaFCYnsxQb8mLo0gjY
+IrHa8AQzXCXFmY+7ic1B21etFdyDdN0WIJa2vNqJgGZepiKO3uViEfuni/q4j8JI
+bxCbUSC3X89xE3c2qJAG+c5rsx34VlEIU7r/nfmZtVHGMcwkBeRXL9ZVfb8tY2m2
+lsQcFK8tglz6+VtYvVoQDEk5kqg8cOf/ebJBXI0SYvPYPylGv03GdNnB+uetwpm0
+uPX2yBC0bkslwMWvRfkthSr4MNL0+vBLEH3h8Jm9EJniZXa/ElWD3mi2
+=WL/h
+-----END PGP SIGNATURE-----
