@@ -251,7 +251,7 @@
     </message>
     <message>
         <source>You must run this program as root.</source>
-        <translation type="vanished">Diese Anwendung muss mit-root-Rechten ausgeführt werden.</translation>
+        <translation type="vanished">Diese Anwendung muss mit-Administratorrechten ausgeführt werden.</translation>
     </message>
 </context>
 <context>
