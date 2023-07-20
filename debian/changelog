@@ -1,5 +1,11 @@
 mx-codecs (23.7) mx; urgency=medium
 
+  * translation update
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 20 Jul 2023 15:07:45 -0400
+
+mx-codecs (23.7) mx; urgency=medium
+
   * Refresh translations
   * Update policy file
 
