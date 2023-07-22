@@ -62,7 +62,6 @@ TRANSLATIONS += translations/mx-codecs_af.ts \
                 translations/mx-codecs_be.ts \
                 translations/mx-codecs_bg.ts \
                 translations/mx-codecs_bn.ts \
-                translations/mx-codecs_bs_BA.ts \
                 translations/mx-codecs_bs.ts \
                 translations/mx-codecs_ca.ts \
                 translations/mx-codecs_ceb.ts \
@@ -100,7 +99,6 @@ TRANSLATIONS += translations/mx-codecs_af.ts \
                 translations/mx-codecs_hr.ts \
                 translations/mx-codecs_ht.ts \
                 translations/mx-codecs_hu.ts \
-                translations/mx-codecs_hy_AM.ts \
                 translations/mx-codecs_hye.ts \
                 translations/mx-codecs_hy.ts \
                 translations/mx-codecs_id.ts \
